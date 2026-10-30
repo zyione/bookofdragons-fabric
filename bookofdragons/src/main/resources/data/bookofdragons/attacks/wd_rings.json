@@ -1,0 +1,65 @@
+{
+  "delivery": {
+    "type": "stream",
+    "windup_ticks": 6,
+    "fire_rate": 3,
+    "max_duration_ticks": 200,
+    "cooldown_ticks": 40,
+    "fuel": {"max": 100, "drain_per_tick": 1, "regen_per_sec": 20, "recharge_ticks": 100}
+  },
+  "collision": {
+    "damage": 6.0,
+    "fire_seconds": 0
+  },
+  "emitters": [
+    {
+      "kind": "projectile",
+      "emission": {"shape": "point", "count": 1, "rate_ticks": 6},
+      "sim": {
+        "speed": 0.8, "lifetime_ticks": 30, "grow_in_ticks": 20,
+        "initial_temperature": 1.0, "cooling_rate": 0.033, "cooling_shrink": true, "flicker": 0.0,
+        "movement": [
+          {"type": "drag", "factor": 0.97}
+        ]
+      },
+      "render": {
+        "type": "pixel_quad",
+        "blend": "additive",
+        "size": [0.7, 0.0],
+        "palette": [
+          {"color": [255, 200, 160], "alpha": 1.0},
+          {"color": [255, 110, 60],  "alpha": 0.95},
+          {"color": [200, 50, 30],   "alpha": 0.8},
+          {"color": [110, 20, 10],   "alpha": 0.4}
+        ]
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "source",
+      "emission": {"shape": "disc", "radius": 0.8, "spread": [0.05, 0.05, 0.05], "count": 10, "rate_ticks": 3},
+      "sim": {
+        "speed": 0.8, "lifetime_ticks": 30, "grow_in_ticks": 20,
+        "initial_temperature": 1.0, "cooling_rate": 0.04, "cooling_shrink": true, "flicker": 0.1,
+        "movement": [
+          {"type": "drag", "factor": 0.96},
+          {"type": "turbulence", "amount": 0.02, "noise_scale": 0.5}
+        ]
+      },
+      "render": {
+        "type": "pixel_quad",
+        "blend": "additive",
+        "size": [0.4, 0.0],
+        "palette": [
+          {"color": [255, 200, 160], "alpha": 1.0},
+          {"color": [255, 110, 60],  "alpha": 0.95},
+          {"color": [200, 50, 30],   "alpha": 0.8},
+          {"color": [110, 20, 10],   "alpha": 0.4}
+        ]
+      }
+    }
+  ],
+  "impact": [
+    {"type": "none"}
+  ]
+}

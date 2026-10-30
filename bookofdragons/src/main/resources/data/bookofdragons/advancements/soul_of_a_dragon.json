@@ -1,0 +1,84 @@
+{
+  "parent": "bookofdragons:dragon_tamer",
+  "display": {
+    "icon": {
+      "item": "minecraft:name_tag",
+      "id": "minecraft:name_tag"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.soul_of_a_dragon.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.soul_of_a_dragon.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tamed_nightfury": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "tamed",
+        "dragon_type": "nightfury"
+      }
+    },
+    "tamed_deadly_nadder": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "tamed",
+        "dragon_type": "deadly_nadder"
+      }
+    },
+    "tamed_monstrous_nightmare": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "tamed",
+        "dragon_type": "monstrous_nightmare"
+      }
+    },
+    "tamed_gronckle": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "tamed",
+        "dragon_type": "gronckle"
+      }
+    },
+    "tamed_hideous_zippleback": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "tamed",
+        "dragon_type": "hideous_zippleback"
+      }
+    },
+    "tamed_skrill": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "tamed",
+        "dragon_type": "skrill"
+      }
+    },
+    "tamed_whispering_death": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "tamed",
+        "dragon_type": "whispering_death"
+      }
+    },
+    "tamed_terrible_terror": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "tamed",
+        "dragon_type": "terrible_terror"
+      }
+    },
+    "tamed_speed_stinger": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "tamed",
+        "dragon_type": "speed_stinger"
+      }
+    }
+  }
+}

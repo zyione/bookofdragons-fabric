@@ -1,0 +1,27 @@
+{
+  "parent": "bookofdragons:nice_and_slow",
+  "display": {
+    "icon": {
+      "item": "minecraft:paper",
+      "id": "minecraft:paper"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.position_four.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.position_four.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "dodge": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "dodge"
+      }
+    }
+  }
+}

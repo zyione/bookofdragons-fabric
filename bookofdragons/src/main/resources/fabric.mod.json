@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "bookofdragons",
+  "version": "1.4+1.20.1.fabric.dev.1",
+  "name": "Book of Dragons (Fabric port)",
+  "description": "Unofficial reconstructed Fabric 1.20.1 port. Development work in progress.",
+  "authors": [
+    "MrMagister",
+    "AuroranKingslayer"
+  ],
+  "environment": "*",
+  "entrypoints": {
+    "modmenu": ["net.magister.bookofdragons.platform.fabric.BookModMenu"],
+    "main": [
+      "net.magister.bookofdragons.platform.fabric.BookOfDragonsFabric"
+    ],
+    "liberanimalium:client": [
+      "net.magister.bookofdragons.platform.fabric.BookOfDragonsClient"
+    ]
+  },
+  "mixins": [
+    "bookofdragons.fabric.mixins.json"
+  ],
+  "license": "LicenseRef-All-Rights-Reserved",
+  "depends": {
+    "fabricloader": ">=0.18.2",
+    "minecraft": "1.20.1",
+    "java": ">=17",
+    "fabric-api": "*",
+    "azurelib": "3.2.0",
+    "liberanimalium": "*",
+    "forgeconfigapiport": "*"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "attributes": {
+    "CON": {"floor": 40, "ceiling": 60},
+    "ATH": {"floor": 40, "ceiling": 60},
+    "AGI": {"floor": 40, "ceiling": 60},
+    "PRW": {"floor": 40, "ceiling": 60},
+    "POT": {"floor": 40, "ceiling": 60},
+    "VIG": {"floor": 40, "ceiling": 60}
+  },
+  "art_version": 1,
+  "mutation": {
+    "allele_chance": 0.02,
+    "palette_chance": 0.05,
+    "deviation_tier_weights": {"0": 10, "1": 30, "2": 40, "3": 20}
+  },
+  "color_loci": {
+    "b": {
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "r": {
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "y": {
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "n": {
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "e": {
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "g": {
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "j": {
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "a": {
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "i": {
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "z": {
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "v": {
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "c": {
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    }
+  },
+  "structure_loci": {
+    "d": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "u": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "p": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "w": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "x": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "f": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "l": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "s": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "h": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "k": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    },
+    "q": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {"COMMON": 40, "UNCOMMON": 30, "RARE": 20, "VERY_RARE": 10},
+        "entries": {"COMMON": [], "UNCOMMON": [], "RARE": [], "VERY_RARE": []}
+      }
+    }
+  },
+  "linkage": {"rules": {}},
+  "palette_taxonomy": {}
+}

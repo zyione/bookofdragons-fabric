@@ -1,0 +1,63 @@
+{
+  "parent": "bookofdragons:we_have_dragons",
+  "display": {
+    "icon": {
+      "item": "bookofdragons:book_of_dragons",
+      "id": "bookofdragons:book_of_dragons"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.class_collector.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.class_collector.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "met_strike": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "met",
+        "dragon_class": "strike"
+      }
+    },
+    "met_tracker": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "met",
+        "dragon_class": "tracker"
+      }
+    },
+    "met_boulder": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "met",
+        "dragon_class": "boulder"
+      }
+    },
+    "met_stoker": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "met",
+        "dragon_class": "stoker"
+      }
+    },
+    "met_mystery": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "met",
+        "dragon_class": "mystery"
+      }
+    },
+    "met_sharp": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "met",
+        "dragon_class": "sharp"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "sounds": {
+    "idle": {
+      "sound": "minecraft:entity.polar_bear.ambient",
+      "volume": 0.69,
+      "pitch": 0.7,
+      "variance": 0.2
+    },
+    "asleep": {
+      "sound": "minecraft:block.beacon.ambient",
+      "volume": 0.17,
+      "pitch": 0.5
+    },
+    "hurt": {
+      "sound": "minecraft:entity.polar_bear.hurt",
+      "volume": 0.6,
+      "pitch": 1.5,
+      "variance": 0.1
+    },
+    "death": {
+      "sound": "minecraft:entity.polar_bear.death",
+      "volume": 0.59,
+      "pitch": 1.5,
+      "variance": 0.1
+    },
+    "roar": {
+      "sound": "minecraft:entity.polar_bear.warning",
+      "volume": 0.7,
+      "pitch": 0.8,
+      "variance": 0.1
+    },
+    "flap": {
+      "sound": "bookofdragons:medium_flap",
+      "volume": 1.0,
+      "pitch": 1.1,
+      "variance": 0.15
+    },
+    "bite": {
+      "sound": "minecraft:item.trident.hit",
+      "volume": 1.0,
+      "pitch": 0.5,
+      "variance": 0.1
+    },
+    "shoot": {
+      "sound": "bookofdragons:skrill_fire",
+      "volume": 1.0,
+      "pitch": 0.5,
+      "variance": 0.1
+    }
+  }
+}

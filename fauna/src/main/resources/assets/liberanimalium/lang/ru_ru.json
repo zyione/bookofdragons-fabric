@@ -1,0 +1,9 @@
+{
+  "key.category.liberanimalium": "FAUNA Engine",
+  "liberanimalium.ability.cannot_use": "%s не может использовать эту способность сейчас!",
+  "liberanimalium.ability.cooldown": "Способность %s всё ещё на перезарядке!",
+  "liberanimalium.ability.not_bonded": "%s недостаточно привязан(а), чтобы использовать эту способность!",
+  "liberanimalium.command.set": "%s теперь %s",
+  "liberanimalium.too_young_to_fly": "%s слишком молод, чтобы летать!",
+  "liberanimalium.needs_saddle": "Для езды нужно седло!"
+}

@@ -1,0 +1,526 @@
+{
+  "attributes": {
+    "CON": { "floor": 80, "ceiling": 100 },
+    "ATH": { "floor": 20, "ceiling": 40 },
+    "AGI": { "floor": 80, "ceiling": 100 },
+    "PRW": { "floor": 50, "ceiling": 70 },
+    "POT": { "floor": 20, "ceiling": 40 },
+    "VIG": { "floor": 20, "ceiling": 40 }
+  },
+  "art_version": 2,
+  "mutation": {
+    "allele_chance": 0.02,
+    "palette_chance": 0.05,
+    "deviation_tier_weights": {
+      "0": 10,
+      "1": 30,
+      "2": 40,
+      "3": 20
+    }
+  },
+  "color_loci": {
+    "b": {
+      "link_group": "body",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "clay",
+            "wine",
+            "soot",
+            "smoke",
+            "granite",
+            "tuff",
+            "earth",
+            "olive",
+            "deep_brown",
+            "brown",
+            "leather"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "r": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "clay",
+            "wine",
+            "soot",
+            "smoke",
+            "granite",
+            "tuff",
+            "earth",
+            "olive",
+            "deep_brown",
+            "brown",
+            "leather"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "y": {
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "sandy"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "n": {
+      "link_group": "gradient",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "clay",
+            "wine",
+            "soot",
+            "smoke",
+            "granite",
+            "tuff",
+            "earth",
+            "olive",
+            "deep_brown",
+            "brown",
+            "leather"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "e": {
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "g": {
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "j": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "clay",
+            "wine",
+            "soot",
+            "smoke",
+            "granite",
+            "tuff",
+            "earth",
+            "olive",
+            "deep_brown",
+            "brown",
+            "leather"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "a": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "clay",
+            "wine",
+            "soot",
+            "smoke",
+            "granite",
+            "tuff",
+            "earth",
+            "olive",
+            "deep_brown",
+            "brown",
+            "leather"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "i": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "clay",
+            "wine",
+            "soot",
+            "smoke",
+            "granite",
+            "tuff",
+            "earth",
+            "olive",
+            "deep_brown",
+            "brown",
+            "leather"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "z": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "clay",
+            "wine",
+            "soot",
+            "smoke",
+            "granite",
+            "tuff",
+            "earth",
+            "olive",
+            "deep_brown",
+            "brown",
+            "leather"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "v": {
+      "link_group": "gradient",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "clay",
+            "wine",
+            "soot",
+            "smoke",
+            "granite",
+            "tuff",
+            "earth",
+            "olive",
+            "deep_brown",
+            "brown",
+            "leather"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "c": {
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "clay",
+            "wine",
+            "soot",
+            "smoke",
+            "granite",
+            "tuff",
+            "earth",
+            "olive",
+            "deep_brown",
+            "brown",
+            "leather"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    }
+  },
+  "structure_loci": {
+    "d": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["blank"],
+          "UNCOMMON": ["d_dorsal_stripe"],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "u": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["u_underbelly_simple"],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "p": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "w": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "x": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "f": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["f_eye_mask"],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "l": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "s": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "h": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["blank"],
+          "UNCOMMON": ["g_tail_gradient"],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "k": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "q": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["k_nodes_basic"],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    }
+  },
+  "linkage": {
+    "rules": {}
+  },
+  "palette_taxonomy": {}
+}

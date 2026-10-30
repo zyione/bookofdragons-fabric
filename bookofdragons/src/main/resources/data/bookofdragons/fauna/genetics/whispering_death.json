@@ -1,0 +1,849 @@
+{
+  "attributes": {
+    "CON": { "floor": 35, "ceiling": 60 },
+    "ATH": { "floor": 10, "ceiling": 60 },
+    "AGI": { "floor": 60, "ceiling": 65 },
+    "PRW": { "floor": 75, "ceiling": 90 },
+    "POT": { "floor": 60, "ceiling": 80 },
+    "VIG": { "floor": 45, "ceiling": 65 }
+  },
+  "art_version": 2,
+  "disabled_layers": ["GRADIENT", "DORSAL", "UNDERWING", "LIMB", "EYES"],
+  "mutation": {
+    "allele_chance": 0.02,
+    "palette_chance": 0.05,
+    "deviation_tier_weights": {
+      "0": 10,
+      "1": 30,
+      "2": 40,
+      "3": 20
+    }
+  },
+  "color_loci": {
+    "b": {
+"link_group": "body",
+      "pool": {
+        "weights": {
+          "COMMON": 45,
+          "UNCOMMON": 35,
+          "RARE": 20,
+          "VERY_RARE": 0
+        },
+        "entries": {
+          "COMMON": [
+            "whisper",
+            "clay",
+            "overgrowth",
+            "alluvial",
+            "stone",
+            "cobble"
+          ],
+          "UNCOMMON": [
+            "bronze",
+            "loam",
+            "mineral",
+            "oxide",
+            "lichen",
+            "sphagnum",
+            "seasalt"
+          ],
+          "RARE": [
+            "rhodolite",
+            "ruby",
+            "gold",
+            "sandstone"
+          ],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "r": {
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "y": {
+      "link_group": "body",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "boulder",
+            "grain",
+            "moraine",
+            "greensand",
+            "pebble",
+            "silt",
+            "glacial",
+            "calcite",
+            "quartz"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "n": {
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "e": {
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "j": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "whisper",
+            "clay",
+            "overgrowth",
+            "alluvial",
+            "stone",
+            "cobble",
+            "topsoil"
+          ],
+          "UNCOMMON": [
+            "bronze",
+            "loam",
+            "mineral",
+            "oxide",
+            "lichen",
+            "sphagnum",
+            "seasalt",
+            "corrosion",
+            "depths",
+            "fungus"
+          ],
+          "RARE": [
+            "rhodolite",
+            "ruby",
+            "gold",
+            "sandstone",
+            "garnet",
+            "hydro"
+          ],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "a": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "whisper",
+            "clay",
+            "overgrowth",
+            "alluvial",
+            "stone",
+            "cobble",
+            "topsoil"
+          ],
+          "UNCOMMON": [
+            "bronze",
+            "loam",
+            "mineral",
+            "oxide",
+            "lichen",
+            "sphagnum",
+            "seasalt",
+            "corrosion",
+            "depths",
+            "fungus"
+          ],
+          "RARE": [
+            "rhodolite",
+            "ruby",
+            "gold",
+            "sandstone",
+            "garnet",
+            "hydro"
+          ],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "i": {
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "z": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "whisper",
+            "clay",
+            "overgrowth",
+            "alluvial",
+            "stone",
+            "cobble",
+            "topsoil"
+          ],
+          "UNCOMMON": [
+            "bronze",
+            "loam",
+            "mineral",
+            "oxide",
+            "lichen",
+            "sphagnum",
+            "seasalt",
+            "corrosion",
+            "depths",
+            "fungus"
+          ],
+          "RARE": [
+            "rhodolite",
+            "ruby",
+            "gold",
+            "sandstone",
+            "garnet",
+            "hydro"
+          ],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "v": {
+      "link_group": "gradient",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "whisper",
+            "clay",
+            "overgrowth",
+            "alluvial",
+            "stone",
+            "cobble",
+            "topsoil"
+          ],
+          "UNCOMMON": [
+            "bronze",
+            "loam",
+            "mineral",
+            "oxide",
+            "lichen",
+            "sphagnum",
+            "seasalt",
+            "corrosion",
+            "depths",
+            "fungus"
+          ],
+          "RARE": [
+            "rhodolite",
+            "ruby",
+            "gold",
+            "sandstone",
+            "garnet",
+            "hydro"
+          ],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "c": {
+      "pool": {
+        "weights": {
+          "COMMON": 100,
+          "UNCOMMON": 0,
+          "RARE": 0,
+          "VERY_RARE": 0
+        },
+        "entries": {
+          "COMMON": [
+            "crimson",
+            "amber",
+            "sunstone",
+            "peridot",
+            "lush",
+            "icicle",
+            "hydro",
+            "cavern",
+            "iodine",
+            "topsoil",
+            "corrosion",
+            "garnet",
+            "fungus",
+            "depths"            
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    }
+  },
+  "structure_loci": {
+    "d": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "u": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 100,
+          "UNCOMMON": 0,
+          "RARE": 0,
+          "VERY_RARE": 0
+        },
+        "entries": {
+          "COMMON": [
+            "u_basic"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "p": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [
+            "b_stripes",
+            "b_stripes_fade"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "w": {
+      "expression_count": 2,
+      "multi_channel_count": 2,
+      "pool": {
+        "weights": {
+          "COMMON": 30,
+          "UNCOMMON": 40,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [
+            "w_stripes",
+            "w_dappled"
+          ],
+          "RARE": [
+            "w_orbs"
+          ],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "x": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "f": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "f_basic_eye"
+          ],
+          "UNCOMMON": [
+            "f_mask_eye"
+          ],
+          "RARE": [
+            "f_basic_eyeliner"
+          ],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "l": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "s": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "h": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "k": {
+      "expression_count": 2,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [
+            "w_upper_gradient",
+            "w_lower_gradient"
+          ],
+          "RARE": [
+            "w_full_gradient"
+          ],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "q": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 100,
+          "UNCOMMON": 0,
+          "RARE": 0,
+          "VERY_RARE": 0
+        },
+        "entries": {
+          "COMMON": [
+            "s_basic"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    }
+  },
+  "linkage": {
+    "rules": {
+      "body": {
+        "mode_weights": {
+          "SAME": 50,
+          "SIMILAR": 35,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      },
+      "pattern": {
+        "mode_weights": {
+          "SAME": 55,
+          "SIMILAR": 40,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      },
+      "gradient": {
+        "mode_weights": {
+          "SAME": 50,
+          "SIMILAR": 35,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      }
+    }
+  },
+  "palette_taxonomy": {
+    "whisper": {
+    "primary": "blue",
+    "sat": 2,
+    "temp": -2,
+    "light": 2
+  },
+  "clay": {
+    "primary": "blue",
+    "sat": -2,
+    "temp": -3,
+    "light": 2
+  },
+  "overgrowth": {
+    "primary": "green",
+    "sat": 1,
+    "temp": 1,
+    "light": 1
+  },
+  "alluvial": {
+    "primary": "green",
+    "sat": -2,
+    "temp": 2,
+    "light": 1
+  },
+  "cobble": {
+    "primary": "neutral",
+    "sat": -3,
+    "temp": -1,
+    "light": 2
+  },
+  "stone": {
+    "primary": "neutral",
+    "sat": -3,
+    "temp": -2,
+    "light": 3
+  },
+  "bronze": {
+    "primary": "orange",
+    "sat": 3,
+    "temp": 4,
+    "light": 3
+  },
+  "loam": {
+    "primary": "orange",
+    "sat": 3,
+    "temp": 5,
+    "light": 3
+  },
+  "mineral": {
+    "primary": "blue",
+    "sat": 2,
+    "temp": -4,
+    "light": 3
+  },
+  "oxide": {
+    "primary": "purple",
+    "sat": 3,
+    "temp": -1,
+    "light": 2
+  },
+  "lichen": {
+    "primary": "green",
+    "sat": 4,
+    "temp": 2,
+    "light": 3
+  },
+  "sphagnum": {
+    "primary": "green",
+    "sat": 4,
+    "temp": 3,
+    "light": 4
+  },
+  "seasalt": {
+    "primary": "blue",
+    "sat": 5,
+    "temp": -5,
+    "light": 4
+  },
+  "rhodolite": {
+    "primary": "pink",
+    "sat": 4,
+    "temp": 5,
+    "light": 3
+  },
+"ruby": {
+    "primary": "red",
+    "sat": 4,
+    "temp": 5,
+    "light": 3
+  },
+  "gold": {
+    "primary": "orange",
+    "sat": 5,
+    "temp": 5,
+    "light": 3
+  },
+  "sandstone": {
+    "primary": "yellow",
+    "sat": 5,
+    "temp": 4,
+    "light": 4
+  },
+  "boulder": {
+    "primary": "green",
+    "sat": -3,
+    "temp": 1,
+    "light": 5
+  },
+  "grain": {
+    "primary": "yellow",
+    "sat": -2,
+    "temp": 2,
+    "light": 5
+  },
+  "moraine": {
+    "primary": "neutral",
+    "sat": -4,
+    "temp": -4,
+    "light": 5
+  },
+  "greensand": {
+    "primary": "green",
+    "sat": -3,
+    "temp": 2,
+    "light": 5
+  },
+  "pebble": {
+    "primary": "green",
+    "sat": -5,
+    "temp": -2,
+    "light": 5
+  },
+  "silt": {
+    "primary": "orange",
+    "sat": 2,
+    "temp": 4,
+    "light": 5
+  },
+  "glacial": {
+    "primary": "blue",
+    "sat": 2,
+    "temp": -5,
+    "light": 5
+  },
+  "calcite": {
+    "primary": "red",
+    "sat": -4,
+    "temp": 3,
+    "light": 5
+  },
+  "quartz": {
+    "primary": "purple",
+    "sat": 1,
+    "temp": 2,
+    "light": 5
+  },
+  "crimson": {
+    "primary": "red",
+    "sat": 5,
+    "temp": 5,
+    "light": 4
+  },
+  "amber": {
+    "primary": "orange",
+    "sat": 5,
+    "temp": 5,
+    "light": 4
+  },
+"sunstone": {
+    "primary": "orange",
+    "sat": 4,
+    "temp": 5,
+    "light": 5
+  },
+  "peridot": {
+    "primary": "green",
+    "sat": 5,
+    "temp": 2,
+    "light": 5
+  },
+  "lush": {
+    "primary": "green",
+    "sat": 5,
+    "temp": -2,
+    "light": 4
+  },
+  "icicle": {
+    "primary": "blue",
+    "sat": 5,
+    "temp": -5,
+    "light": 4
+  },
+  "hydro": {
+    "primary": "blue",
+    "sat": 4,
+    "temp": -5,
+    "light": 3
+  },
+  "cavern": {
+    "primary": "blue",
+    "sat": 1,
+    "temp": -4,
+    "light": 4
+  },
+"iodine": {
+    "primary": "pink",
+    "sat": 5,
+    "temp": 5,
+    "light": 3
+  },
+  "topsoil": {
+    "primary": "orange",
+    "sat": 4,
+    "temp": 3,
+    "light": -4
+  },
+  "corrosion": {
+    "primary": "purple",
+    "sat": 3,
+    "temp": -2,
+    "light": -5
+  },
+  "garnet": {
+    "primary": "red",
+    "sat": 5,
+    "temp": 5,
+    "light": -4
+  },
+  "fungus": {
+    "primary": "green",
+    "sat": 5,
+    "temp": 2,
+    "light": -5
+  },
+  "depths": {
+    "primary": "blue",
+    "sat": 4,
+    "temp": -3,
+    "light": -5
+  }
+}}

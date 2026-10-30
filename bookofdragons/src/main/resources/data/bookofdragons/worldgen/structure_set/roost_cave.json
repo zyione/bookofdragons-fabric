@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "bookofdragons:roost_cave",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 20,
+        "separation": 10,
+        "salt": 1665432002
+    }
+}

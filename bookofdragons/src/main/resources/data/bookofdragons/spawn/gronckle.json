@@ -1,0 +1,41 @@
+{
+  "entity": "gronckle",
+  "weight": 45,
+  "group": {"min": 1, "max": 2},
+  "radius_cap": {"radius": 128, "max": 4},
+  "where": {
+    "shallow_cave": {
+      "placement": "cave",
+      "group": {"min": 2, "max": 4},
+      "radius_cap": {"radius": 96, "max": 6},
+      "conditions": [{"below_surface": {"min": 10, "max": 30}}, {"sky": "sheltered"}]
+    },
+    "ore_vein": {
+      "placement": "cave",
+      "weight": 55,
+      "group": {"min": 2, "max": 3},
+      "radius_cap": {"radius": 96, "max": 6},
+      "conditions": [
+        {"below_surface": {"min": 10, "max": 40}},
+        {"sky": "sheltered"},
+        {
+          "nearby_block": {
+            "is": ["#minecraft:coal_ores", "#minecraft:iron_ores", "#minecraft:copper_ores"],
+            "radius": 4,
+            "min_count": 2
+          }
+        }
+      ]
+    },
+    "rockfield": {
+      "weight": 25,
+      "conditions": [
+        {"biome": ["#minecraft:is_hill", "minecraft:stony_shore", "minecraft:stony_peaks"]},
+        {"time": "active"},
+        {"block_below": ["#minecraft:base_stone_overworld", "minecraft:gravel"]}
+      ]
+    }
+  },
+  "when": [{"dimension": "minecraft:overworld"}],
+  "special": [{"near_roost": {"within": 128, "kind": "cave"}, "weight": 40}]
+}

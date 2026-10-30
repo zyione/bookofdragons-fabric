@@ -1,0 +1,27 @@
+{
+  "parent": "bookofdragons:dragon_tamer",
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_apple",
+      "id": "minecraft:golden_apple"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.true_bond.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.true_bond.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bonded_dragon": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "bonded"
+      }
+    }
+  }
+}

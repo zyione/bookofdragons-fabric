@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "unlock": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "entry",
+        "favorite_food": [
+          "minecraft:cod",
+          "minecraft:salmon",
+          "minecraft:tropical_fish",
+          "minecraft:pufferfish",
+          "minecraft:cooked_cod",
+          "minecraft:cooked_salmon"
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "bookofdragons:fish_plush"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "unlock",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bookofdragons:fish_plush"
+    ]
+  }
+}

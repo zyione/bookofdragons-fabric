@@ -1,0 +1,1130 @@
+{
+  "fauna": {
+    "javaFiles": 995,
+    "registrations": [
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/attack/client/particle/FaunaParticles.java",
+        "registry": "PARTICLE_TYPES",
+        "id": "attack_particle"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/attack/client/particle/FaunaParticles.java",
+        "registry": "PARTICLE_TYPES",
+        "id": "breath_puff"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/attack/client/particle/FaunaParticles.java",
+        "registry": "PARTICLE_TYPES",
+        "id": "wing_dust"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/attack/client/particle/FaunaParticles.java",
+        "registry": "PARTICLE_TYPES",
+        "id": "wing_debris"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/attack/client/particle/FaunaParticles.java",
+        "registry": "PARTICLE_TYPES",
+        "id": "sleep_bubble"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/attack/client/particle/FaunaParticles.java",
+        "registry": "PARTICLE_TYPES",
+        "id": "water_spray"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/body/effect/FaunaEffects.java",
+        "registry": "MOB_EFFECTS",
+        "id": "injury"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/body/nav/noise/FaunaGameEvents.java",
+        "registry": "GAME_EVENTS",
+        "id": "call"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/body/registry/FaunaEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "attack_projectile"
+      }
+    ],
+    "events": [
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/attack/light/LightScribeEvents.java",
+        "event": "CommonEvents.LEVEL_TICK_END",
+        "listener": "LightScribeEvents::onLevelTick)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/attack/light/LightScribeEvents.java",
+        "event": "CommonEvents.CHUNK_LOAD",
+        "listener": "LightScribeEvents::onChunkLoad)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/attack/light/LightScribeEvents.java",
+        "event": "CommonEvents.CHUNK_UNLOAD",
+        "listener": "LightScribeEvents::onChunkUnload)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/attack/light/LightScribeEvents.java",
+        "event": "CommonEvents.LEVEL_UNLOAD",
+        "listener": "LightScribeEvents::onLevelUnload)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/attack/light/LightScribeEvents.java",
+        "event": "CommonEvents.SERVER_STOPPING",
+        "listener": "LightScribeEvents::onServerStopping)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/body/event/PartIndexEvents.java",
+        "event": "CommonEvents.ENTITY_JOIN",
+        "listener": "PartIndexEvents::onJoin)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/body/event/PartIndexEvents.java",
+        "event": "CommonEvents.ENTITY_LEAVE",
+        "listener": "PartIndexEvents::onLeave)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/chassis/PerchMemory.java",
+        "event": "CommonEvents.SERVER_TICK_END",
+        "listener": "PerchMemory::tick)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/chassis/PerchMemory.java",
+        "event": "CommonEvents.PLAYER_LOGOUT",
+        "listener": "PerchMemory::forget)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/chassis/PerchMemory.java",
+        "event": "CommonEvents.PLAYER_LOGIN",
+        "listener": "PerchMemory::restore)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/client/FrameStages.java",
+        "event": "ClientEvents.FRAME_START",
+        "listener": "Event.Priority.HIGHEST, FrameStages::onRenderTickStart)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/client/FrameStages.java",
+        "event": "ClientEvents.FRAME_END",
+        "listener": "Event.Priority.LOWEST, FrameStages::onRenderTickEnd)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/client/FrameStages.java",
+        "event": "ClientEvents.RENDER_STAGE",
+        "listener": "Event.Priority.LOWEST, FrameStages::onStage)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/client/FrameStages.java",
+        "event": "ClientEvents.CLIENT_TICK_END",
+        "listener": "FrameStages::onClientTick)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/client/LibraryClientEvents.java",
+        "event": "ClientEvents.CLIENT_TICK_END",
+        "listener": "LibraryClientEvents::onClientTick)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/client/LibraryClientEvents.java",
+        "event": "FaunaTick.LIVING",
+        "listener": "LibraryClientEvents::onLivingTick)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/client/LibraryClientEvents.java",
+        "event": "ClientEvents.RENDER_STAGE",
+        "listener": "LibraryClientEvents::onRenderLevelStage)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/client/LibraryClientEvents.java",
+        "event": "CommonEvents.ENTITY_LEAVE",
+        "listener": "LibraryClientEvents::onEntityLeaveLevel)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/client/LibraryClientEvents.java",
+        "event": "CommonEvents.CHUNK_LOAD",
+        "listener": "LibraryClientEvents::onChunkLoad)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/client/LibraryClientEvents.java",
+        "event": "CommonEvents.CHUNK_UNLOAD",
+        "listener": "LibraryClientEvents::onChunkUnload)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/client/LibraryClientEvents.java",
+        "event": "CommonEvents.LEVEL_UNLOAD",
+        "listener": "LibraryClientEvents::onLevelUnload)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/debug/client/LegReachDebugRenderer.java",
+        "event": "ClientEvents.RENDER_STAGE",
+        "listener": "LegReachDebugRenderer::onRenderLevel)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/event/FaunaWorldEvents.java",
+        "event": "CommonEvents.TAGS_UPDATED",
+        "listener": "FaunaWorldEvents::onTagsUpdated)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/event/FaunaWorldEvents.java",
+        "event": "CommonEvents.EXPLOSION",
+        "listener": "FaunaWorldEvents::onExplosionDetonate)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/event/FaunaWorldEvents.java",
+        "event": "CommonEvents.BLOCK_PLACED",
+        "listener": "FaunaWorldEvents::onBlockPlaced)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/event/FaunaWorldEvents.java",
+        "event": "CommonEvents.BLOCK_BROKEN",
+        "listener": "FaunaWorldEvents::onBlockBroken)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/event/FaunaWorldEvents.java",
+        "event": "CommonEvents.USE_BLOCK",
+        "listener": "FaunaWorldEvents::onRightClickBlock)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/event/FaunaWorldEvents.java",
+        "event": "CommonEvents.LIVING_DIED",
+        "listener": "FaunaWorldEvents::onLivingDeath)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/event/FaunaWorldEvents.java",
+        "event": "CommonEvents.PLAYER_LOGOUT",
+        "listener": "FaunaWorldEvents::onPlayerLoggedOut)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/event/FaunaWorldEvents.java",
+        "event": "CommonEvents.LIVING_DAMAGED",
+        "listener": "FaunaWorldEvents::onLivingHurt)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/event/FaunaWorldEvents.java",
+        "event": "CommonEvents.PLAYER_LOGIN",
+        "listener": "FaunaWorldEvents::onPlayerLoggedIn)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/event/FaunaWorldEvents.java",
+        "event": "CommonEvents.DATA_RELOADED",
+        "listener": "FaunaWorldEvents::onDataReloaded)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/event/FaunaWorldEvents.java",
+        "event": "CommonEvents.LEGACY_DATA",
+        "listener": "FaunaWorldEvents::onLegacyData)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/LiberAnimalium.java",
+        "event": "CommonEvents.SERVER_TICK_END",
+        "listener": "LiberAnimalium::onServerTick)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/LiberAnimalium.java",
+        "event": "CommonEvents.COMMANDS",
+        "listener": "LiberAnimalium::onRegisterCommands)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/LiberAnimalium.java",
+        "event": "CommonEvents.RELOAD_LISTENERS",
+        "listener": "LiberAnimalium::onAddReloadListeners)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/LiberAnimalium.java",
+        "event": "CommonEvents.SERVER_STOPPING",
+        "listener": "server -> {\n         PairSession.clearAll()"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/LiberAnimalium.java",
+        "event": "CommonEvents.LEVEL_TICK_END",
+        "listener": "FaunaSpawner::onLevelTick)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/LiberAnimalium.java",
+        "event": "CommonEvents.LEVEL_TICK_END",
+        "listener": "PlayBow::onLevelTick)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/LiberAnimalium.java",
+        "event": "CommonEvents.PLAYER_LOGOUT",
+        "listener": "PlayBow::forget)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/LiberAnimalium.java",
+        "event": "ClientEvents.CLIENT_RELOAD_LISTENERS",
+        "listener": "LiberAnimalium.ClientModEvents::onRegisterClientReloadListeners)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/LiberAnimalium.java",
+        "event": "ClientEvents.PARTICLE_PROVIDERS",
+        "listener": "LiberAnimalium.ClientModEvents::onRegisterParticleProviders)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/LiberAnimalium.java",
+        "event": "ClientEvents.ENTITY_RENDERERS",
+        "listener": "LiberAnimalium.ClientModEvents::onRegisterRenderers)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/LiberAnimalium.java",
+        "event": "ClientEvents.CLIENT_TICK_END",
+        "listener": "LiberAnimalium.ClientPerf::onClientTick)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/LiberAnimalium.java",
+        "event": "ClientEvents.FRAME_START",
+        "listener": "LiberAnimalium.ClientPerf::onRenderTick)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/render/BodyWatch.java",
+        "event": "ClientEvents.HUD_AFTER_HOTBAR",
+        "listener": "BodyWatch::onRenderGui)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/render/ChainWatch.java",
+        "event": "ClientEvents.HUD_AFTER_HOTBAR",
+        "listener": "ChainWatch::onRenderGui)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/render/gpu/FaunaShaders.java",
+        "event": "ClientEvents.SHADERS",
+        "listener": "FaunaShaders::register)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/render/gpu/SpeciesBatches.java",
+        "event": "ClientEvents.RENDER_STAGE",
+        "listener": "SpeciesBatches::onStage)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/client/RideClientEvents.java",
+        "event": "ClientEvents.CAMERA_ANGLES",
+        "listener": "RideClientEvents::onCameraSetup)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/client/RideClientEvents.java",
+        "event": "ClientEvents.KEY",
+        "listener": "RideClientEvents::onKeyInput)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/client/RideClientEvents.java",
+        "event": "ClientEvents.SCREEN_OPENING",
+        "listener": "RideClientEvents::onScreenOpen)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/client/RideClientEvents.java",
+        "event": "ClientEvents.MOUSE_BUTTON",
+        "listener": "RideClientEvents::onMouseInput)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/client/RideClientEvents.java",
+        "event": "ClientEvents.HUD_LAYER_PRE",
+        "listener": "RideClientEvents::onRenderGuiOverlayPre)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/client/RideClientEvents.java",
+        "event": "ClientEvents.HUD_AFTER_HOTBAR",
+        "listener": "RideClientEvents::onRenderGuiOverlay)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/client/RideClientEvents.java",
+        "event": "ClientEvents.CLIENT_TICK_END",
+        "listener": "RideClientEvents::onClientTick)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/client/RideClientEvents.java",
+        "event": "ClientEvents.FRAME_START",
+        "listener": "RideClientEvents::onRenderTick)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/client/RideClientEvents.java",
+        "event": "ClientEvents.FOV",
+        "listener": "RideClientEvents::onComputeFov)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/client/RideClientEvents.java",
+        "event": "CommonEvents.MOUNT",
+        "listener": "RideClientEvents::onEntityMount)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/render/RideHandRenderer.java",
+        "event": "ClientEvents.RENDER_HAND",
+        "listener": "RideHandRenderer::onRenderHand)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/touch/TouchHandRenderer.java",
+        "event": "ClientEvents.RENDER_HAND",
+        "listener": "TouchHandRenderer::onRenderHand)"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/ride/touch/TouchHandRenderer.java",
+        "event": "CommonEvents.LEVEL_UNLOAD",
+        "listener": "TouchHandRenderer::onLevelUnload)"
+      }
+    ],
+    "packets": [
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_boost",
+        "type": "ControlMessageBoost"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_brake",
+        "type": "ControlMessageBrake"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_free_look",
+        "type": "ControlMessageFreeLook"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_primary_attack",
+        "type": "ControlMessagePrimaryAttack"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_secondary_ability",
+        "type": "ControlMessageSecondaryAbility"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_sprint",
+        "type": "ControlMessageSprint"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "part_sync",
+        "type": "PartSyncPayload"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "flight_tells_sync",
+        "type": "FlightTellsSyncMessage"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_throttle_sync",
+        "type": "ControlMessageThrottleSync"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toClient",
+        "id": "sync_omni_attack_definitions",
+        "type": "SyncOmniAttackDefinitionsPacket"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_roll",
+        "type": "ControlMessageRoll"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toClient",
+        "id": "sync_data",
+        "type": "SyncDataPacket"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "set_command",
+        "type": "SetCommandMessage"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "cycle_stance",
+        "type": "CycleStanceMessage"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "fauna_debug_toggle",
+        "type": "FaunaDebugToggleMessage"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toClient",
+        "id": "sync_qte",
+        "type": "SyncQtePacket"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toClient",
+        "id": "fauna_expression_event",
+        "type": "FaunaExpressionEventMessage"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toClient",
+        "id": "touch_gesture",
+        "type": "TouchGestureMessage"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_tame_key",
+        "type": "ControlMessageTameKey"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_wall_hit",
+        "type": "ControlMessageWallHit"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_dismount",
+        "type": "ControlMessageDismount"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_grab",
+        "type": "ControlMessageGrab"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_struggle",
+        "type": "ControlMessageStruggle"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toClient",
+        "id": "clear_attack_particles",
+        "type": "ClearAttackParticlesMessage"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "control_dodge",
+        "type": "ControlMessageDodge"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "ride_place",
+        "type": "RidePlaceMessage"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toClient",
+        "id": "dodge_refused",
+        "type": "DodgeRefusedMessage"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toServer",
+        "id": "grip_stance",
+        "type": "GripStancePayload"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toClient",
+        "id": "breath_emit",
+        "type": "BreathEmitMessage"
+      },
+      {
+        "source": "fauna/src/main/java/net/magister/liberanimalium/network/FaunaNetwork.java",
+        "direction": "toClient",
+        "id": "grip_deck",
+        "type": "GripDeckPayload"
+      }
+    ],
+    "referenceSha256": "ca75e40bbf578ad72ede656f579703fe57dc48c046bb0ab41c1cd947637f9bbe"
+  },
+  "bookofdragons": {
+    "javaFiles": 212,
+    "registrations": [
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/block/entity/ModBlockEntities.java",
+        "registry": "BLOCK_ENTITIES",
+        "id": "roost_controller_entity"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/block/ModBlocks.java",
+        "registry": "BLOCKS",
+        "id": "placeable_nightfury_scales"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/block/ModBlocks.java",
+        "registry": "BLOCKS",
+        "id": "placeable_nadder_scales"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/block/ModBlocks.java",
+        "registry": "BLOCKS",
+        "id": "placeable_nightmare_scales"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/block/ModBlocks.java",
+        "registry": "BLOCKS",
+        "id": "placeable_gronckle_scales"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/block/ModBlocks.java",
+        "registry": "BLOCKS",
+        "id": "placeable_zippleback_scales"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/block/ModBlocks.java",
+        "registry": "BLOCKS",
+        "id": "placeable_skrill_scales"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/block/ModBlocks.java",
+        "registry": "BLOCKS",
+        "id": "placeable_whisperingdeath_scales"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/block/ModBlocks.java",
+        "registry": "BLOCKS",
+        "id": "placeable_terribleterror_scales"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/block/ModBlocks.java",
+        "registry": "BLOCKS",
+        "id": "placeable_speedstinger_scales"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/effect/ModEffects.java",
+        "registry": "MOB_EFFECTS",
+        "id": "paralysis"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/ModEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "nightfury"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/ModEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "deadlynadder"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/ModEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "skrill"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/ModEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "monstrousnightmare"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/ModEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "gronckle"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/ModEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "hiddeous_zippleback"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/ModEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "whispering_death"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/ModEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "terrible_terror"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/ModEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "speed_stinger"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/ModEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "dragon_egg"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/ModEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "hooligan_drifter"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/ModEntities.java",
+        "registry": "ENTITY_TYPES",
+        "id": "spike_projectile"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/inventory/ModMenuTypes.java",
+        "registry": "MENU_TYPES",
+        "id": "dragon_inventory"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModCreativeModeTabs.java",
+        "registry": "CREATIVE_MODE_TABS",
+        "id": "bookofdragons_tab"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "rattlestaff"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "dragon_whistle"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "book_of_dragons"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "debug_tame_stick"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "cliff_roost_map"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "strike_roost_map"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "cave_roost_map"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "glade_roost_map"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "wetland_roost_map"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "barrens_roost_map"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "fireproof_scalemail"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "gronckle_iron"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "nightfury_spawn_egg"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "deadlynadder_spawn_egg"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "monstrousnightmare_spawn_egg"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "gronckle_spawn_egg"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "hiddeous_zippleback_spawn_egg"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "skrill_spawn_egg"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "whispering_death_spawn_egg"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "terrible_terror_spawn_egg"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/ModItems.java",
+        "registry": "ITEMS",
+        "id": "speed_stinger_spawn_egg"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/particle/ModParticles.java",
+        "registry": "PARTICLE_TYPES",
+        "id": "fury_trail"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/particle/ModParticles.java",
+        "registry": "PARTICLE_TYPES",
+        "id": "blastwave"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/particle/ModParticles.java",
+        "registry": "PARTICLE_TYPES",
+        "id": "fireball"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/particle/ModParticles.java",
+        "registry": "PARTICLE_TYPES",
+        "id": "nadder_spark"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/particle/ModParticles.java",
+        "registry": "PARTICLE_TYPES",
+        "id": "nightmare_jacket_flame"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/platform/fabric/BookOfDragonsFabric.java",
+        "registry": "INSTANCE",
+        "id": "bookofdragons"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/platform/fabric/BookOfDragonsFabric.java",
+        "registry": "INSTANCE",
+        "id": "bookofdragons"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/villager/ModVillagers.java",
+        "registry": "POI_TYPES",
+        "id": "viking_poi"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/villager/ModVillagers.java",
+        "registry": "POI_TYPES",
+        "id": "roost"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/villager/ModVillagers.java",
+        "registry": "VILLAGER_PROFESSIONS",
+        "id": "hooligan"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/worldgen/ModStructureProcessors.java",
+        "registry": "PROCESSORS",
+        "id": "dragon_spawn"
+      }
+    ],
+    "events": [
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/advancement/DragonMilestones.java",
+        "event": "CommonEvents.PLAYER_LOGIN",
+        "listener": "DragonMilestones::replay)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/advancement/DragonMilestones.java",
+        "event": "CommonEvents.SERVER_TICK_END",
+        "listener": "DragonMilestones::lookForRoosts)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/BookOfDragons.java",
+        "event": "ClientEvents.ENTITY_RENDERERS",
+        "listener": "BookOfDragons.ClientModEvents::onRegisterRenderers)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/BookOfDragons.java",
+        "event": "ClientEvents.PARTICLE_PROVIDERS",
+        "listener": "BookOfDragons.ClientModEvents::onRegisterParticleProviders)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientEvents.java",
+        "event": "ClientEvents.KEY_MAPPINGS",
+        "listener": "ClientEvents.ClientModBusEvents::onRegisterKeys)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientEvents.java",
+        "event": "ClientEvents.MENU_SCREENS",
+        "listener": "ClientEvents.ClientModBusEvents::onRegisterMenuScreens)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientEvents.java",
+        "event": "ClientEvents.ITEM_PROPERTIES",
+        "listener": "ClientEvents.ClientModBusEvents::onRegisterItemProperties)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientEvents.java",
+        "event": "ClientEvents.ITEM_HANDS",
+        "listener": "ClientEvents.ClientModBusEvents::onRegisterItemHands)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientEvents.java",
+        "event": "ClientEvents.PARTICLE_PROVIDERS",
+        "listener": "ClientEvents.ClientModBusEvents::registerParticleFactories)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientEvents.java",
+        "event": "ClientEvents.ENTITY_RENDERERS",
+        "listener": "ClientEvents.ClientModBusEvents::registerRenderers)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientEvents.java",
+        "event": "ClientEvents.ITEM_COLORS",
+        "listener": "ClientEvents.ClientModBusEvents::registerItemColors)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientEvents.java",
+        "event": "ClientEvents.CLIENT_SETUP",
+        "listener": "JourneyMapIcons::init)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientForgeEvents.java",
+        "event": "ClientEvents.KEY",
+        "listener": "ClientForgeEvents::onKeyInput)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientForgeEvents.java",
+        "event": "ClientEvents.CLIENT_TICK_END",
+        "listener": "ClientForgeEvents::onClientTick)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientForgeEvents.java",
+        "event": "FaunaTick.LIVING",
+        "listener": "ClientForgeEvents::onLivingTick)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientForgeEvents.java",
+        "event": "ClientEvents.RENDER_STAGE",
+        "listener": "ClientForgeEvents::onRenderLevelStage)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/ClientForgeEvents.java",
+        "event": "CommonEvents.LEVEL_UNLOAD",
+        "listener": "ClientForgeEvents::onLevelUnload)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/CommandWheelInputHandler.java",
+        "event": "ClientEvents.USE_KEY",
+        "listener": "CommandWheelInputHandler::onUseInteraction)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/event/CommandWheelInputHandler.java",
+        "event": "ClientEvents.CLIENT_TICK_END",
+        "listener": "CommandWheelInputHandler::onClientTick)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/gui/hud/BookStrip.java",
+        "event": "ClientEvents.HUD_AFTER_HOTBAR",
+        "listener": "BookStrip::draw)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/gui/hud/RiderHud.java",
+        "event": "ClientEvents.HUD_LAYER_PRE",
+        "listener": "RiderHud::hides)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/client/gui/hud/RiderHud.java",
+        "event": "ClientEvents.HUD_AFTER_HOTBAR",
+        "listener": "RiderHud::render)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/datagen/data/DragonDiscoveryProvider.java",
+        "event": "CommonEvents.PLAYER_RESPAWN",
+        "listener": "DragonDiscoveryProvider::onPlayerRespawn)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/datagen/data/DragonDiscoveryProvider.java",
+        "event": "CommonEvents.PLAYER_LOGIN",
+        "listener": "DragonDiscoveryProvider::onPlayerLogin)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/base/dragon/AskReading.java",
+        "event": "CommonEvents.SERVER_TICK_END",
+        "listener": "AskReading::tick)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/entity/base/dragon/AskReading.java",
+        "event": "CommonEvents.PLAYER_LOGOUT",
+        "listener": "(Consumer<ServerPlayer>)player -> READERS.remove(player.getUUID()))"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/DragonDiscoveryEventHandler.java",
+        "event": "FaunaTick.LIVING",
+        "listener": "DragonDiscoveryEventHandler::onLivingTick)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/DragonDiscoveryEventHandler.java",
+        "event": "CommonEvents.LIVING_DIED",
+        "listener": "DragonDiscoveryEventHandler::onLivingDeath)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/DragonDiscoveryEventHandler.java",
+        "event": "CommonEvents.ANIMAL_TAMED",
+        "listener": "DragonDiscoveryEventHandler::onAnimalTame)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/DragonDiscoveryEventHandler.java",
+        "event": "CommonEvents.ENTITY_LEAVE",
+        "listener": "DragonDiscoveryEventHandler::onEntityLeave)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/DragonDiscoveryEventHandler.java",
+        "event": "CommonEvents.PLAYER_LOGOUT",
+        "listener": "DragonDiscoveryEventHandler::onPlayerLeave)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/DrifterSpawnHandler.java",
+        "event": "CommonEvents.ADVANCEMENT_EARNED",
+        "listener": "DrifterSpawnHandler::onAdvancementEarned)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/DrifterSpawnHandler.java",
+        "event": "CommonEvents.LEVEL_TICK_END",
+        "listener": "DrifterSpawnHandler::onWorldTick)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/DrifterSpawnHandler.java",
+        "event": "CommonEvents.LEGACY_DATA",
+        "listener": "DrifterSpawnHandler::onLegacyData)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/ModEvents.java",
+        "event": "CommonEvents.PACK_SOURCES",
+        "listener": "ModEvents::onAddPackFinders)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/ModEvents.java",
+        "event": "CommonEvents.RELOAD_LISTENERS",
+        "listener": "(Consumer<ReloadListenerSink>)sink -> {\n         sink.addListener(new PartWounds())"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/ModEvents.java",
+        "event": "CommonEvents.ENTITY_ATTRIBUTES",
+        "listener": "ModEvents::entityAttributeEvent)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/ModEvents.java",
+        "event": "CommonEvents.SPAWN_PLACEMENTS",
+        "listener": "ModEvents::registerSpawnPlacements)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/ModForgeEvents.java",
+        "event": "CommonEvents.VILLAGER_TRADES",
+        "listener": "ModForgeEvents::addCustomTrades)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/ServerForgeEvents.java",
+        "event": "CommonEvents.ENTITY_JOIN",
+        "listener": "ServerForgeEvents::onEntityJoinLevel)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/event/ServerForgeEvents.java",
+        "event": "CommonEvents.CHUNK_LOAD",
+        "listener": "Priority.HIGHEST, ServerForgeEvents::absorbFormerLightBook)"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/item/custom/WhistleStable.java",
+        "event": "CommonEvents.SERVER_TICK_END",
+        "listener": "WhistleStable::tick)"
+      }
+    ],
+    "packets": [
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toServer",
+        "id": "open_dragon_gui_from_book",
+        "type": "OpenDragonGUIFromBookMessage"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toClient",
+        "id": "sync_discovery_data",
+        "type": "SyncDiscoveryDataMessage"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toClient",
+        "id": "discovery_level_update",
+        "type": "DiscoveryLevelUpdateMessage"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toClient",
+        "id": "sync_tamed_dragons",
+        "type": "SyncTamedDragonsMessage"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toServer",
+        "id": "open_dragon_gui",
+        "type": "OpenDragonGUIMessage"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toServer",
+        "id": "save_notes",
+        "type": "SaveNotesMessage"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toServer",
+        "id": "request_tamed_dragons",
+        "type": "RequestTamedDragonsMessage"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toServer",
+        "id": "request_dragon_page",
+        "type": "RequestDragonPageMessage"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toClient",
+        "id": "dragon_page",
+        "type": "DragonPageMessage"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toServer",
+        "id": "release_dragon",
+        "type": "ReleaseDragonMessage"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toServer",
+        "id": "give_dragon",
+        "type": "GiveDragonMessage"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toClient",
+        "id": "strip_line",
+        "type": "StripLineMessage"
+      },
+      {
+        "source": "bookofdragons/src/main/java/net/magister/bookofdragons/network/ControlNetwork.java",
+        "direction": "toClient",
+        "id": "book_strip",
+        "type": "BookStripMessage"
+      }
+    ],
+    "referenceSha256": "68e59efe5a8e9a2bbff1b0238561a4e3b8bc6bbdcd3f2bcdedf312a71eef60a4"
+  }
+}

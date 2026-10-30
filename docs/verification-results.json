@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-31",
+  "minecraft": "1.20.1",
+  "loader": "0.18.2",
+  "fabricApi": "0.92.12+1.20.1",
+  "buildJvm": 21,
+  "packagedRuntimeJvm": 17,
+  "junit": {
+    "tests": "3",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  "gameTests": [
+    "portgametests.malformedcontrolsrejectnonfinitevaluesbeforemutation",
+    "portgametests.discoveryandnotessurviveserializationandclone",
+    "portgametests.nonownerscannotcommandorreleasenearbydragons",
+    "portgametests.equipmentandeggdatasurviveitemandentityroundtrips",
+    "portgametests.soundlistenerandmultipartqueriesareregistered",
+    "portgametests.paralysisdisablesandrestoresaiwithimmunity",
+    "portgametests.activatedegghatchesgeneticbabywithparentlineage",
+    "portgametests.everydragoncreatesticksandretainsownershiponsave"
+  ],
+  "packagedClient": [
+    "Nine species finalized, genetics synchronized and world frames rendered",
+    "Book opened, rendered and requested synchronized data",
+    "Extended menu payload, inventory screen and entity preview rendered",
+    "Mount, rider camera and HUD rendered without error",
+    "100-page note save crossed the real Fabric C2S transport intact",
+    "Adult takeoff transitioned to synchronized flight and rendered rider camera",
+    "Primary attack press/release traveled through real C2S handler and rendered breath frames",
+    "C2S dismount detached rider on server and client"
+  ],
+  "packagedServer": {
+    "java": "17",
+    "ready": true,
+    "spawnedSpecies": 9,
+    "exitCode": 0,
+    "artifacts": {
+      "fauna-engine-fabric-1.0+1.20.1.fabric.dev.1.jar": "fdecac7e28912dc4c30dbbd0a12b00f32b528b0397143c7bf5752596b440fcdf",
+      "bookofdragons-fabric-1.4+1.20.1.fabric.dev.1.jar": "29afcff491856cec6a9f90aa6494348e67fa6e31b783786333d9a42318f536ef",
+      "fabric-api-0.92.12+1.20.1.jar": "4197ff4fbdac13cffccd267c1bc59e9fbabb2b5683a9d5f8023f4b5ea16a1c1e",
+      "azurelib-VDXznzXQ.jar": "a7381f41ede57c01bcd1d10326535a6c6d846fe251140b0f0d72c97e5267a44d",
+      "forge-config-api-port-Qs8LaZLo.jar": "8f078189ad44eaf20cfb277f92b6362a508d50a94b0a35956e2779c6665be464"
+    }
+  },
+  "reproducibleReleaseJars": {
+    "fauna/build/libs/fauna-engine-fabric-1.0+1.20.1.fabric.dev.1.jar": true,
+    "bookofdragons/build/libs/bookofdragons-fabric-1.4+1.20.1.fabric.dev.1.jar": true
+  },
+  "resources": {
+    "fauna": {
+      "removed": [],
+      "added": [],
+      "changed": [],
+      "identicalCount": 77,
+      "scope": "Asset/data content hashes only. Differences need ledger reconciliation."
+    },
+    "bookofdragons": {
+      "removed": [],
+      "added": [],
+      "changed": [],
+      "identicalCount": 1002,
+      "scope": "Asset/data content hashes only. Differences need ledger reconciliation."
+    }
+  },
+  "releaseArtifacts": {
+    "fauna-engine-fabric-1.0+1.20.1.fabric.dev.1.jar": {
+      "bytes": 3234057,
+      "sha256": "fdecac7e28912dc4c30dbbd0a12b00f32b528b0397143c7bf5752596b440fcdf"
+    },
+    "bookofdragons-fabric-1.4+1.20.1.fabric.dev.1.jar": {
+      "bytes": 9145236,
+      "sha256": "29afcff491856cec6a9f90aa6494348e67fa6e31b783786333d9a42318f536ef"
+    }
+  },
+  "manualCoverage": "See VERIFICATION.md; exhaustive gameplay and real-player latency tests remain unverified."
+}

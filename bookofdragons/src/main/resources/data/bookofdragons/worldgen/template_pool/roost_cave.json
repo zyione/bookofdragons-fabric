@@ -1,0 +1,24 @@
+{
+    "name": "bookofdragons:roost_cave",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:boulder_roost2",
+                "processors": "bookofdragons:roost_cave",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:boulder_roost3",
+                "processors": "bookofdragons:roost_cave",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

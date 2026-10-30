@@ -1,0 +1,42 @@
+{
+    "name": "bookofdragons:roost_cliff",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:strike_roost",
+                "processors": "bookofdragons:roost_cliff",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:strike_roost2",
+                "processors": "bookofdragons:roost_cliff",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:strike_roost3",
+                "processors": "bookofdragons:roost_cliff",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:strike_roost4",
+                "processors": "bookofdragons:roost_cliff",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

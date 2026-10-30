@@ -1,0 +1,27 @@
+{
+  "parent": "bookofdragons:we_have_dragons",
+  "display": {
+    "icon": {
+      "item": "minecraft:feather",
+      "id": "minecraft:feather"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.everything_we_know.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.everything_we_know.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fact": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "fact"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+Book lettering
+
+Monogram and Monogram Italic, converted to bitmap sheets (textures/font/hand_monogram.png,
+hand_monogram_italic.png) at their own pixel size, one texel to the screen pixel, set with the game's
+letter spacing. No font file is shipped.
+
+monogram, monogram_italic
+            Monogram by Vinicius Menezio. CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
+            https://datagoblin.itch.io/monogram

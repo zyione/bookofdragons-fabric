@@ -1,0 +1,42 @@
+{
+    "name": "bookofdragons:roost_glade",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:tracker_nest",
+                "processors": "bookofdragons:roost_glade",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:tracker_nest2",
+                "processors": "bookofdragons:roost_glade",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:tracker_nest3",
+                "processors": "bookofdragons:roost_glade",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:tracker_nest4",
+                "processors": "bookofdragons:roost_glade",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

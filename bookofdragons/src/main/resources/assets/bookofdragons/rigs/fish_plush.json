@@ -1,0 +1,19 @@
+{
+  "passes": ["chain"],
+  "chains": {
+    "fin_top": ["fin_top"],
+    "fin_bottom": ["fin_bottom"],
+    "tail_top": ["tail_top"],
+    "tail_bottom": ["tail_bottom"],
+    "eye_top": ["eye_top"],
+    "eye_bottom": ["eye_bottom"]
+  },
+  "chain": {
+    "eye_top": { "stiffness": 0.2, "damping": 0.04, "bend": 40, "radius": 0.03, "flow": 0 },
+    "eye_bottom": { "stiffness": 0.2, "damping": 0.04, "bend": 40, "radius": 0.03, "flow": 0 },
+    "fin_top": { "stiffness": 0.4, "damping": 0.08, "bend": 45, "radius": 0.03, "flow": 0 },
+    "fin_bottom": { "stiffness": 0.4, "damping": 0.08, "bend": 45, "radius": 0.03, "flow": 0 },
+    "tail_top": { "stiffness": 0.4, "damping": 0.08, "bend": 50, "radius": 0.03, "flow": 0 },
+    "tail_bottom": { "stiffness": 0.4, "damping": 0.08, "bend": 50, "radius": 0.03, "flow": 0 }
+  }
+}

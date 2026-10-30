@@ -1,0 +1,7 @@
+{
+  "render_type": "minecraft:cutout",
+  "parent": "bookofdragons:block/scalebed_4",
+  "textures": {
+    "scale": "bookofdragons:block/placeable_gronckle_scales"
+  }
+}

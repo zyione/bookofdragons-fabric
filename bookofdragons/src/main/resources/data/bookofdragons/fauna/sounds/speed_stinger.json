@@ -1,0 +1,34 @@
+{
+  "sounds": {
+    "idle": {
+      "sound": "minecraft:entity.spider.ambient",
+      "volume": 0,
+      "pitch": 1.4,
+      "variance": 0.2
+    },
+    "asleep": {
+      "sound": "minecraft:entity.spider.ambient",
+      "volume": 0,
+      "pitch": 0.7
+    },
+    "hurt": {
+      "sound": "minecraft:entity.spider.hurt",
+      "volume": 0,
+      "pitch": 1.4,
+      "variance": 0.1
+    },
+    "roar": {
+      "sound": "minecraft:entity.spider.ambient",
+      "volume": 0,
+      "pitch": 1.6,
+      "variance": 0.1
+    },
+    "call": null,
+    "bite": {
+      "sound": "bookofdragons:light_bite",
+      "volume": 0,
+      "pitch": 1.4,
+      "variance": 0.2
+    }
+  }
+}

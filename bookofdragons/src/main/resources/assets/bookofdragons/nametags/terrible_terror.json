@@ -1,0 +1,11 @@
+{
+  "Toothless": {
+    "texture": "bookofdragons:textures/entity/genetics/terrible_terror/nametags/toothless.png"
+  },
+  "Sharpshot": {
+    "texture": "bookofdragons:textures/entity/genetics/terrible_terror/nametags/sharp_shot.png"
+  },
+  "Sharp Shot": {
+    "texture": "bookofdragons:textures/entity/genetics/terrible_terror/nametags/sharp_shot.png"
+  }
+}

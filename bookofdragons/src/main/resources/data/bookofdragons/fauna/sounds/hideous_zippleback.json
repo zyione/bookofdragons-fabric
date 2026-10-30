@@ -1,0 +1,71 @@
+{
+  "sounds": {
+    "idle": {
+      "sound": "bookofdragons:hideouszippleback_idle",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "asleep": {
+      "sound": "bookofdragons:hideouszippleback_sleep",
+      "volume": 0.17,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "hurt": {
+      "sound": "bookofdragons:hideouszippleback_hurt",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "death": {
+      "sound": "bookofdragons:hideouszippleback_death",
+      "volume": 0.49,
+      "pitch": 1.0
+    },
+    "roar": {
+      "sound": "bookofdragons:hideouszippleback_roar",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "ignition": {
+      "sound": "bookofdragons:hideouszippleback_ignition",
+      "volume": 1.0,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "flap": {
+      "sound": "bookofdragons:medium_flap",
+      "volume": 1.0,
+      "pitch": 0.85,
+      "variance": 0.15
+    },
+    "bite": {
+      "sound": "bookofdragons:heavy_bite",
+      "volume": 0.75,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "shoot": {
+      "sound": "minecraft:block.campfire.crackle",
+      "volume": 1.0,
+      "pitch": 0.7
+    },
+    "breath_start": {
+      "sound": "bookofdragons:hideouszippleback_breath_start",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    "breath_loop": {
+      "sound": "bookofdragons:hideouszippleback_breath_loop",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    "breath_end": {
+      "sound": "bookofdragons:hideouszippleback_breath_end",
+      "volume": 1.0,
+      "pitch": 1.0
+    }
+  }
+}

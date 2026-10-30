@@ -1,0 +1,27 @@
+{
+  "parent": "bookofdragons:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:cod",
+      "id": "minecraft:cod"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.sworn_you_had_teeth.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.sworn_you_had_teeth.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ask": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "ask"
+      }
+    }
+  }
+}

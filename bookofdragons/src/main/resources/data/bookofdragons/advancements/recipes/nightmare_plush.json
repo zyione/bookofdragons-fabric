@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "unlock": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "entry",
+        "dragon_type": "monstrous_nightmare"
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "bookofdragons:nightmare_plush"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "unlock",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bookofdragons:nightmare_plush"
+    ]
+  }
+}

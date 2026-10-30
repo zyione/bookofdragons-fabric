@@ -1,0 +1,31 @@
+{
+  "entity": "whispering_death",
+  "weight": 30,
+  "world_cap": 4,
+  "radius_cap": {"radius": 192, "max": 1},
+  "placement": "cave",
+  "where": {
+    "deep": {
+      "conditions": [
+        {"below_surface": {"min": 40}},
+        {"y": {"max": 0}},
+        {"light": {"block": {"max": 0}}},
+        {"cave_size": {"min_air": 60}}
+      ]
+    },
+    "dripstone": {
+      "weight": 25,
+      "conditions": [{"biome": ["minecraft:dripstone_caves", "minecraft:deep_dark"]}, {"below_surface": {"min": 30}}]
+    }
+  },
+  "when": [
+    {"dimension": "minecraft:overworld"},
+    {"sky": "sheltered"},
+    {"world_age": {"min_days": 12}},
+    {"difficulty": {"min": "normal"}}
+  ],
+  "special": [
+    {"near_roost": {"within": 192, "kind": "cave"}, "weight": 30},
+    {"difficulty": {"min": "hard"}, "weight": 20}
+  ]
+}

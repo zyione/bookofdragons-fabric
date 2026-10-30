@@ -1,0 +1,33 @@
+{
+  "delivery": {
+    "type": "stream",
+    "windup_ticks": 4,
+    "fire_rate": 5,
+    "max_duration_ticks": 200,
+    "cooldown_ticks": 40,
+    "fuel": {"max": 100, "drain_per_tick": 1, "regen_per_sec": 20, "recharge_ticks": 100}
+  },
+  "collision": {
+    "damage": 8.0,
+    "fire_seconds": 0
+  },
+  "light": {"level": 13, "source": true, "projectile": true, "every_ticks": 2, "ttl_ticks": 3, "spacing": 2, "max_points": 8},
+  "emitters": [
+    {
+      "kind": "projectile",
+      "emission": {"shape": "point", "count": 1, "rate_ticks": 4},
+      "sim": {
+        "speed": 3.0, "lifetime_ticks": 20, "grow_in_ticks": 0,
+        "movement": []
+      },
+      "render": {
+        "type": "beam",
+        "inner_color": [204, 229, 255],
+        "outer_color": [102, 153, 255]
+      }
+    }
+  ],
+  "impact": [
+    {"type": "none"}
+  ]
+}

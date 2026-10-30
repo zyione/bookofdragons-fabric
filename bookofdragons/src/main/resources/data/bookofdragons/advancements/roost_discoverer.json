@@ -1,0 +1,85 @@
+{
+  "parent": "bookofdragons:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass",
+      "id": "minecraft:spyglass"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.roost_discoverer.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.roost_discoverer.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "visit_roost_cliff": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structure": "bookofdragons:roost_cliff",
+            "structures": "bookofdragons:roost_cliff"
+          }
+        }
+      }
+    },
+    "visit_roost_cave": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structure": "bookofdragons:roost_cave",
+            "structures": "bookofdragons:roost_cave"
+          }
+        }
+      }
+    },
+    "visit_roost_glade": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structure": "bookofdragons:roost_glade",
+            "structures": "bookofdragons:roost_glade"
+          }
+        }
+      }
+    },
+    "visit_roost_wetland": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structure": "bookofdragons:roost_wetland",
+            "structures": "bookofdragons:roost_wetland"
+          }
+        }
+      }
+    },
+    "visit_roost_barrens": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structure": "bookofdragons:roost_barrens",
+            "structures": "bookofdragons:roost_barrens"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "visit_roost_cliff",
+      "visit_roost_cave",
+      "visit_roost_glade",
+      "visit_roost_wetland",
+      "visit_roost_barrens"
+    ]
+  ]
+}

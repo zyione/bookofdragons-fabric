@@ -1,0 +1,12 @@
+{
+  "type": "melee",
+  "windup_ticks": 7,
+  "active_ticks": 3,
+  "recovery_ticks": 11,
+  "cooldown_ticks": 24,
+  "damage_multiplier": 1.15,
+  "knockback": 0.5,
+  "reach": 3.0,
+  "hitbox_angle_degrees": 180.0,
+  "stamina_cost": 0.0
+}

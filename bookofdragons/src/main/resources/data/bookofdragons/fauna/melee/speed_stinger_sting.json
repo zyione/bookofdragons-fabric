@@ -1,0 +1,16 @@
+{
+  "type": "melee",
+  "windup_ticks": 6,
+  "active_ticks": 3,
+  "recovery_ticks": 12,
+  "cooldown_ticks": 200,
+  "damage": 2.0,
+  "knockback": 0.4,
+  "reach": 3.2,
+  "hitbox_angle_degrees": 180.0,
+  "stamina_cost": 8.0,
+  "on_hit": {
+    "effect": "bookofdragons:paralysis",
+    "duration_ticks": 60
+  }
+}

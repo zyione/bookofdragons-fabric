@@ -1,0 +1,694 @@
+{
+  "attributes": {
+    "CON": { "floor": 40, "ceiling": 60 },
+    "ATH": { "floor": 50, "ceiling": 70 },
+    "AGI": { "floor": 70, "ceiling": 90 },
+    "PRW": { "floor": 70, "ceiling": 90 },
+    "POT": { "floor": 60, "ceiling": 80 },
+    "VIG": { "floor": 40, "ceiling": 60 }
+  },
+  "art_version": 2,
+  "mutation": {
+    "allele_chance": 0.02,
+    "palette_chance": 0.05,
+    "deviation_tier_weights": {
+      "0": 10,
+      "1": 30,
+      "2": 40,
+      "3": 20
+    }
+  },
+  "color_loci": {
+    "b": {
+      "link_group": "body",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "cornflower",
+            "deep_lavender",
+            "kelp",
+            "mauve",
+            "mulberry",
+            "periwinkle",
+            "russet",
+            "seafoam",
+            "sky",
+            "umber"
+          ],
+          "UNCOMMON": [
+            "salmon",
+            "wine",
+            "sunflower",
+            "morning",
+            "ember",
+            "deep_teal",
+            "deep_aqua",
+            "eggplant"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "r": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "y": {
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "alabaster",
+            "ivory",
+            "pearl",
+            "sandy"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "n": {
+      "link_group": "gradient",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 45,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "cornflower",
+            "deep_lavender",
+            "kelp",
+            "mauve",
+            "mulberry",
+            "periwinkle",
+            "russet",
+            "seafoam",
+            "sky",
+            "umber"
+          ],
+          "UNCOMMON": [
+            "salmon",
+            "wine",
+            "sunflower",
+            "morning",
+            "ember",
+            "deep_teal",
+            "deep_aqua",
+            "eggplant"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "e": {
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "g": {
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "j": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "morning",
+            "sunflower",
+            "ember",
+            "mulberry",
+            "cornflower",
+            "deep_lavender",
+            "kelp",
+            "mauve",
+            "periwinkle",
+            "russet",
+            "seafoam",
+            "sky",
+            "umber",
+            "deep_teal",
+            "eggplant",
+            "deep_aqua"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "a": {
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "morning",
+            "sunflower",
+            "ember",
+            "mulberry",
+            "cornflower",
+            "deep_lavender",
+            "kelp",
+            "mauve",
+            "periwinkle",
+            "russet",
+            "seafoam",
+            "sky",
+            "umber",
+            "deep_teal",
+            "deep_aqua",
+            "eggplant"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "i": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "morning",
+            "sunflower",
+            "ember",
+            "mulberry",
+            "cornflower",
+            "deep_lavender",
+            "kelp",
+            "mauve",
+            "periwinkle",
+            "russet",
+            "seafoam",
+            "sky",
+            "umber"
+          ],
+          "UNCOMMON": [
+            "deep_teal",
+            "deep_aqua",
+            "eggplant"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "z": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "morning",
+            "sunflower",
+            "ember",
+            "mulberry",
+            "cornflower",
+            "deep_lavender",
+            "kelp",
+            "mauve",
+            "periwinkle",
+            "russet",
+            "seafoam",
+            "sky",
+            "umber",
+            "deep_teal",
+            "deep_aqua",
+            "eggplant"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "v": {
+      "link_group": "gradient",
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "cornflower",
+            "deep_lavender",
+            "kelp",
+            "mauve",
+            "mulberry",
+            "periwinkle",
+            "russet",
+            "seafoam",
+            "sky",
+            "umber"
+          ],
+          "UNCOMMON": [
+            "salmon",
+            "wine",
+            "sunflower",
+            "morning",
+            "ember",
+            "deep_teal",
+            "deep_aqua",
+            "eggplant"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    }
+  },
+  "structure_loci": {
+    "d": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "u": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "underbelly_simple",
+            "underbelly_lower"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "p": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "tail_stripes_simple",
+            "tail_stripes_slanted",
+            "tail_banded"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "w": {
+      "expression_count": 2,
+      "multi_channel_count": 2,
+      "pool": {
+        "weights": {
+          "COMMON": 17,
+          "UNCOMMON": 48,
+          "RARE": 25,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+         "blank" 
+          ],
+          "UNCOMMON": [
+            "w_spots_simple",
+            "w_spots_flattened"
+          ],
+          "RARE": [
+            "w_marbled",
+            "w_toxin_splotches"
+          ],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "x": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "underwing_standard"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "f": {
+      "expression_count": 2,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "crest_fade",
+            "eye_fade",
+            "eyes_and_nose",
+            "snout_fade"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "l": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "leg_fade_simple",
+            "leg_stripes_front"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "s": {
+      "expression_count": 1,
+      "multi_channel_count": 2,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "h": {
+      "expression_count": 2,
+      "pool": {
+        "weights": {
+          "COMMON": 35,
+          "UNCOMMON": 50,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "blank"
+          ],
+          "UNCOMMON": [
+            "head_neck_gradient",
+            "tail_gradient_back",
+            "tail_gradient_end",
+            "g_covered"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "k": {
+      "expression_count": 2,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "blank",
+            "wg_gradient_lower",
+            "wg_gradient_upper"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    }
+  },
+  "linkage": {
+    "rules": {
+      "body": {
+        "mode_weights": {
+          "SAME": 50,
+          "SIMILAR": 35,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      },
+      "pattern": {
+        "mode_weights": {
+          "SAME": 55,
+          "SIMILAR": 40,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      },
+      "gradient": {
+        "mode_weights": {
+          "SAME": 50,
+          "SIMILAR": 35,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      }
+    }
+  },
+  "palette_taxonomy": {
+    "kelp": {
+      "primary": "green",
+      "sat": 4,
+      "temp": -5,
+      "light": 4
+    },
+    "seafoam": {
+      "primary": "blue",
+      "sat": 4,
+      "temp": 5,
+      "light": 4
+    },
+    "sky": {
+      "primary": "blue",
+      "sat": 4,
+      "temp": 2,
+      "light": 4
+    },
+    "mulberry": {
+      "primary": "purple",
+      "sat": 4,
+      "temp": 2,
+      "light": 4
+    },
+    "mauve": {
+      "primary": "purple",
+      "sat": -2,
+      "temp": 4,
+      "light": 3
+    },
+    "umber": {
+      "primary": "red",
+      "sat": -3,
+      "temp": -2,
+      "light": 3
+    },
+    "russet": {
+      "primary": "orange",
+      "sat": -3,
+      "temp": 1,
+      "light": 3
+    },
+    "sunflower": {
+      "primary": "yellow",
+      "sat": 4,
+      "temp": 2,
+      "light": 4
+    },
+    "ember": {
+      "primary": "yellow",
+      "sat": 4,
+      "temp": 2,
+      "light": 4
+    },
+    "morning": {
+      "primary": "yellow",
+      "sat": 1,
+      "temp": 2,
+      "light": 4
+    },
+    "deep_lavender": {
+      "primary": "purple",
+      "sat": 8,
+      "temp": 2,
+      "light": 2
+    },
+    "cornflower": {
+      "primary": "blue",
+      "sat": 4,
+      "temp": 5,
+      "light": 6
+    },
+    "periwinkle": {
+      "primary": "purple",
+      "sat": 4,
+      "temp": 5,
+      "light": 6
+    },
+    "eggplant": {
+      "primary": "purple",
+      "sat": 1,
+      "temp": -4,
+      "light": -2
+    },
+    "salmon": {
+      "primary": "red",
+      "sat": 3,
+      "temp": -3,
+      "light": 3
+    },
+    "wine": {
+      "primary": "red",
+      "sat": 3,
+      "temp": -3,
+      "light": 3
+    },
+    "deep_aqua": {
+      "primary": "blue",
+      "sat": 3,
+      "temp": 3,
+      "light": -1
+    }
+  }
+}

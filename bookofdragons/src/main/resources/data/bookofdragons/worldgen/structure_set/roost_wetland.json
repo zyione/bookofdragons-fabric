@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "bookofdragons:roost_wetland",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 24,
+        "separation": 12,
+        "salt": 1665432004
+    }
+}

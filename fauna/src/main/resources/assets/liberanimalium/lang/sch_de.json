@@ -1,0 +1,9 @@
+{
+  "key.category.liberanimalium": "FAUNA Engine",
+  "liberanimalium.ability.cannot_use": "Dr %s kann die Fähigkeit grad edd nutza!",
+  "liberanimalium.ability.cooldown": "D' Fähigkeit deines %ss isch no am abklingen!",
+  "liberanimalium.ability.not_bonded": "Dr Bund zu daim %s isch no nedd schtark gnuag um die Fähigkeit z'nutza!",
+  "liberanimalium.command.set": "Dr %s isch jetzd am %s",
+  "liberanimalium.too_young_to_fly": "Dr %s isch z'jung zom fliagn!",
+  "liberanimalium.needs_saddle": "Do brauchts n Saddl um gritta z'wera!"
+}

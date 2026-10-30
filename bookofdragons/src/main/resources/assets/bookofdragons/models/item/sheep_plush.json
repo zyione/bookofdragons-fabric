@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "bookofdragons:item/sheep_plush",
+        "layer1": "bookofdragons:item/sheep_plush_wool"
+    }
+}

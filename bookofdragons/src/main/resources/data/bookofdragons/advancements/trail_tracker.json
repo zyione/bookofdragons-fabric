@@ -1,0 +1,27 @@
+{
+  "parent": "bookofdragons:root",
+  "display": {
+    "icon": {
+      "item": "bookofdragons:nightfury_scales",
+      "id": "bookofdragons:nightfury_scales"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.trail_tracker.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.trail_tracker.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "near_roost": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "roost"
+      }
+    }
+  }
+}

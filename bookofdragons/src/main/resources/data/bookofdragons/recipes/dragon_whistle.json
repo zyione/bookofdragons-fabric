@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "B  ",
+        " B ",
+        "  N"
+    ],
+    "key": {
+        "B": {
+            "item": "minecraft:bone"
+        },
+        "N": {
+            "item": "minecraft:iron_nugget"
+        }
+    },
+    "result": {
+        "item": "bookofdragons:dragon_whistle",
+        "id": "bookofdragons:dragon_whistle",
+        "count": 1
+    }
+}

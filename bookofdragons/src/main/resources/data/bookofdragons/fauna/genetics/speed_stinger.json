@@ -1,0 +1,369 @@
+{"attributes":{"CON":{"floor":15,"ceiling":35},"ATH":{"floor":70,"ceiling":90},"AGI":{"floor":65,"ceiling":85},"PRW":{"floor":40,"ceiling":60},"POT":{"floor":0,"ceiling":0},"VIG":{"floor":50,"ceiling":70}},"art_version":1,"color_loci":
+
+{"b":{
+  "link_group": "body",
+  "pool":{"entries":
+{"COMMON":["meadow", "spearmint","sage","seafoam","mint","cyan","crystal","aqua","glace","cornflower","floe"],
+  "UNCOMMON":["vortex","periwinkle","lily","wisteria","amethyst","mist","violet","grape","regal"],
+  "RARE":["raven","quartz", "ember"],
+  "VERY_RARE":["black"]}}},
+
+  "r":{
+    "link_group": "pattern",
+    "pool":{
+      "weights": {
+        "COMMON": 30,
+        "UNCOMMON": 40,
+        "RARE": 20,
+        "VERY_RARE": 10
+      },
+        "entries":{"COMMON":["meadow", "spearmint","sage","seafoam","mint","cyan","crystal","aqua","glace","cornflower","floe"],
+    "UNCOMMON":["dawn", "wine", "vortex","periwinkle","lily","wisteria","amethyst","mist","violet","grape","regal","rust","crimson","fuchsia","lilac","royal","dark_ice","black_ice","forest"],
+    "RARE":["raven","quartz", "ember"],
+    "VERY_RARE":["black"]}}},
+
+  "y": {
+    "pool": {
+      "allow_downgrade": true,
+      "weights": {
+        "COMMON": 40,
+        "UNCOMMON": 30,
+        "RARE": 20,
+        "VERY_RARE": 10
+      },
+      "entries": {
+        "COMMON": [
+"calcite", "cloud", "cotton", "ivory", "pearlescent", "snowmint", "tan"
+        ],
+        "UNCOMMON": [ "quartz", "meadow", "spearmint","sage","seafoam","mint","cyan","crystal","aqua","glace","cornflower","floe"
+        ],
+        "RARE":["raven", "ember", "dawn", "wine", "vortex","periwinkle","lily","wisteria","amethyst","mist","violet","grape","regal","rust","crimson","fuchsia","lilac","royal","dark_ice","black_ice","forest" ]
+      }
+    }
+  },
+
+  "n":{
+    "link_group": "gradient",
+    "pool":{"entries":{"COMMON":["meadow", "spearmint","sage","seafoam","mint","cyan","crystal","aqua","glace","cornflower","floe"],
+      "UNCOMMON":["dawn", "wine", "vortex","periwinkle","lily","wisteria","amethyst","mist","violet","grape","regal","rust","crimson","fuchsia","lilac","royal","dark_ice","black_ice","forest"],
+      "RARE":["raven","quartz", "ember"],
+    "VERY_RARE":["black"]}}},
+
+  "j":{
+    "link_group": "pattern",
+    "pool":{
+      "weights": {
+        "COMMON": 30,
+        "UNCOMMON": 40,
+        "RARE": 20,
+        "VERY_RARE": 10
+      },
+      "entries":{"COMMON":["meadow", "spearmint","sage","seafoam","mint","cyan","crystal","aqua","glace","cornflower","floe"],
+        "UNCOMMON":["dawn", "wine", "vortex","periwinkle","lily","wisteria","amethyst","mist","violet","grape","regal","rust","crimson","fuchsia","lilac","royal","dark_ice","black_ice","forest"],
+        "RARE":["raven","quartz", "ember"],
+    "VERY_RARE":["black"]}}},
+
+  "a":{
+    "link_group": "pattern",
+    "pool":{
+      "weights": {
+        "COMMON": 30,
+        "UNCOMMON": 40,
+        "RARE": 20,
+        "VERY_RARE": 10
+      },
+      "entries":{"COMMON":["meadow", "spearmint","sage","seafoam","mint","cyan","crystal","aqua","glace","cornflower","floe"],
+        "UNCOMMON":["dawn", "wine", "vortex","periwinkle","lily","wisteria","amethyst","mist","violet","grape","regal","rust","crimson","fuchsia","lilac","royal","dark_ice","black_ice","forest"],
+        "RARE":["raven","quartz", "ember"],
+    "VERY_RARE":["black"]}}},
+
+  "i":{
+    "link_group": "pattern",
+    "pool":{
+      "weights": {
+        "COMMON": 30,
+        "UNCOMMON": 40,
+        "RARE": 20,
+        "VERY_RARE": 10
+      },
+      "entries":{"COMMON":["meadow", "spearmint","sage","seafoam","mint","cyan","crystal","aqua","glace","cornflower","floe"],
+        "UNCOMMON":["dawn", "wine", "vortex","periwinkle","lily","wisteria","amethyst","mist","violet","grape","regal","rust","crimson","fuchsia","lilac","royal","dark_ice","black_ice","forest"],
+        "RARE":["raven","quartz", "ember"],
+    "VERY_RARE":["black"]}}},
+
+  "z":{
+    "link_group": "pattern",
+    "pool":{
+      "weights": {
+        "COMMON": 30,
+        "UNCOMMON": 40,
+        "RARE": 20,
+        "VERY_RARE": 10
+      },
+      "entries":{"COMMON":["meadow", "spearmint","sage","seafoam","mint","cyan","crystal","aqua","glace","cornflower","floe"],
+        "UNCOMMON":["dawn", "wine", "vortex","periwinkle","lily","wisteria","amethyst","mist","violet","grape","regal","rust","crimson","fuchsia","lilac","royal","dark_ice","black_ice","forest"],
+        "RARE":["raven","quartz", "ember"],
+    "VERY_RARE":["black"]}}},
+
+  "v":{
+    "link_group": "gradient",
+    "pool":{"entries":{"COMMON":["meadow", "spearmint","sage","seafoam","mint","cyan","crystal","aqua","glace","cornflower","floe"],
+      "UNCOMMON":["dawn", "wine", "vortex","periwinkle","lily","wisteria","amethyst","mist","violet","grape","regal","rust","crimson","fuchsia","lilac","royal","dark_ice","black_ice","forest"],
+      "RARE":["raven","quartz", "ember"],
+    "VERY_RARE":["black"]}}},
+
+  "c":{
+    "link_group": "pattern",
+    "pool":{
+      "weights": {
+        "COMMON": 30,
+        "UNCOMMON": 40,
+        "RARE": 20,
+        "VERY_RARE": 10
+      },
+      "entries":{"COMMON":["meadow", "spearmint","sage","seafoam","mint","cyan","crystal","aqua","glace","cornflower","floe"],
+        "UNCOMMON":["dawn", "wine", "vortex","periwinkle","lily","wisteria","amethyst","mist","violet","grape","regal","rust","crimson","fuchsia","lilac","royal","dark_ice","black_ice","forest"],
+        "RARE":["raven","quartz", "ember"],
+    "VERY_RARE":["black"]}}}},
+
+  "structure_loci": {
+    "d": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 40,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["blank"],
+          "UNCOMMON": ["d_back_coverage", "d_side_streaks"],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "u": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["blank","underbelly_simple"],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "p": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "b_thick_stripes",
+            "b_thin_stripes"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "w": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "x": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "f": {
+      "expression_count": 2,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "f_dorsal_stripe",
+            "f_frontal_barring",
+            "f_lateral_stripes",
+            "f_side_stripe",
+            "f_snout_fade",
+            "f_stripe_mask"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "l": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["l_back_fade_high", "l_back_stripes_simple"],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "s": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "h": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["blank"],
+          "UNCOMMON": ["g_head_shoulder", "g_tail_mid"],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "k": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 30,
+          "UNCOMMON": 40,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["blank"],
+          "UNCOMMON": ["wg_fin_fade_low", "wg_fin_fade_mid"],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "q": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["m_stinger_basic", "m_stinger_stripes"],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    }
+  },
+  "linkage": {
+    "rules": {
+      "body": {
+        "mode_weights": {
+          "SAME": 50,
+          "SIMILAR": 35,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      },
+      "pattern": {
+        "mode_weights": {
+          "SAME": 55,
+          "SIMILAR": 40,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      },
+      "gradient": {
+        "mode_weights": {
+          "SAME": 50,
+          "SIMILAR": 35,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      }
+    }
+  },
+
+  "palette_taxonomy":{"tan":{"primary":"orange","sat":2,"temp":2,"light":3},"black":{"primary":"neutral","sat":-4,"temp":-1,"light":-5}, "snowmint":{"primary":"blue","sat":-3,"temp":4,"light":4}, "pearlescent":{"primary":"purple","sat":-4,"temp":-1,"light":4}, "ivory":{"primary":"orange","sat":-3,"temp":-1,"light":3}, "cotton":{"primary":"purple","sat":-4,"temp":-1,"light":4}, "cloud":{"primary":"purple","sat":-3,"temp":1,"light":4}, "calcite":{"primary":"green","sat":-4,"temp":-4,"light":4},"meadow":{"primary":"green","sat":3,"temp":1,"light":1},"spearmint":{"primary":"green","sat":1,"temp":-2,"light":0},"sage":{"primary":"green","sat":3,"temp":-3,"light":0},"seafoam":{"primary":"blue","sat":1,"temp":-5,"light":-1},"mint":{"primary":"blue","sat":2,"temp":-3,"light":2},"cyan":{"primary":"blue","sat":2,"temp":4,"light":2},"crystal":{"primary":"blue","sat":-1,"temp":1,"light":3},"aqua":{"primary":"blue","sat":2,"temp":3,"light":0},"glace":{"primary":"blue","sat":3,"temp":1,"light":0},"cornflower":{"primary":"blue","sat":2,"temp":0,"light":0},"floe":{"primary":"blue","sat":2,"temp":-1,"light":-1},"vortex":{"primary":"blue","sat":1,"temp":-1,"light":-2},"vortex":{"primary":"blue","sat":-3,"temp":0,"light":-3},"periwinkle":{"primary":"blue","sat":-2,"temp":-1,"light":-1},"lily":{"primary":"blue","sat":0,"temp":-2,"light":-1},"wisteria":{"primary":"blue","sat":1,"temp":-4,"light":-1},"amethyst":{"primary":"purple","sat":-1,"temp":4,"light":-1},"mist":{"primary":"blue","sat":-1,"temp":-5,"light":0},"violet":{"primary":"purple","sat":1,"temp":-4,"light":-1},"grape":{"primary":"purple","sat":2,"temp":2,"light":0},"regal":{"primary":"purple","sat":3,"temp":4,"light":0},"wine":{"primary":"purple","sat":-1,"temp":4,"light":-1},"dawn":{"primary":"red","sat":4,"temp":-2,"light":1},"rust":{"primary":"red","sat":2,"temp":0,"light":-1},"crimson":{"primary":"red","sat":3,"temp":1,"light":0},"fuchsia":{"primary":"purple","sat":4,"temp":5,"light":1},"lilac":{"primary":"purple","sat":3,"temp":3,"light":1},"royal":{"primary":"purple","sat":4,"temp":1,"light":1},"dark_ice":{"primary":"blue","sat":-1,"temp":1,"light":-3},"black_ice":{"primary":"blue","sat":-2,"temp":2,"light":-3},"raven":{"primary":"blue","sat":-4,"temp":-1,"light":-4},"quartz":{"primary":"blue","sat":-4,"temp":-3,"light":4},"ember":{"primary":"yellow","sat":4,"temp":-2,"light":3},"forest":{"primary":"green","sat":-2,"temp":-1,"light":-2}}}

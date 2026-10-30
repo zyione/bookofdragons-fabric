@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "period_ticks": 1200,
+  "roostless_cap": 14,
+  "per_extra_player": 3,
+  "density_cap": 4,
+  "density_radius": 128,
+  "species_share": 0.25,
+  "abundance": {"region_blocks": 512, "days": 3, "floor": 0, "tide_floor": 0.4},
+  "despawn": {"safe_radius": 64, "unwatched_ticks": 6000, "chance_per_tick": 0.0005},
+  "guard": {"sight_margin": 8, "home_radius": 64}
+}

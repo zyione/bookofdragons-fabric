@@ -1,0 +1,109 @@
+{
+  "delivery": {
+    "type": "stream",
+    "windup_ticks": 4,
+    "fire_rate": 2,
+    "max_duration_ticks": 60,
+    "cooldown_ticks": 60,
+    "fuel": {"max": 60, "drain_per_tick": 1, "regen_per_sec": 10, "recharge_ticks": 100}
+  },
+  "reach": 2,
+  "collision": {"damage": 1, "fire_seconds": 2},
+  "muzzle": {
+    "bone": "Tongue",
+    "offset": [0, 0, -0.04],
+    "glow_alpha": 0.55,
+    "glow": {
+      "size": [0.03, 0.09],
+      "palette": [
+        {"color": [210, 236, 255], "alpha": 0.75},
+        {"color": [110, 170, 255], "alpha": 0.5},
+        {"color": [80, 110, 230], "alpha": 0.2}
+      ]
+    }
+  },
+  "light": {
+    "level": 6,
+    "source": false,
+    "projectile": true,
+    "every_ticks": 3,
+    "ttl_ticks": 6,
+    "spacing": 1,
+    "max_points": 2
+  },
+  "emitters": [
+    {
+      "kind": "projectile",
+      "emission": {
+        "shape": "point",
+        "spread": [0.05, 0.05, 1],
+        "count": 3,
+        "rate_ticks": 4,
+        "direction": "forward",
+        "radius": 0.11,
+        "flare": 0,
+        "axis": "fire"
+      },
+      "sim": {
+        "speed": 0.35,
+        "lifetime_ticks": 20,
+        "grow_in_ticks": 5,
+        "initial_temperature": 1,
+        "cooling_rate": 0.07,
+        "cooling_shrink": true,
+        "flicker": 0.15,
+        "movement": [
+          {"type": "turbulence", "amount": 0.03, "noise_scale": 0.5},
+          {"type": "gravity", "amount": -0.012}
+        ]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:terror_lick",
+        "frames": 6,
+        "blend": "additive",
+        "size": [0.264, 0],
+        "spin": false
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "source",
+      "phase": "fire",
+      "emission": {"shape": "point", "spread": [0.035, 0.03, 1.5], "count": 5, "rate_ticks": 1, "direction": "forward"},
+      "sim": {
+        "speed": 0.35,
+        "lifetime_ticks": 30,
+        "grow_in_ticks": 5,
+        "initial_temperature": 1,
+        "cooling_rate": 0.075,
+        "cooling_shrink": false,
+        "flicker": 0.12,
+        "movement": [
+          {"type": "turbulence", "amount": 0.045, "noise_scale": 0.5},
+          {"type": "gravity", "amount": -0.018}
+        ]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:terror_lick",
+        "frames": 6,
+        "blend": "additive",
+        "size": [0.216, 0],
+        "spin": false
+      }
+    }
+  ],
+  "impact": [
+    {"type": "extinguish"},
+    {
+      "type": "slide",
+      "bounciness": 0,
+      "friction": 0.95,
+      "max_bounces": 30,
+      "lifetime_ticks": 30,
+      "fade_rate": 0.02,
+      "sets_fire": true
+    }
+  ]
+}

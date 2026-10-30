@@ -1,0 +1,77 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "bookofdragons:item/dragon_whistle",
+        "layer1": "bookofdragons:item/dragon_whistle_overlay"
+    },
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [
+                45,
+                -35,
+                0
+            ],
+            "translation": [
+                0,
+                6,
+                -2
+            ],
+            "scale": [
+                0.55,
+                0.55,
+                0.55
+            ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [
+                45,
+                35,
+                0
+            ],
+            "translation": [
+                0,
+                6,
+                -2
+            ],
+            "scale": [
+                0.55,
+                0.55,
+                0.55
+            ]
+        },
+        "firstperson_righthand": {
+            "rotation": [
+                25,
+                -15,
+                15
+            ],
+            "translation": [
+                4,
+                8,
+                -4
+            ],
+            "scale": [
+                0.68,
+                0.68,
+                0.68
+            ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [
+                25,
+                15,
+                -15
+            ],
+            "translation": [
+                -4,
+                8,
+                -4
+            ],
+            "scale": [
+                0.68,
+                0.68,
+                0.68
+            ]
+        }
+    }
+}

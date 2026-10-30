@@ -1,0 +1,11 @@
+{
+  "_comment": "One file per species (deadly_nadder.json, ...). Each key is the exact custom name, case-insensitive, a dragon must carry.",
+  "stormfly": {
+    "texture": "bookofdragons:textures/entity/dragon/custom/stormfly.png",
+    "apply_saddle": true
+  },
+  "your_custom_name_here": {
+    "texture": "bookofdragons:textures/entity/dragon/custom/your_texture.png",
+    "apply_saddle": false
+  }
+}

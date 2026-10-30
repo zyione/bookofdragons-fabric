@@ -1,0 +1,13 @@
+{
+  "default": "bookofdragons:textures/entity/misc/terror_plush.png",
+  "skins": {
+    "green": "bookofdragons:textures/entity/misc/terror_plush.png",
+    "orange": "bookofdragons:textures/entity/misc/terror_plush_orange.png",
+    "cyan": "bookofdragons:textures/entity/misc/terror_plush_cyan.png",
+    "purple": "bookofdragons:textures/entity/misc/terror_plush_purple.png",
+    "blue": "bookofdragons:textures/entity/misc/terror_plush_blue.png",
+    "red": "bookofdragons:textures/entity/misc/terror_plush_red.png",
+    "gray": "bookofdragons:textures/entity/misc/terror_plush_gray.png",
+    "yellow": "bookofdragons:textures/entity/misc/terror_plush_yellow.png"
+  }
+}

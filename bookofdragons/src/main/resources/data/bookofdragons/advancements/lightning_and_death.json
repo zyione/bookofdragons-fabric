@@ -1,0 +1,28 @@
+{
+  "parent": "bookofdragons:dragon_tamer",
+  "display": {
+    "icon": {
+      "item": "bookofdragons:nightfury_scales",
+      "id": "bookofdragons:nightfury_scales"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.lightning_and_death.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.lightning_and_death.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tamed_nightfury": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "tamed",
+        "dragon_type": "nightfury"
+      }
+    }
+  }
+}

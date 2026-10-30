@@ -1,0 +1,218 @@
+{
+  "delivery": {
+    "type": "stream",
+    "windup_ticks": 8,
+    "fire_rate": 4,
+    "max_duration_ticks": 200,
+    "cooldown_ticks": 40,
+    "fuel": {"max": 100, "drain_per_tick": 1, "regen_per_sec": 20, "recharge_ticks": 100}
+  },
+  "collision": {"damage": 4, "fire_seconds": 5, "pierce": 1},
+  "light": {
+    "level": 14,
+    "source": true,
+    "projectile": true,
+    "every_ticks": 2,
+    "ttl_ticks": 4,
+    "spacing": 2,
+    "max_points": 8
+  },
+  "emitters": [
+    {
+      "kind": "projectile",
+      "emission": {"shape": "point", "count": 2, "rate_ticks": 4, "spread": [0.295, 0.375, 1.6], "radius": 0},
+      "sim": {
+        "speed": 1.5,
+        "lifetime_ticks": 20,
+        "grow_in_ticks": 10,
+        "initial_temperature": 1,
+        "cooling_rate": 0.031,
+        "cooling_shrink": true,
+        "flicker": 0,
+        "movement": [
+          {"type": "drag", "factor": 0.94},
+          {"type": "gravity", "amount": 0.02}
+        ]
+      },
+      "render": {
+        "type": "pixel_quad",
+        "blend": "additive",
+        "size": [0.5, 0],
+        "palette": [
+          {"color": [255, 195, 60], "alpha": 1},
+          {"color": [255, 130, 20], "alpha": 0.98},
+          {"color": [235, 60, 15], "alpha": 0.95},
+          {"color": [190, 35, 12], "alpha": 0.85},
+          {"color": [135, 25, 12], "alpha": 0.65},
+          {"color": [90, 40, 30], "alpha": 0.45},
+          {"color": [55, 45, 45], "alpha": 0.25},
+          {"color": [25, 22, 22], "alpha": 0.08}
+        ],
+        "spin": true,
+        "snap": 12
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "source",
+      "phase": "fire",
+      "emission": {"shape": "point", "radius": 0.12, "spread": [0.04, 0.04, 1.5], "count": 9, "rate_ticks": 1, "flare": 0},
+      "sim": {
+        "speed": 1.63,
+        "lifetime_ticks": 32,
+        "grow_in_ticks": 5,
+        "initial_temperature": 1,
+        "cooling_rate": 0.04,
+        "cooling_shrink": true,
+        "flicker": 0.1,
+        "movement": [
+          {"type": "gravity", "amount": 0.041},
+          {"type": "turbulence", "amount": 0.03, "noise_scale": 0.5},
+          {"type": "drag", "factor": 0.95}
+        ]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:nightmare_gel",
+        "frames": 8,
+        "frame_ticks": 0,
+        "blend": "alpha",
+        "size": [1.8, 0],
+        "spin": true,
+        "emissive": true,
+        "emissive_until": 0.7,
+        "curves": {
+          "size": [[0.0, 0.35], [0.3, 0.8], [1.0, 1.0]],
+          "alpha": [[0.0, 1.0], [0.8, 1.0], [1.0, 0.0]]
+        }
+      },
+      "charge_scale": {"count": false}
+    },
+    {
+      "kind": "visual",
+      "anchor": "projectile",
+      "phase": "fire",
+      "emission": {"shape": "point", "radius": 0.3, "spread": [0.3, 0.3, 0], "count": 1, "rate_ticks": 5},
+      "sim": {
+        "speed": 0.15,
+        "lifetime_ticks": 40,
+        "grow_in_ticks": 1,
+        "initial_temperature": 0.3,
+        "cooling_rate": 0.01,
+        "cooling_shrink": false,
+        "flicker": 0,
+        "movement": [
+          {"type": "drag", "factor": 0.9},
+          {"type": "gravity", "amount": -0.012}
+        ]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:nightmare_soot",
+        "frames": 2,
+        "frame_ticks": 0,
+        "blend": "alpha",
+        "size": [2.4, 0],
+        "spin": true,
+        "emissive": false,
+        "curves": {
+          "size": [[0.0, 0.9], [1.0, 1.4]],
+          "alpha": [[0.0, 0.0], [0.15, 0.95], [0.7, 0.85], [1.0, 0.0]]
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "projectile",
+      "phase": "fire",
+      "emission": {
+        "shape": "point",
+        "spread": [0.06, 0.28, 0.47],
+        "count": 2,
+        "rate_ticks": 1,
+        "direction": "forward",
+        "radius": 0.76
+      },
+      "sim": {
+        "speed": 1.26,
+        "lifetime_ticks": 16,
+        "grow_in_ticks": 1,
+        "initial_temperature": 1,
+        "cooling_rate": 0.06,
+        "cooling_shrink": true,
+        "flicker": 0.15,
+        "movement": [
+          {"type": "drag", "factor": 0.94},
+          {"type": "gravity", "amount": 0.045},
+          {"type": "turbulence", "amount": 0.16, "noise_scale": 0.5}
+        ]
+      },
+      "render": {
+        "type": "pixel_quad",
+        "blend": "additive",
+        "size": [0.18, 0],
+        "palette": [
+          {"color": [255, 185, 50], "alpha": 1},
+          {"color": [255, 110, 20], "alpha": 0.9},
+          {"color": [215, 45, 15], "alpha": 0.75},
+          {"color": [140, 25, 10], "alpha": 0.45},
+          {"color": [45, 15, 8], "alpha": 0.15}
+        ],
+        "spin": true
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "source",
+      "phase": "charge",
+      "charge_scale": {"count": true, "size": true},
+      "emission": {
+        "shape": "line",
+        "radius": 0.25,
+        "spread": [0.05, 0.04, 0.05],
+        "count": 3,
+        "rate_ticks": 1,
+        "direction": "forward"
+      },
+      "sim": {
+        "speed": 0.08,
+        "lifetime_ticks": 20,
+        "grow_in_ticks": 4,
+        "initial_temperature": 0.8,
+        "cooling_rate": 0.04,
+        "cooling_shrink": false,
+        "flicker": 0,
+        "movement": [
+          {"type": "drag", "factor": 0.88},
+          {"type": "gravity", "amount": 0.04}
+        ]
+      },
+      "render": {
+        "type": "pixel_quad",
+        "blend": "alpha",
+        "size": [0.28, 0],
+        "palette": [
+          {"color": [120, 65, 35], "alpha": 0.65},
+          {"color": [80, 72, 68], "alpha": 0.55},
+          {"color": [60, 54, 50], "alpha": 0.42},
+          {"color": [45, 40, 38], "alpha": 0.28},
+          {"color": [28, 25, 24], "alpha": 0.1}
+        ],
+        "spin": true
+      }
+    }
+  ],
+  "impact": [
+    {"type": "extinguish"},
+    {
+      "type": "slide",
+      "bounciness": 0,
+      "friction": 0.95,
+      "max_bounces": 50,
+      "lifetime_ticks": 60,
+      "fade_rate": 0.01,
+      "sets_fire": true
+    }
+  ],
+  "muzzle": {"bone": "tongue", "offset": [0, 0, 0]}
+}

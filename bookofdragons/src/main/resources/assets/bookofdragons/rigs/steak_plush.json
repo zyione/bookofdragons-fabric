@@ -1,0 +1,9 @@
+{
+  "passes": ["chain"],
+  "chains": {
+    "tail": ["tail"]
+  },
+  "chain": {
+    "tail": { "stiffness": 0.6, "damping": 0.12, "bend": 25, "radius": 0.08, "flow": 0 }
+  }
+}

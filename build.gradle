@@ -1,0 +1,96 @@
+plugins {
+    id 'fabric-loom' version '1.14.10' apply false
+}
+subprojects {
+    apply plugin: 'fabric-loom'
+    group = 'net.magister.fabricport'
+    version = project.name == 'fauna' ? '1.0+1.20.1.fabric.dev.1' : '1.4+1.20.1.fabric.dev.1'
+    base { archivesName = project.name == 'fauna' ? 'fauna-engine-fabric' : 'bookofdragons-fabric' }
+    repositories {
+        maven { url = 'https://api.modrinth.com/maven' }
+        mavenCentral()
+    }
+    dependencies {
+        minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
+        mappings loom.officialMojangMappings()
+        modImplementation "net.fabricmc:fabric-loader:${rootProject.loader_version}"
+        modImplementation "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
+        modImplementation 'maven.modrinth:azurelib:VDXznzXQ'
+        modImplementation 'maven.modrinth:forge-config-api-port:Qs8LaZLo'
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+        testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.11.4'
+    }
+    java {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+        withSourcesJar()
+    }
+    if (project.name == 'fauna') {
+        loom { accessWidenerPath = file('src/main/resources/liberanimalium.accesswidener') }
+    }
+    tasks.withType(JavaCompile).configureEach {
+        options.release = 17
+        options.encoding = 'UTF-8'
+        options.compilerArgs += ['-Xmaxerrs', '1000']
+    }
+    tasks.withType(AbstractArchiveTask).configureEach {
+        preserveFileTimestamps = false
+        reproducibleFileOrder = true
+    }
+    tasks.withType(Test).configureEach { useJUnitPlatform(); maxHeapSize = '256m' }
+}
+project(':bookofdragons') {
+    sourceSets {
+        gametest {
+            compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+            runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+        }
+    }
+    configurations {
+        gametestImplementation.extendsFrom implementation
+        gametestRuntimeOnly.extendsFrom runtimeOnly
+    }
+    dependencies {
+        implementation project(path: ':fauna', configuration: 'namedElements')
+        modCompileOnly 'maven.modrinth:modmenu:lEkperf6'
+    }
+    loom {
+        mods {
+            liberanimalium { sourceSet project(':fauna').sourceSets.main }
+            bookofdragons { sourceSet sourceSets.main }
+            bookofdragons_tests { sourceSet sourceSets.gametest }
+        }
+        runs {
+            server {
+                runDir '../.reference/dev-server'
+                programArg 'nogui'
+            }
+            client { runDir '../.reference/dev-client' }
+            gametest {
+                server()
+                source sourceSets.gametest
+                runDir '../.reference/gametest'
+                vmArg '-Dfabric-api.gametest'
+                vmArg '-Dfabric-api.gametest.report-file=reports/gametest.xml'
+            }
+            clientVerification {
+                client()
+                source sourceSets.gametest
+                runDir '../.reference/dev-client'
+                vmArg '-Dbookofdragons.clientVerification=true'
+                programArgs '--width', '1280', '--height', '800'
+            }
+        }
+    }
+    tasks.register('verificationJar', Jar) {
+        archiveClassifier = 'verification-dev'
+        from sourceSets.gametest.output
+    }
+    tasks.register('remapVerificationJar', net.fabricmc.loom.task.RemapJarTask) {
+        dependsOn tasks.named('verificationJar')
+        inputFile = tasks.named('verificationJar').flatMap { it.archiveFile }
+        archiveClassifier = 'verification'
+        addNestedDependencies = false
+        classpath.from sourceSets.main.output, sourceSets.main.compileClasspath, project(':fauna').sourceSets.main.output
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "key.category.liberanimalium": "FAUNA Engine",
+  "liberanimalium.ability.cannot_use": "%s Nie można teraz użyć tej Umiejętności!",
+  "liberanimalium.ability.cooldown": "%s's Umiejętność jeszcze nie gotowa!",
+  "liberanimalium.ability.not_bonded": "%s nie jest przywiązany na tyle, aby użyć tej umiejętności!",
+  "liberanimalium.command.set": "%s teraz %s",
+  "liberanimalium.too_young_to_fly": "%s jest za młody na latanie!",
+  "liberanimalium.needs_saddle": "Do jazdy potrzebne jest siodło!"
+}

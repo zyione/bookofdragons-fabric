@@ -1,0 +1,44 @@
+{
+  "parent": "bookofdragons:root",
+  "display": {
+    "icon": {
+      "item": "bookofdragons:sheep_plush",
+      "id": "bookofdragons:sheep_plush"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.first_plush.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.first_plush.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_a_plush": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:sheep_plush",
+              "bookofdragons:fury_plush",
+              "bookofdragons:fish_plush",
+              "bookofdragons:steak_plush",
+              "bookofdragons:ball_plush",
+              "bookofdragons:terror_plush",
+              "bookofdragons:nightmare_plush"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_a_plush"
+    ]
+  ]
+}

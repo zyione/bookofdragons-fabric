@@ -1,0 +1,18 @@
+{
+  "Barf and Belch": {
+    "texture": "bookofdragons:textures/entity/genetics/hideous_zippleback/nametags/barf_and_belch.png",
+    "apply_saddle": true
+  },
+  "Barf & Belch": {
+    "texture": "bookofdragons:textures/entity/genetics/hideous_zippleback/nametags/barf_and_belch.png",
+    "apply_saddle": true
+  },
+  "Whip and Lash": {
+    "texture": "bookofdragons:textures/entity/genetics/hideous_zippleback/nametags/whip_and_lash.png",
+    "apply_saddle": true
+  },
+  "Whip & Lash": {
+    "texture": "bookofdragons:textures/entity/genetics/hideous_zippleback/nametags/whip_and_lash.png",
+    "apply_saddle": true
+  }
+}

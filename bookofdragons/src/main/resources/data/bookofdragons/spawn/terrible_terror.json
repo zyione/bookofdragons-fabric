@@ -1,0 +1,28 @@
+{
+  "entity": "terrible_terror",
+  "weight": 50,
+  "group": {"min": 2, "max": 4},
+  "radius_cap": {"radius": 64, "max": 8},
+  "where": {
+    "coast": {"conditions": [{"biome": ["#minecraft:is_beach", "minecraft:stony_shore"]}]},
+    "sea_stack": {"weight": 40, "conditions": [{"biome": "#minecraft:is_ocean"}]},
+    "jungle": {
+      "weight": 30,
+      "group": {"min": 2, "max": 3},
+      "conditions": [{"biome": "#minecraft:is_jungle"}, {"nearby_block": {"is": "minecraft:water", "radius": 5}}]
+    }
+  },
+  "when": [{"dimension": "minecraft:overworld"}, {"time": "active"}],
+  "special": [
+    {
+      "poi": {"type": "minecraft:fisherman", "within": 48},
+      "weight": 30,
+      "set": {"group": {"min": 2, "max": 3}, "radius_cap": {"radius": 64, "max": 6}}
+    },
+    {
+      "moon": "full",
+      "weight": 30,
+      "set": {"group": {"min": 5, "max": 8}, "radius_cap": {"radius": 64, "max": 12}}
+    }
+  ]
+}

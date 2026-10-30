@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "bookofdragons:book_of_dragons",
+      "id": "bookofdragons:book_of_dragons"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.root.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "has_book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["bookofdragons:book_of_dragons"]
+          }
+        ]
+      }
+    }
+  }
+}

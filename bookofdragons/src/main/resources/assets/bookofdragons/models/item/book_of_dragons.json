@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "bookofdragons:item/book_of_dragons_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "bookofdragons:item/book_of_dragons_2d"
+    },
+    "ground": {
+      "parent": "bookofdragons:item/book_of_dragons_2d"
+    },
+    "fixed": {
+      "parent": "bookofdragons:item/book_of_dragons_2d"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "bookofdragons:httyd_variant": 1.0
+      },
+      "model": "bookofdragons:item/book_of_dragons_httyd"
+    }
+  ]
+}

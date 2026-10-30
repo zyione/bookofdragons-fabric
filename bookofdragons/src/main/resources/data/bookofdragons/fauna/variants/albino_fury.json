@@ -1,0 +1,104 @@
+{
+  "entity": "nightfury",
+  "name": "Albino Fury",
+  "genetics": {
+    "pools": {
+      "b": ["albino_cool"],
+      "n": ["albino_cool"],
+      "v": ["albino_cool"],
+      "r": ["albino_cool"],
+      "y": ["albino_cool"],
+      "j": ["albino_cool"],
+      "a": ["albino_cool"],
+      "i": ["albino_cool"],
+      "z": ["albino_cool"],
+      "c": ["albino_cool"],
+      "e": ["eye_rare_2"],
+      "d": ["blank"],
+      "u": ["blank"],
+      "p": ["blank"],
+      "w": ["blank"],
+      "f": ["blank"],
+      "l": ["blank"],
+      "h": ["blank"],
+      "k": ["blank"],
+      "q": ["blank"],
+      "s": ["eyes_1"]
+    },
+    "stats": {"CON": 100, "PRW": 90, "VIG": 85}
+  },
+  "profile": {
+    "roosts": true,
+    "habit": {"active": "NIGHT"},
+    "senses": {"sightRadius": 56.0, "viewCone": [35.0, 120.0], "nightVision": true, "hearingSkill": 1.4},
+    "movement": {
+      "GROUND": 1.0,
+      "AIR": 1.35,
+      "WATER": 30.0,
+      "CLIMB": null,
+      "hazards": {"DAMAGE_FIRE": 24.0, "DANGER_FIRE": 16.0},
+      "styles": {
+        "close": 0.7,
+        "arc": 1.0,
+        "flank": 1.1,
+        "withdraw": 1.6,
+        "cover": 1.8,
+        "creep": 1.4,
+        "freeze": 1.6,
+        "hold": 0.9
+      }
+    },
+    "social": {"trackerCapacity": 20, "forgetTicks": 6000, "territoryRadius": 48.0, "bonds": 0},
+    "traits": {
+      "aggression": [0.95, 1.0],
+      "bravery": [0.95, 1.0],
+      "dominance": [0.9, 1.0],
+      "energy": [0.7, 1.0],
+      "nervousness": [0.0, 0.1],
+      "sympathy": [0.0, 0.05]
+    },
+    "drives": {
+      "without": ["play", "pack", "friend", "threat"],
+      "with": [],
+      "weights": {"wander": 0.8, "prey": 1.2, "enmity": 1.6, "rival": 1.3},
+      "smoothing": {
+        "wander": {"rise": 0.5, "decay": 0.003},
+        "enmity": {"rise": 0.9, "decay": 0.002},
+        "prey": {"rise": 0.4, "decay": 0.006}
+      },
+      "switchBias": 1.5
+    },
+    "relations": [
+      {"targets": "minecraft:player", "type": "ATTACKS", "intensity": 1.0},
+      {"targets": "#fauna:same_species", "type": "ATTACKS", "intensity": 1.0},
+      {"targets": "#bookofdragons:dragons", "type": "ATTACKS", "intensity": 1.0},
+      {"targets": "#minecraft:raiders", "type": "ATTACKS", "intensity": 0.9},
+      {"targets": "#minecraft:skeletons", "type": "ATTACKS", "intensity": 0.8},
+      {"targets": "minecraft:zombie", "type": "ATTACKS", "intensity": 0.8},
+      {"targets": "minecraft:zombie_villager", "type": "ATTACKS", "intensity": 0.8},
+      {"targets": "minecraft:husk", "type": "ATTACKS", "intensity": 0.8},
+      {"targets": "minecraft:drowned", "type": "ATTACKS", "intensity": 0.8},
+      {"targets": "minecraft:creeper", "type": "ATTACKS", "intensity": 0.7},
+      {"targets": "minecraft:spider", "type": "ATTACKS", "intensity": 0.7},
+      {"targets": "minecraft:cave_spider", "type": "ATTACKS", "intensity": 0.7},
+      {"targets": "minecraft:enderman", "type": "ATTACKS", "intensity": 0.7},
+      {"targets": "minecraft:phantom", "type": "ATTACKS", "intensity": 0.8},
+      {"targets": "minecraft:iron_golem", "type": "ATTACKS", "intensity": 0.9},
+      {"targets": "minecraft:warden", "type": "ATTACKS", "intensity": 0.6},
+      {"targets": "minecraft:wolf", "type": "ATTACKS", "intensity": 0.7},
+      {"targets": "minecraft:polar_bear", "type": "ATTACKS", "intensity": 0.8},
+      {"targets": "minecraft:villager", "type": "ATTACKS", "intensity": 0.8},
+      {"targets": "minecraft:cow", "type": "EATS", "intensity": 0.9},
+      {"targets": "minecraft:sheep", "type": "EATS", "intensity": 0.85},
+      {"targets": "minecraft:pig", "type": "EATS", "intensity": 0.8},
+      {"targets": "minecraft:horse", "type": "EATS", "intensity": 0.6},
+      {"targets": "minecraft:chicken", "type": "EATS", "intensity": 0.5},
+      {"targets": "minecraft:rabbit", "type": "EATS", "intensity": 0.5},
+      {"targets": "minecraft:fox", "type": "EATS", "intensity": 0.5},
+      {"targets": "#bookofdragons:dragon_prey", "type": "EATS", "intensity": 0.6},
+      {"targets": "minecraft:cat", "type": "ATTACKS", "intensity": 0.4},
+      {"targets": "minecraft:bee", "type": "ATTACKS", "intensity": 0.3}
+    ],
+    "taming": {"matrix": {"act:live_prey": "DISLIKES"}}
+  }
+}

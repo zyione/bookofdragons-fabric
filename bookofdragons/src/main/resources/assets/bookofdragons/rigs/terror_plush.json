@@ -1,0 +1,23 @@
+{
+  "passes": ["chain"],
+  "chains": {
+    "neck": ["neck1", "neck2", "Head"],
+    "r_arm": ["r_arm"],
+    "l_arm": ["l_arm"],
+    "r_leg": ["r_leg"],
+    "l_leg": ["l_leg"],
+    "RightWing": ["RightWing"],
+    "LeftWing": ["LeftWing"],
+    "tail": ["Tail", "Tail2", "Tail3", "Tail4"]
+  },
+  "chain": {
+    "neck": { "stiffness": [0.5, 0.3], "damping": 0.08, "bend": [40, 55], "radius": [0.08, 0.12], "flow": 0 },
+    "r_arm": { "stiffness": 0.35, "damping": 0.08, "bend": 55, "radius": 0.06, "flow": 0 },
+    "l_arm": { "stiffness": 0.35, "damping": 0.08, "bend": 55, "radius": 0.06, "flow": 0 },
+    "r_leg": { "stiffness": 0.35, "damping": 0.08, "bend": 55, "radius": 0.06, "flow": 0 },
+    "l_leg": { "stiffness": 0.35, "damping": 0.08, "bend": 55, "radius": 0.06, "flow": 0 },
+    "RightWing": { "stiffness": 0.3, "damping": 0.08, "bend": 60, "radius": 0.03, "flow": 0 },
+    "LeftWing": { "stiffness": 0.3, "damping": 0.08, "bend": 60, "radius": 0.03, "flow": 0 },
+    "tail": { "stiffness": [0.4, 0.2], "damping": 0.08, "bend": [40, 60], "radius": [0.06, 0.03], "flow": 0 }
+  }
+}

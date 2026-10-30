@@ -1,0 +1,12 @@
+{
+  "default": "bookofdragons:textures/entity/misc/nightmare_plush.png",
+  "skins": {
+    "yellow": "bookofdragons:textures/entity/misc/nightmare_plush_gold.png",
+    "pink": "bookofdragons:textures/entity/misc/nightmare_plush_pink.png",
+    "cyan": "bookofdragons:textures/entity/misc/nightmare_plush_cyan.png",
+    "blue": "bookofdragons:textures/entity/misc/nightmare_plush_blue.png",
+    "green": "bookofdragons:textures/entity/misc/nightmare_plush_green.png",
+    "red": "bookofdragons:textures/entity/misc/nightmare_plush.png",
+    "black": "bookofdragons:textures/entity/misc/nightmare_plush_black.png"
+  }
+}

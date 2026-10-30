@@ -1,0 +1,360 @@
+{
+  "habit": {
+    "active": "NIGHT"
+  },
+  "calls": ["drive.pack.begin", "drive.enmity.begin", "drive.threat.begin"],
+  "callHoldTicks": 54,
+  "senses": {
+    "sightRadius": 32.0,
+    "viewCone": [
+      30.0,
+      110.0
+    ],
+    "nightVision": true,
+    "hearingSkill": 1.2
+  },
+  "movement": {
+    "GROUND": 1.0,
+    "AIR": null,
+    "WATER": 25.0,
+    "CLIMB": null,
+    "canSprint": true,
+    "styles": {
+      "close": 1.1,
+      "arc": 1.2,
+      "flank": 1.4,
+      "withdraw": 0.9,
+      "cover": 0.9,
+      "creep": 1.0,
+      "freeze": 1.0,
+      "hold": 0.7
+    }
+  },
+  "social": {
+    "trackerCapacity": 12,
+    "forgetTicks": 3600,
+    "territoryRadius": 36.0,
+    "territorial": true
+  },
+  "traits": {
+    "aggression": [
+      0.55,
+      0.9
+    ],
+    "bravery": [
+      0.45,
+      0.8
+    ],
+    "dominance": [
+      0.35,
+      0.75
+    ],
+    "energy": [
+      0.7,
+      1.0
+    ],
+    "nervousness": [
+      0.2,
+      0.55
+    ],
+    "sympathy": [
+      0.6,
+      0.9
+    ]
+  },
+  "drives": {
+    "weights": {
+      "wander": 1.0,
+      "prey": 1.3,
+      "threat": 0.9,
+      "rival": 0.9,
+      "enmity": 1.2,
+      "space": 1.0,
+      "pack": 1.4,
+      "friend": 1.0,
+      "play": 0.7,
+      "forage": 1.0,
+      "beg": 0.6,
+      "explore": 1.1,
+      "rest": 0.9,
+      "noise": 1.1
+    },
+    "smoothing": {
+      "threat": {
+        "rise": 0.8,
+        "decay": 0.004
+      },
+      "prey": {
+        "rise": 0.4,
+        "decay": 0.005
+      },
+      "enmity": {
+        "rise": 0.7,
+        "decay": 0.003
+      }
+    }
+  },
+  "relations": [
+    {
+      "targets": "#fauna:same_species",
+      "type": "PACK",
+      "intensity": 0.8
+    },
+    {
+      "targets": "minecraft:player",
+      "type": "ATTACKS",
+      "intensity": 0.5
+    },
+    {
+      "targets": "#minecraft:skeletons",
+      "type": "ATTACKS",
+      "intensity": 0.4
+    },
+    {
+      "targets": "minecraft:zombie",
+      "type": "ATTACKS",
+      "intensity": 0.5
+    },
+    {
+      "targets": "minecraft:zombie_villager",
+      "type": "ATTACKS",
+      "intensity": 0.5
+    },
+    {
+      "targets": "minecraft:husk",
+      "type": "ATTACKS",
+      "intensity": 0.5
+    },
+    {
+      "targets": "minecraft:drowned",
+      "type": "ATTACKS",
+      "intensity": 0.4
+    },
+    {
+      "targets": "minecraft:creeper",
+      "type": "AFRAID",
+      "intensity": 0.45
+    },
+    {
+      "targets": "minecraft:spider",
+      "type": "EATS",
+      "intensity": 0.4
+    },
+    {
+      "targets": "minecraft:cave_spider",
+      "type": "EATS",
+      "intensity": 0.35
+    },
+    {
+      "targets": "minecraft:enderman",
+      "type": "AFRAID",
+      "intensity": 0.35
+    },
+    {
+      "targets": "#minecraft:raiders",
+      "type": "ATTACKS",
+      "intensity": 0.5
+    },
+    {
+      "targets": "minecraft:phantom",
+      "type": "AFRAID",
+      "intensity": 0.4
+    },
+    {
+      "targets": "minecraft:iron_golem",
+      "type": "AFRAID",
+      "intensity": 0.55
+    },
+    {
+      "targets": "minecraft:warden",
+      "type": "AFRAID",
+      "intensity": 0.9
+    },
+    {
+      "targets": "minecraft:slime",
+      "type": "EATS",
+      "intensity": 0.3
+    },
+    {
+      "targets": "minecraft:pig",
+      "type": "EATS",
+      "intensity": 0.85
+    },
+    {
+      "targets": "minecraft:sheep",
+      "type": "EATS",
+      "intensity": 0.8
+    },
+    {
+      "targets": "minecraft:rabbit",
+      "type": "EATS",
+      "intensity": 0.75
+    },
+    {
+      "targets": "minecraft:cow",
+      "type": "EATS",
+      "intensity": 0.7
+    },
+    {
+      "targets": "minecraft:chicken",
+      "type": "EATS",
+      "intensity": 0.7
+    },
+    {
+      "targets": "minecraft:goat",
+      "type": "EATS",
+      "intensity": 0.6
+    },
+    {
+      "targets": "minecraft:horse",
+      "type": "EATS",
+      "intensity": 0.5
+    },
+    {
+      "targets": "minecraft:fox",
+      "type": "EATS",
+      "intensity": 0.5
+    },
+    {
+      "targets": "minecraft:llama",
+      "type": "EATS",
+      "intensity": 0.45
+    },
+    {
+      "targets": "minecraft:cat",
+      "type": "EATS",
+      "intensity": 0.4
+    },
+    {
+      "targets": "minecraft:turtle",
+      "type": "EATS",
+      "intensity": 0.3
+    },
+    {
+      "targets": "#bookofdragons:dragon_prey",
+      "type": "EATS",
+      "intensity": 0.6
+    },
+    {
+      "targets": "minecraft:wolf",
+      "type": "RIVAL",
+      "intensity": 0.5
+    },
+    {
+      "targets": "minecraft:polar_bear",
+      "type": "RIVAL",
+      "intensity": 0.4
+    },
+    {
+      "targets": "minecraft:villager",
+      "type": "ATTACKS",
+      "intensity": 0.35
+    },
+    {
+      "targets": "minecraft:bee",
+      "type": "IGNORES",
+      "intensity": 0.0
+    },
+    {
+      "targets": "bookofdragons:nightfury",
+      "type": "AFRAID",
+      "intensity": 0.45
+    },
+    {
+      "targets": "bookofdragons:deadlynadder",
+      "type": "UNCOMFORTABLE",
+      "intensity": 0.45
+    },
+    {
+      "targets": "bookofdragons:gronckle",
+      "type": "UNCOMFORTABLE",
+      "intensity": 0.3
+    },
+    {
+      "targets": "bookofdragons:hiddeous_zippleback",
+      "type": "UNCOMFORTABLE",
+      "intensity": 0.4
+    },
+    {
+      "targets": "bookofdragons:monstrousnightmare",
+      "type": "AFRAID",
+      "intensity": 0.5
+    },
+    {
+      "targets": "bookofdragons:skrill",
+      "type": "AFRAID",
+      "intensity": 0.5
+    },
+    {
+      "targets": "bookofdragons:whispering_death",
+      "type": "AFRAID",
+      "intensity": 0.55
+    },
+    {
+      "targets": "bookofdragons:terrible_terror",
+      "type": "ATTACKS",
+      "intensity": 0.3
+    },
+    {
+      "targets": "#bookofdragons:aquatic",
+      "type": "IGNORES",
+      "intensity": 0.0
+    },
+    {
+      "targets": "#bookofdragons:toys",
+      "type": "PLAYS_WITH",
+      "intensity": 0.35
+    }
+  ],
+  "taming": {
+    "matrix": {
+      "act:live_prey": "LIKES",
+      "act:groom": "DISLIKES"
+    },
+    "stages": [
+      {
+        "check": "APPROACH"
+      },
+      {
+        "check": "SPAR"
+      },
+      {
+        "check": "FOLLOW"
+      },
+      {
+        "check": "HUNT"
+      },
+      {
+        "check": "MEAL"
+      },
+      {
+        "check": "REST"
+      },
+      {
+        "check": "WALK"
+      },
+      {
+        "check": "HUNT_TOGETHER"
+      }
+    ]
+  },
+  "identity": {
+    "class": "SHARP",
+    "attack_id": "bookofdragons:melee_only",
+    "melee": ["bookofdragons:speed_stinger_sting", "bookofdragons:speed_stinger_bite"],
+    "melee_reserved": ["bookofdragons:speed_stinger_sting"],
+    "favorite_food": [
+      "minecraft:salmon"
+    ],
+    "special_food": [
+      "minecraft:cod"
+    ],
+    "disliked_food": [
+      "minecraft:rotten_flesh"
+    ]
+  },
+  "body": {
+    "weight": "LIGHT",
+    "plan": "SPARROW"
+  }
+}

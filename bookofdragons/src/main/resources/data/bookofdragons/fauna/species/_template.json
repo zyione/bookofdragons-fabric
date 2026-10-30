@@ -1,0 +1,72 @@
+{
+  "habit": {"active": "DAY"},
+  "roosts": true,
+  "calls": ["drive.pack.begin", "drive.enmity.begin", "drive.threat.begin"],
+  "callHoldTicks": 54,
+  "senses": {
+    "sightRadius": 24.0,
+    "viewCone": [30.0, 110.0],
+    "blindSpot": 0.0,
+    "nightVision": false,
+    "hearingSkill": 1.0
+  },
+  "movement": {
+    "GROUND": 1.0,
+    "AIR": null,
+    "WATER": 30.0,
+    "CLIMB": null,
+    "hazards": {"DAMAGE_FIRE": 16.0},
+    "styles": {
+      "close": 1.0,
+      "arc": 1.0,
+      "flank": 1.0,
+      "withdraw": 1.0,
+      "cover": 1.0,
+      "creep": 1.0,
+      "freeze": 1.0,
+      "hold": 1.0
+    }
+  },
+  "social": {"trackerCapacity": 6, "forgetTicks": 1200, "territoryRadius": 32.0},
+  "traits": {
+    "aggression": [0.0, 1.0],
+    "bravery": [0.0, 1.0],
+    "dominance": [0.0, 1.0],
+    "energy": [0.0, 1.0],
+    "nervousness": [0.0, 1.0],
+    "sympathy": [0.0, 1.0]
+  },
+  "drives": {"weights": {}, "smoothing": {}},
+  "relations": [{"targets": "#fauna:same_species", "type": "IGNORES", "intensity": 0.0}],
+  "taming": {
+    "matrix": {"act:groom": "LIKES"},
+    "stages": [
+      {"check": "MEAL"},
+      {"check": "TOUCH", "item": "#bookofdragons:brushes", "hold_ticks": 60, "crouched": false},
+      {"check": "MOUNT"}
+    ]
+  },
+  "identity": {
+    "class": "STRIKE",
+    "attack_id": "bookofdragons:standard_flame",
+    "melee": ["bookofdragons:nightfury_bite"],
+    "melee_reserved": [],
+    "favorite_food": [
+      "minecraft:salmon"
+    ],
+    "special_food": [
+      "minecraft:tropical_fish"
+    ],
+    "disliked_food": [
+      "minecraft:pufferfish"
+    ],
+    "hoard_item": []
+  },
+  "body": {"weight": "MEDIUM", "plan": "FALCON", "scale": 1.0},
+  "channel": {
+    "id": "brush_teeth",
+    "match": {"type": "holding_tag", "tag": "bookofdragons:brushes"},
+    "points": 40,
+    "cooldown": 200
+  }
+}

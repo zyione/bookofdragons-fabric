@@ -1,0 +1,17 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "bookofdragons:item/nightmare_plush"
+    },
+    "overrides": [
+        {"predicate": {"bookofdragons:dye": 0.125}, "model": "bookofdragons:item/nightmare_plush_orange"},
+        {"predicate": {"bookofdragons:dye": 0.3125}, "model": "bookofdragons:item/nightmare_plush_gold"},
+        {"predicate": {"bookofdragons:dye": 0.4375}, "model": "bookofdragons:item/nightmare_plush_pink"},
+        {"predicate": {"bookofdragons:dye": 0.625}, "model": "bookofdragons:item/nightmare_plush_cyan"},
+        {"predicate": {"bookofdragons:dye": 0.6875}, "model": "bookofdragons:item/nightmare_plush_purple"},
+        {"predicate": {"bookofdragons:dye": 0.75}, "model": "bookofdragons:item/nightmare_plush_blue"},
+        {"predicate": {"bookofdragons:dye": 0.875}, "model": "bookofdragons:item/nightmare_plush_green"},
+        {"predicate": {"bookofdragons:dye": 0.9375}, "model": "bookofdragons:item/nightmare_plush_own"},
+        {"predicate": {"bookofdragons:dye": 1.0}, "model": "bookofdragons:item/nightmare_plush_black"}
+    ]
+}

@@ -1,0 +1,68 @@
+{
+  "parent": "bookofdragons:first_plush",
+  "display": {
+    "icon": {
+      "item": "bookofdragons:fury_plush",
+      "id": "bookofdragons:fury_plush"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.plush_collector.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.plush_collector.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_fury_plush": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:fury_plush"
+            ]
+          }
+        ]
+      }
+    },
+    "has_terror_plush": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:terror_plush"
+            ]
+          }
+        ]
+      }
+    },
+    "has_nightmare_plush": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:nightmare_plush"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_fury_plush"
+    ],
+    [
+      "has_terror_plush"
+    ],
+    [
+      "has_nightmare_plush"
+    ]
+  ]
+}

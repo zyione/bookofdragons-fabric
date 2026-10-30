@@ -1,0 +1,231 @@
+{
+  "delivery": {
+    "type": "charged",
+    "charge_time_ticks": 40,
+    "min_scale": 0.0,
+    "max_scale": 0.0,
+    "cooldown_ticks": 60
+  },
+  "collision": {
+    "damage": 0.0,
+    "fire_seconds": 0
+  },
+  "light": {
+    "level": 15,
+    "source": false,
+    "projectile": false,
+    "impact_level": 15,
+    "impact_ttl_ticks": 16
+  },
+  "emitters": [
+    {
+      "kind": "visual",
+      "anchor": "impact",
+      "emission": {"shape": "point", "count": 1, "rate_ticks": 1, "direction": "outward"},
+      "sim": {
+        "speed": 0,
+        "lifetime_ticks": 4,
+        "grow_in_ticks": 0,
+        "initial_temperature": 1,
+        "cooling_rate": 0.2,
+        "cooling_shrink": false,
+        "flicker": 0,
+        "movement": []
+      },
+      "render": {
+        "type": "pixel_quad",
+        "shader_alpha": 1.0,
+        "blend": "additive",
+        "size": [3.2, 0],
+        "spin": false,
+        "curves": {"size": [[0.0, 0.6], [0.3, 1.0], [1.0, 1.25]], "alpha": [[0.0, 1.0], [1.0, 0.0]]},
+        "palette": [{"color": [255, 250, 220], "alpha": 0.9}, {"color": [255, 200, 110], "alpha": 0.6}]
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "impact",
+      "emission": {"shape": "point", "count": 1, "rate_ticks": 1, "direction": "outward"},
+      "sim": {
+        "speed": 0,
+        "lifetime_ticks": 18,
+        "grow_in_ticks": 0,
+        "initial_temperature": 1,
+        "cooling_rate": 0.05,
+        "cooling_shrink": false,
+        "flicker": 0,
+        "movement": []
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:magma_fireball",
+        "frames": 9,
+        "frame_ticks": 0,
+        "blend": "alpha",
+        "size": [5.0, 0],
+        "curves": {"size": [[0.0, 0.55], [0.25, 1.0], [1.0, 1.1]]},
+        "emissive_until": 0.55
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "impact",
+      "emission": {"shape": "sphere", "radius": 1.3, "count": 3, "rate_ticks": 1, "direction": "outward"},
+      "sim": {
+        "speed": 0.05,
+        "lifetime_ticks": 16,
+        "grow_in_ticks": 0,
+        "initial_temperature": 1,
+        "cooling_rate": 0.05,
+        "cooling_shrink": false,
+        "flicker": 0,
+        "movement": [{"type": "drag", "factor": 0.85}]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:magma_fireball",
+        "frames": 9,
+        "frame_ticks": 0,
+        "blend": "alpha",
+        "size": [2.6, 0],
+        "curves": {"size": [[0.0, 0.4], [0.3, 1.0], [1.0, 1.15]]},
+        "emissive_until": 0.55,
+        "spin": true
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "impact",
+      "emission": {"shape": "sphere", "radius": 0.4, "count": 50, "rate_ticks": 1, "direction": "outward"},
+      "sim": {
+        "speed": 0.75,
+        "lifetime_ticks": 20,
+        "grow_in_ticks": 0,
+        "initial_temperature": 1,
+        "cooling_rate": 0.05,
+        "cooling_shrink": false,
+        "flicker": 0,
+        "movement": [{"type": "drag", "factor": 0.93}, {"type": "gravity", "amount": 0.045}]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:magma_spark",
+        "frames": 4,
+        "frame_ticks": 0,
+        "blend": "additive",
+        "size": [0.35, 0],
+        "shader_alpha": 1.0
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "impact",
+      "emission": {"shape": "sphere", "radius": 1.0, "count": 24, "rate_ticks": 1, "direction": "outward"},
+      "sim": {
+        "speed": 0.3,
+        "lifetime_ticks": 32,
+        "grow_in_ticks": 0,
+        "initial_temperature": 1,
+        "cooling_rate": 0.05,
+        "cooling_shrink": false,
+        "flicker": 0,
+        "movement": [
+          {"type": "drag", "factor": 0.95},
+          {"type": "gravity", "amount": 0.02},
+          {"type": "turbulence", "amount": 0.03, "noise_scale": 0.8}
+        ]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:magma_spark",
+        "frames": 4,
+        "frame_ticks": 0,
+        "blend": "additive",
+        "size": [0.25, 0],
+        "shader_alpha": 1.0
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "impact",
+      "emission": {"shape": "sphere", "radius": 1.1, "count": 8, "rate_ticks": 1, "direction": "outward"},
+      "sim": {
+        "speed": 0.08,
+        "lifetime_ticks": 70,
+        "grow_in_ticks": 0,
+        "initial_temperature": 1,
+        "cooling_rate": 0.05,
+        "cooling_shrink": false,
+        "flicker": 0,
+        "movement": [
+          {"type": "drag", "factor": 0.9},
+          {"type": "buoyancy", "amount": 0.025},
+          {"type": "turbulence", "amount": 0.015, "noise_scale": 0.4}
+        ]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:magma_smoke",
+        "frames": 8,
+        "frame_ticks": 0,
+        "blend": "alpha",
+        "size": [3.2, 0],
+        "curves": {
+          "size": [[0.0, 0.5], [0.3, 1.0], [1.0, 1.3]],
+          "alpha": [[0.0, 0.0], [0.08, 1.0], [0.45, 0.9], [1.0, 0.0]]
+        },
+        "emissive_until": 0.12,
+        "spin": true
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "impact",
+      "emission": {
+        "shape": "point",
+        "spread": [0.3, 0.3, 0],
+        "count": 3,
+        "rate_ticks": 1,
+        "direction": "forward",
+        "axis": "up"
+      },
+      "sim": {
+        "speed": 0.16,
+        "lifetime_ticks": 70,
+        "grow_in_ticks": 0,
+        "initial_temperature": 1,
+        "cooling_rate": 0.05,
+        "cooling_shrink": false,
+        "flicker": 0,
+        "movement": [
+          {"type": "drag", "factor": 0.9},
+          {"type": "buoyancy", "amount": 0.02},
+          {"type": "turbulence", "amount": 0.01, "noise_scale": 0.4}
+        ]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:magma_smoke",
+        "frames": 8,
+        "frame_ticks": 0,
+        "blend": "alpha",
+        "size": [2.6, 0],
+        "curves": {
+          "size": [[0.0, 0.5], [0.3, 1.0], [1.0, 1.4]],
+          "alpha": [[0.0, 0.0], [0.08, 1.0], [0.45, 0.9], [1.0, 0.0]]
+        },
+        "emissive_until": 0.12,
+        "spin": true
+      }
+    }
+  ],
+  "impact": [
+    {
+      "type": "explosion",
+      "min_power": 1.5,
+      "max_power": 3.0,
+      "breaks_blocks": false,
+      "sets_fire": true
+    }
+  ]
+}

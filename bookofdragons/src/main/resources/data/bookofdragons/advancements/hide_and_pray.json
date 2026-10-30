@@ -1,0 +1,27 @@
+{
+  "parent": "bookofdragons:we_have_dragons",
+  "display": {
+    "icon": {
+      "item": "minecraft:white_dye",
+      "id": "minecraft:white_dye"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.hide_and_pray.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.hide_and_pray.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "variant": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "variant"
+      }
+    }
+  }
+}

@@ -1,0 +1,1562 @@
+{
+  "attributes": {
+    "CON": { "floor": 20, "ceiling": 40 },
+    "ATH": { "floor": 70, "ceiling": 90 },
+    "AGI": { "floor": 45, "ceiling": 65 },
+    "PRW": { "floor": 30, "ceiling": 50 },
+    "POT": { "floor": 80, "ceiling": 100 },
+    "VIG": { "floor": 30, "ceiling": 50 }
+  },
+  "art_version": 2,
+  "mutation": {
+    "allele_chance": 0.02,
+    "palette_chance": 0.05,
+    "deviation_tier_weights": {
+      "0": 10,
+      "1": 30,
+      "2": 40,
+      "3": 20
+    }
+  },
+  "color_loci": {
+    "b": {
+      "link_group": "body",
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 55,
+          "UNCOMMON": 25,
+          "RARE": 15,
+          "VERY_RARE": 5
+        },
+        "entries": {
+          "COMMON": [
+         "black",
+            "crow",
+            "raven",
+            "black_gray",
+            "deep_gray",
+            "dark_gray",
+            "gray",
+            "slate",
+            "shadow",
+            "smog",
+            "smoke",
+            "midnight",
+            "noct",
+            "chasm",
+            "black_ice",
+            "fujita",
+            "stormcall",
+            "soot",
+            "deep_dusk"
+          ],
+          "UNCOMMON": [
+          "dark_glace",
+            "trench",
+            "depths",
+            "tempest",
+            "forest",
+            "indigo",
+            "dusk",
+            "sundown",
+            "chocolate"
+          ],
+          "RARE": [
+          "deep_quartz",
+           "umber",
+       "brass",
+            "soul",
+            "spectre",
+            "dreamy"
+          ],
+          "VERY_RARE": [
+          "leucistic_cool",
+            "albino_cool"
+          ]
+        }
+      }
+    },
+    "r": {
+      "link_group": "pattern",
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 50,
+          "UNCOMMON": 30,
+          "RARE": 15,
+          "VERY_RARE": 5
+        },
+        "entries": {
+          "COMMON": [
+            "flint",
+            "dust",
+            "stone",
+            "argent",
+            "ash",
+            "deep_crystal",
+            "soft_gray",
+            "steel_blue",
+            "deep_steel",
+            "deep_ice",
+            "thundercloud",
+            "deep_silver",
+            "deep_gallium",
+            "coal",
+            "deep_burgundy",
+            "deep_royal",
+            "black",
+            "crow",
+            "raven",
+            "black_gray",
+            "deep_gray",
+            "dark_gray",
+            "gray",
+            "slate",
+            "shadow",
+            "smog",
+            "smoke",
+            "midnight",
+            "noct",
+            "chasm",
+            "black_ice",
+            "fujita",
+            "stormcall",
+            "soot",
+            "deep_dusk"
+          ],
+          "UNCOMMON": [
+          "azurite",
+            "dreamy",
+            "spectre",
+            "deep_rhubarb",
+            "umber",
+            "royal",
+            "indigo",
+            "trench",
+            "tempest",
+            "soul"
+          ],
+          "RARE": [
+           "firefly",
+            "energy",
+            "stormlight",
+            "brass",
+            "argentum",
+            "snowfall"
+          ],
+          "VERY_RARE": [
+            "leucistic_cool",
+            "albino_cool"
+          ]
+        }
+      }
+    },
+    "y": {
+      "link_group": "pattern",
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 50,
+          "UNCOMMON": 30,
+          "RARE": 15,
+          "VERY_RARE": 5
+        },
+        "entries": {
+          "COMMON": [
+            "flint",
+            "dust",
+            "stone",
+            "argent",
+            "ash",
+            "deep_crystal",
+            "soft_gray",
+            "steel_blue",
+            "deep_steel",
+            "deep_ice",
+            "thundercloud",
+            "deep_silver",
+            "deep_gallium",
+            "coal",
+            "deep_burgundy",
+            "deep_royal",
+            "black",
+            "crow",
+            "raven",
+            "black_gray",
+            "deep_gray",
+            "dark_gray",
+            "gray",
+            "slate",
+            "shadow",
+            "smog",
+            "smoke",
+            "midnight",
+            "noct",
+            "chasm",
+            "black_ice",
+            "fujita",
+            "stormcall",
+            "soot",
+            "deep_dusk"
+          ],
+          "UNCOMMON": [
+            "azurite",
+            "dreamy",
+            "spectre",
+            "deep_rhubarb",
+            "umber",
+            "royal",
+            "indigo",
+            "trench",
+            "tempest",
+            "soul"
+          ],
+          "RARE": [
+            "firefly",
+            "energy",
+            "stormlight",
+            "brass",
+            "argentum",
+            "snowfall"
+          ],
+          "VERY_RARE": [
+            "leucistic_cool",
+            "albino_cool"
+          ]
+        }
+      }
+    },
+    "n": {
+      "link_group": "gradient",
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 55,
+          "UNCOMMON": 25,
+          "RARE": 15,
+          "VERY_RARE": 5
+        },
+        "entries": {
+          "COMMON": [
+            "black",
+            "crow",
+            "raven",
+            "black_gray",
+            "deep_gray",
+            "dark_gray",
+            "gray",
+            "slate",
+            "shadow",
+            "smog",
+            "smoke",
+            "midnight",
+            "noct",
+            "chasm",
+            "black_ice",
+            "fujita",
+            "stormcall",
+            "soot",
+            "deep_dusk"
+          ],
+          "UNCOMMON": [
+            "dark_glace",
+            "trench",
+            "depths",
+            "tempest",
+            "forest",
+            "indigo",
+            "dusk",
+            "sundown",
+            "chocolate"
+          ],
+          "RARE": [
+            "deep_quartz",
+            "umber",
+            "brass",
+            "soul",
+            "spectre",
+            "dreamy"
+          ],
+          "VERY_RARE": [
+            "leucistic_cool",
+            "albino_cool"
+          ]
+        }
+      }
+    },
+    "e": {
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "eye_common_1",
+            "eye_common_2",
+            "eye_common_3",
+            "eye_common_4",
+            "eye_common_5",
+            "eye_common_6",
+            "eye_common_7",
+            "eye_common_8",
+            "eye_common_9",
+            "eye_common_10",
+            "eye_common_11",
+            "eye_common_12",
+            "eye_common_13",
+            "eye_common_14",
+            "eye_common_15"
+          ],
+          "UNCOMMON": [
+            "eye_uncommon_1",
+            "eye_uncommon_2",
+            "eye_uncommon_3",
+            "eye_uncommon_4",
+            "eye_uncommon_5",
+            "eye_uncommon_6",
+            "eye_uncommon_7",
+            "eye_uncommon_8"
+          ],
+          "RARE": [
+            "eye_rare_1",
+            "eye_rare_2",
+            "eye_rare_3"
+          ],
+          "VERY_RARE": [
+            "eye_veryrare_1",
+            "eye_veryrare_2",
+            "eye_veryrare_3",
+            "eye_veryrare_4"
+          ]
+        }
+      }
+    },
+    "g": {
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+
+          ],
+          "UNCOMMON": [
+
+          ],
+          "RARE": [
+
+          ],
+          "VERY_RARE": [
+
+          ]
+        }
+      }
+    },
+    "j": {
+      "link_group": "pattern",
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 55,
+          "UNCOMMON": 25,
+          "RARE": 15,
+          "VERY_RARE": 5
+        },
+        "entries": {
+          "COMMON": [
+            "flint",
+            "dust",
+            "stone",
+            "argent",
+            "ash",
+            "deep_crystal",
+            "soft_gray",
+            "steel_blue",
+            "deep_steel",
+            "deep_ice",
+            "thundercloud",
+            "deep_silver",
+            "deep_gallium",
+            "coal",
+            "deep_burgundy",
+            "deep_royal",
+            "black",
+            "crow",
+            "raven",
+            "black_gray",
+            "deep_gray",
+            "dark_gray",
+            "gray",
+            "slate",
+            "shadow",
+            "smog",
+            "smoke",
+            "midnight",
+            "noct",
+            "chasm",
+            "black_ice",
+            "fujita",
+            "stormcall",
+            "soot",
+            "deep_dusk"
+          ],
+          "UNCOMMON": [
+            "azurite",
+            "dreamy",
+            "spectre",
+            "deep_rhubarb",
+            "umber",
+            "royal",
+            "indigo",
+            "trench",
+            "tempest",
+            "soul"
+          ],
+          "RARE": [
+            "firefly",
+            "energy",
+            "stormlight",
+            "brass",
+            "argentum",
+            "snowfall"
+          ],
+          "VERY_RARE": [
+            "leucistic_cool",
+            "albino_cool"
+          ]
+        }
+      }
+    },
+    "a": {
+      "link_group": "pattern",
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 55,
+          "UNCOMMON": 25,
+          "RARE": 15,
+          "VERY_RARE": 5
+        },
+        "entries": {
+          "COMMON": [
+            "flint",
+            "dust",
+            "stone",
+            "argent",
+            "ash",
+            "deep_crystal",
+            "soft_gray",
+            "steel_blue",
+            "deep_steel",
+            "deep_ice",
+            "thundercloud",
+            "deep_silver",
+            "deep_gallium",
+            "coal",
+            "deep_burgundy",
+            "deep_royal",
+            "black",
+            "crow",
+            "raven",
+            "black_gray",
+            "deep_gray",
+            "dark_gray",
+            "gray",
+            "slate",
+            "shadow",
+            "smog",
+            "smoke",
+            "midnight",
+            "noct",
+            "chasm",
+            "black_ice",
+            "fujita",
+            "stormcall",
+            "soot",
+            "deep_dusk"
+          ],
+          "UNCOMMON": [
+            "azurite",
+            "dreamy",
+            "spectre",
+            "deep_rhubarb",
+            "umber",
+            "royal",
+            "indigo",
+            "trench",
+            "tempest",
+            "soul"
+          ],
+          "RARE": [
+            "firefly",
+            "energy",
+            "stormlight",
+            "brass",
+            "argentum",
+            "snowfall"
+          ],
+          "VERY_RARE": [
+            "leucistic_cool",
+            "albino_cool"
+          ]
+        }
+      }
+    },
+    "i": {
+      "link_group": "pattern",
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 55,
+          "UNCOMMON": 25,
+          "RARE": 15,
+          "VERY_RARE": 5
+        },
+        "entries": {
+          "COMMON": [
+            "flint",
+            "dust",
+            "stone",
+            "argent",
+            "ash",
+            "deep_crystal",
+            "soft_gray",
+            "steel_blue",
+            "deep_steel",
+            "deep_ice",
+            "thundercloud",
+            "deep_silver",
+            "deep_gallium",
+            "coal",
+            "deep_burgundy",
+            "deep_royal",
+            "black",
+            "crow",
+            "raven",
+            "black_gray",
+            "deep_gray",
+            "dark_gray",
+            "gray",
+            "slate",
+            "shadow",
+            "smog",
+            "smoke",
+            "midnight",
+            "noct",
+            "chasm",
+            "black_ice",
+            "fujita",
+            "stormcall",
+            "soot",
+            "deep_dusk"
+          ],
+          "UNCOMMON": [
+            "azurite",
+            "dreamy",
+            "spectre",
+            "deep_rhubarb",
+            "umber",
+            "royal",
+            "indigo",
+            "trench",
+            "tempest",
+            "soul"
+          ],
+          "RARE": [
+            "firefly",
+            "energy",
+            "stormlight",
+            "brass",
+            "argentum",
+            "snowfall"
+          ],
+          "VERY_RARE": [
+            "leucistic_cool",
+            "albino_cool"
+          ]
+        }
+      }
+    },
+    "z": {
+      "link_group": "pattern",
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 55,
+          "UNCOMMON": 25,
+          "RARE": 15,
+          "VERY_RARE": 5
+        },
+        "entries": {
+          "COMMON": [
+            "flint",
+            "dust",
+            "stone",
+            "argent",
+            "ash",
+            "deep_crystal",
+            "soft_gray",
+            "steel_blue",
+            "deep_steel",
+            "deep_ice",
+            "thundercloud",
+            "deep_silver",
+            "deep_gallium",
+            "coal",
+            "deep_burgundy",
+            "deep_royal",
+            "black",
+            "crow",
+            "raven",
+            "black_gray",
+            "deep_gray",
+            "dark_gray",
+            "gray",
+            "slate",
+            "shadow",
+            "smog",
+            "smoke",
+            "midnight",
+            "noct",
+            "chasm",
+            "black_ice",
+            "fujita",
+            "stormcall",
+            "soot",
+            "deep_dusk"
+          ],
+          "UNCOMMON": [
+            "azurite",
+            "dreamy",
+            "spectre",
+            "deep_rhubarb",
+            "umber",
+            "royal",
+            "indigo",
+            "trench",
+            "tempest",
+            "soul"
+          ],
+          "RARE": [
+            "firefly",
+            "energy",
+            "stormlight",
+            "brass",
+            "argentum",
+            "snowfall"
+          ],
+          "VERY_RARE": [
+            "leucistic_cool",
+            "albino_cool"
+          ]
+        }
+      }
+    },
+    "v": {
+      "link_group": "gradient",
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 55,
+          "UNCOMMON": 25,
+          "RARE": 15,
+          "VERY_RARE": 5
+        },
+        "entries": {
+          "COMMON": [
+            "black",
+            "crow",
+            "raven",
+            "black_gray",
+            "deep_gray",
+            "dark_gray",
+            "gray",
+            "slate",
+            "shadow",
+            "smog",
+            "smoke",
+            "midnight",
+            "noct",
+            "chasm",
+            "black_ice",
+            "fujita",
+            "stormcall",
+            "soot",
+            "deep_dusk"
+          ],
+          "UNCOMMON": [
+            "dark_glace",
+            "trench",
+            "depths",
+            "tempest",
+            "forest",
+            "indigo",
+            "dusk",
+            "sundown",
+            "chocolate"
+          ],
+          "RARE": [
+            "deep_quartz",
+            "umber",
+            "brass",
+            "soul",
+            "spectre",
+            "dreamy"
+          ],
+          "VERY_RARE": [
+            "leucistic_cool",
+            "albino_cool"
+          ]
+        }
+      }
+    },
+    "c": {
+      "link_group": "pattern",
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 55,
+          "UNCOMMON": 25,
+          "RARE": 15,
+          "VERY_RARE": 5
+        },
+        "entries": {
+          "COMMON": [
+            "flint",
+            "dust",
+            "stone",
+            "argent",
+            "ash",
+            "deep_crystal",
+            "soft_gray",
+            "steel_blue",
+            "deep_steel",
+            "deep_ice",
+            "thundercloud",
+            "deep_silver",
+            "deep_gallium",
+            "coal",
+            "deep_burgundy",
+            "deep_royal",
+            "black",
+            "crow",
+            "raven",
+            "black_gray",
+            "deep_gray",
+            "dark_gray",
+            "gray",
+            "slate",
+            "shadow",
+            "smog",
+            "smoke",
+            "midnight",
+            "noct",
+            "chasm",
+            "black_ice",
+            "fujita",
+            "stormcall",
+            "soot",
+            "deep_dusk"
+          ],
+          "UNCOMMON": [
+            "azurite",
+            "dreamy",
+            "spectre",
+            "deep_rhubarb",
+            "umber",
+            "royal",
+            "indigo",
+            "trench",
+            "tempest",
+            "soul"
+          ],
+          "RARE": [
+            "firefly",
+            "energy",
+            "stormlight",
+            "brass",
+            "argentum",
+            "snowfall"
+          ],
+          "VERY_RARE": [
+            "leucistic_cool",
+            "albino_cool"
+          ]
+        }
+      }
+    }
+  },
+  "structure_loci": {
+    "d": {
+      "expression_count": 2,
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 40,
+          "RARE": 15,
+          "VERY_RARE": 5
+        },
+        "entries": {
+          "COMMON": [
+            "blank"
+          ],
+          "UNCOMMON": [
+            "d_dorsal_spots",
+            "d_dorsal_stripe",
+            "d_dorsal_spines",
+            "d_dorsal_speckles"
+          ],
+          "RARE": [
+           "d_splotchy_coat"
+          ]
+        }
+      }
+    },
+    "u": {
+      "expression_count": 1,
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+           "underbelly_simple",
+            "blank"
+          ]
+        }
+      }
+    },
+    "p": {
+      "expression_count": 2,
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "blank"
+          ],
+          "UNCOMMON": [
+            "b_speckles",
+            "b_stripes_messy",
+            "b_stripes_barred"
+          ],
+          "RARE": [
+          ]
+        }
+      }
+    },
+    "w": {
+      "expression_count": 2,
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 35,
+          "UNCOMMON": 35,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "blank"
+          ],
+          "UNCOMMON": [
+            "w_small_upper_spots",
+            "w_medium_spots",
+            "w_large_spots",
+            "w_medium_lower_spots",
+            "w_upper_speckles"
+          ]
+        }
+      }
+    },
+    "f": {
+      "expression_count": 2,
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "blank"
+          ],
+          "UNCOMMON": [
+            "f_nub_fade",
+            "f_speckles",
+            "f_eyeliner",
+            "f_nose_blaze_uneven",
+            "f_nose_blaze_medium",
+            "f_eyeliner",
+            "f_frontal_fade",
+            "f_head_stripe_messy"
+          ],
+          "RARE": [
+          ]
+        }
+      }
+    },
+    "l": {
+      "expression_count": 2,
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "blank"
+          ],
+          "UNCOMMON": [
+            "l_limb_fade",
+            "l_limb_speckles",
+            "l_limb_stripes"
+          ],
+          "RARE": [
+          ]
+        }
+      }
+    },
+    "s": {
+      "expression_count": 1,
+      "multi_channel_count": 2,
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "eyes_1"
+          ]
+        }
+      }
+    },
+    "h": {
+      "expression_count": 2,
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "blank",
+            "g_head_back",
+            "g_hip_tail"
+          ]
+        }
+      }
+    },
+    "k": {
+      "expression_count": 1,
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "blank",
+            "wg_simple",
+            "wg_outer"
+          ]
+        }
+      }
+    },
+    "q": {
+      "expression_count": 2,
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "blank"
+          ],
+          "UNCOMMON": [
+          ],
+          "RARE": [
+          ]
+        }
+      }
+    }
+  },
+  "linkage": {
+    "rules": {
+      "body": {
+        "mode_weights": {
+          "SAME": 50,
+          "SIMILAR": 35,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      },
+      "pattern": {
+        "mode_weights": {
+          "SAME": 55,
+          "SIMILAR": 40,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      },
+      "gradient": {
+        "mode_weights": {
+          "SAME": 50,
+          "SIMILAR": 35,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      }
+    }
+  },
+  "palette_taxonomy": {
+    "black": {
+      "primary": "neutral",
+      "sat": -4,
+      "temp": -3,
+      "light": -5
+    },
+    "crow": {
+      "primary": "neutral",
+      "sat": -4,
+      "temp": -4,
+      "light": -5
+    },
+    "black_gray": {
+      "primary": "neutral",
+      "sat": -3,
+      "temp": -4,
+      "light": -4
+    },
+    "deep_gray": {
+      "primary": "neutral",
+      "sat": -3,
+      "temp": -4,
+      "light": -4
+    },
+    "dark_gray": {
+      "primary": "neutral",
+      "sat": -3,
+      "temp": -4,
+      "light": -4
+    },
+    "gray": {
+      "primary": "neutral",
+      "sat": -3,
+      "temp": -4,
+      "light": -3
+    },
+    "slate": {
+      "primary": "neutral",
+      "sat": -4,
+      "temp": -3,
+      "light": -3
+    },
+    "shadow": {
+      "primary": "neutral",
+      "sat": -3,
+      "temp": -4,
+      "light": -4
+    },
+    "smog": {
+      "primary": "neutral",
+      "sat": -5,
+      "temp": 0,
+      "light": -3
+    },
+    "smoke": {
+      "primary": "neutral",
+      "sat": -5,
+      "temp": -1,
+      "light": -4
+    },
+    "midnight": {
+      "primary": "blue",
+      "sat": -1,
+      "temp": 0,
+      "light": -4
+    },
+    "noct": {
+      "primary": "purple",
+      "sat": -4,
+      "temp": -3,
+      "light": -3
+    },
+    "chasm": {
+      "primary": "blue",
+      "sat": -4,
+      "temp": 3,
+      "light": -4
+    },
+    "black_ice": {
+      "primary": "blue",
+      "sat": -3,
+      "temp":1,
+      "light": -3
+    },
+    "fujita": {
+      "primary": "green",
+      "sat": -3,
+      "temp": -1,
+      "light": -3
+    },
+    "stormcall": {
+      "primary": "green",
+      "sat": -4,
+      "temp": -1,
+      "light": -4
+    },
+    "soot": {
+      "primary": "purple",
+      "sat": -4,
+      "temp": -2,
+      "light": -4
+    },
+    "deep_dusk": {
+      "primary": "purple",
+      "sat": -2,
+      "temp": 2,
+      "light": -4
+    },
+    "dark_glace": {
+      "primary": "blue",
+      "sat": -2,
+      "temp": -2,
+      "light": -3
+    },
+    "trench": {
+      "primary": "blue",
+      "sat": 0,
+      "temp": 0,
+      "light": -3
+    },
+    "depths": {
+      "primary": "blue",
+      "sat": 0,
+      "temp": 2,
+      "light": -3
+    },
+    "tempest": {
+      "primary": "green",
+      "sat": -2,
+      "temp": -3,
+      "light": -3
+    },
+    "forest": {
+      "primary": "green",
+      "sat": 1,
+      "temp": -1,
+      "light": -3
+    },
+    "indigo": {
+      "primary": "purple",
+      "sat": 2,
+      "temp": -4,
+      "light": -3
+    },
+    "dusk": {
+      "primary": "purple",
+      "sat": 2,
+      "temp": 1,
+      "light": -3
+    },
+    "sundown": {
+      "primary": "purple",
+      "sat": 2,
+      "temp": 4,
+      "light": -3
+    },
+    "chocolate": {
+      "primary": "purple",
+      "sat": 3,
+      "temp": 5,
+      "light": -3
+    },
+    "umber": {
+      "primary": "orange",
+      "sat": 1,
+      "temp": -5,
+      "light": -2
+    },
+    "brass": {
+      "primary": "orange",
+      "sat": -2,
+      "temp": -4,
+      "light": -2
+    },
+    "soul": {
+      "primary": "blue",
+      "sat": -3,
+      "temp": 4,
+      "light": -2
+    },
+    "spectre": {
+      "primary": "green",
+      "sat": -3,
+      "temp": -5,
+      "light": -2
+    },
+    "dreamy": {
+      "primary": "yellow",
+      "sat": -4,
+      "temp": -3,
+      "light": -2
+    },
+    "leucistic_cool": {
+      "primary": "neutral",
+      "sat": -4,
+      "temp": -4,
+      "light": 5
+    },
+    "albino_cool": {
+      "primary": "red",
+      "sat": -4,
+      "temp": 4,
+      "light": 5
+    },
+    "flint": {
+      "primary": "neutral",
+      "sat": -4,
+      "temp": 3,
+      "light": -3
+    },
+    "dust": {
+      "primary": "neutral",
+      "sat": -4,
+      "temp": 1,
+      "light": -3
+    },
+    "stone": {
+      "primary": "neutral",
+      "sat": -4,
+      "temp": -2,
+      "light": -3
+    },
+    "argent": {
+      "primary": "neutral",
+      "sat": -5,
+      "temp": -1,
+      "light": -3
+    },
+    "ash": {
+      "primary": "neutral",
+      "sat": -5,
+      "temp": -2,
+      "light": -3
+    },
+    "deep_crystal": {
+      "primary": "blue",
+      "sat": -5,
+      "temp": 3,
+      "light": -3
+    },
+    "soft_gray": {
+      "primary": "neutral",
+      "sat": -5,
+      "temp": -3,
+      "light": -3
+    },
+    "steel_blue": {
+      "primary": "blue",
+      "sat": -4,
+      "temp": -1,
+      "light": -3
+    },
+    "deep_steel": {
+      "primary": "blue",
+      "sat": -4,
+      "temp": 1,
+      "light": -3
+    },
+    "deep_ice": {
+      "primary": "blue",
+      "sat": -2,
+      "temp": 1,
+      "light": -3
+    },
+    "thundercloud": {
+      "primary": "neutral",
+      "sat": -4,
+      "temp": -2,
+      "light": -3
+    },
+    "deep_silver": {
+      "primary": "neutral",
+      "sat": -4,
+      "temp": -4,
+      "light": -3
+    },
+    "deep_gallium": {
+      "primary": "neutral",
+      "sat": -4,
+      "temp": -1,
+      "light": -3
+    },
+    "raven": {
+      "primary": "neutral",
+      "sat": -3,
+      "temp": -4,
+      "light": -5
+    },
+    "coal": {
+      "primary": "neutral",
+      "sat": -5,
+      "temp": 0,
+      "light": -5
+    },
+    "deep_burgundy": {
+      "primary": "red",
+      "sat": -2,
+      "temp": -4,
+      "light": -3
+    },
+    "deep_royal": {
+      "primary": "purple",
+      "sat": -3,
+      "temp": -1,
+      "light": -3
+    },
+    "azurite": {
+      "primary": "blue",
+      "sat": -1,
+      "temp": -3,
+      "light": -2
+    },
+    "deep_rhubarb": {
+      "primary": "purple",
+      "sat": -3,
+      "temp": 5,
+      "light": -3
+    },
+    "royal": {
+      "primary": "purple",
+      "sat": 2,
+      "temp": -1,
+      "light": -3
+    },
+    "firefly": {
+      "primary": "yellow",
+      "sat": -3,
+      "temp": -1,
+      "light": -1
+    },
+    "energy": {
+      "primary": "blue",
+      "sat": 3,
+      "temp": 1,
+      "light": 1
+    },
+    "stormlight": {
+      "primary": "blue",
+      "sat": -2,
+      "temp": 3,
+      "light": 1
+    },
+    "argentum": {
+      "primary": "neutral",
+      "sat": -5,
+      "temp": 0,
+      "light": 2
+    },
+    "snowfall": {
+      "primary": "blue",
+      "sat": -3,
+      "temp": 0,
+      "light": 3
+    },
+    "eye_common_15": {
+      "primary": "yellow",
+      "sat": 4,
+      "temp": -2,
+      "light": 5
+    },
+    "eye_common_2": {
+      "primary": "orange",
+      "sat": 3,
+      "temp": -3,
+      "light": 4
+    },
+    "eye_common_3": {
+      "primary": "purple",
+      "sat": 1,
+      "temp": 2,
+      "light": 2
+    },
+    "eye_common_4": {
+      "primary": "red",
+      "sat": 2,
+      "temp": -3,
+      "light": 3
+    },
+    "eye_common_5": {
+      "primary": "purple",
+      "sat": 2,
+      "temp": -3,
+      "light": 4
+    },
+    "eye_common_6": {
+      "primary": "yellow",
+      "sat": 5,
+      "temp": 4,
+      "light": 5
+    },
+    "eye_common_7": {
+      "primary": "blue",
+      "sat": 3,
+      "temp": -4,
+      "light": 2
+    },
+    "eye_common_8": {
+      "primary": "yellow",
+      "sat": 0,
+      "temp": 1,
+      "light": 0
+    },
+    "eye_common_9": {
+      "primary": "red",
+      "sat": 0,
+      "temp": 3,
+      "light": 0
+    },
+    "eye_rare_1": {
+      "primary": "red",
+      "sat": 4,
+      "temp": 0,
+      "light": 3
+    },
+    "eye_rare_2": {
+      "primary": "neutral",
+      "sat": 0,
+      "temp": 5,
+      "light": 1
+    },
+    "eye_rare_3": {
+      "primary": "yellow",
+      "sat": 0,
+      "temp": 5,
+      "light": 3
+    },
+    "eye_uncommon_1": {
+      "primary": "blue",
+      "sat": 1,
+      "temp": -5,
+      "light": 4
+    },
+    "eye_uncommon_2": {
+      "primary": "yellow",
+      "sat": 1,
+      "temp": 1,
+      "light": 2
+    },
+    "eye_uncommon_3": {
+      "primary": "purple",
+      "sat": 2,
+      "temp": -3,
+      "light": 2
+    },
+    "eye_uncommon_4": {
+      "primary": "orange",
+      "sat": 0,
+      "temp": 5,
+      "light": 2
+    },
+    "eye_uncommon_5": {
+      "primary": "orange",
+      "sat": 1,
+      "temp": -3,
+      "light": 4
+    },
+    "eye_uncommon_6": {
+      "primary": "yellow",
+      "sat": 4,
+      "temp": 1,
+      "light": 3
+    },
+    "eye_uncommon_7": {
+      "primary": "blue",
+      "sat": 3,
+      "temp": -1,
+      "light": 0
+    },
+    "eye_uncommon_8": {
+      "primary": "neutral",
+      "sat": 1,
+      "temp": -2,
+      "light": 0
+    },
+    "eye_veryrare_1": {
+      "primary": "green",
+      "sat": 4,
+      "temp": -3,
+      "light": 2
+    },
+    "eye_veryrare_2": {
+      "primary": "yellow",
+      "sat": 3,
+      "temp": -2,
+      "light": 2
+    },
+    "eye_veryrare_3": {
+      "primary": "orange",
+      "sat": 3,
+      "temp": 3,
+      "light": 3
+    },
+    "eye_veryrare_4": {
+      "primary": "green",
+      "sat": 0,
+      "temp": 2,
+      "light": 0
+    }
+  }
+}

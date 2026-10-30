@@ -1,0 +1,27 @@
+{
+  "parent": "bookofdragons:sworn_you_had_teeth",
+  "display": {
+    "icon": {
+      "item": "minecraft:saddle",
+      "id": "minecraft:saddle"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.dragon_tamer.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.dragon_tamer.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tamed_dragon": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "tamed"
+      }
+    }
+  }
+}

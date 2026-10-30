@@ -1,0 +1,10 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "bookofdragons:item/nightfury_plush"
+    },
+    "overrides": [
+        {"predicate": {"bookofdragons:dye": 0.0625}, "model": "bookofdragons:item/fury_plush_light"},
+        {"predicate": {"bookofdragons:dye": 0.125}, "model": "bookofdragons:item/fury_plush_night"}
+    ]
+}

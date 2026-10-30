@@ -1,0 +1,35 @@
+{
+  "entity": "monstrousnightmare",
+  "weight": 35,
+  "world_cap": 4,
+  "radius_cap": {"radius": 192, "max": 1},
+  "where": {
+    "arid": {
+      "conditions": [{"temperature": {"min": 1.5, "precipitation": "none"}}, {"creatures_nearby": {"radius": 96, "max": 0}}]
+    },
+    "lava_pool": {
+      "weight": 50,
+      "conditions": [
+        {"temperature": {"min": 0.8}},
+        {"nearby_block": {"is": "minecraft:lava", "radius": 5}},
+        {"creatures_nearby": {"radius": 64, "max": 0}}
+      ]
+    },
+    "barrens_roost": {
+      "placement": "air",
+      "radius_cap": {"radius": 160, "max": 1},
+      "conditions": [{"above_ground": {"min": 16, "max": 40}}, {"near_roost": {"within": 128, "kind": "barrens"}}]
+    }
+  },
+  "when": [
+    {"dimension": "minecraft:overworld"},
+    {"time": "active"},
+    {"sky": "exposed"},
+    {"world_age": {"min_days": 8}}
+  ],
+  "special": [
+    {"temperature": {"min": 2.0}, "weight": 15},
+    {"weather": "clear", "weight": 10},
+    {"difficulty": {"min": "hard"}, "weight": 10}
+  ]
+}

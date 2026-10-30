@@ -1,0 +1,33 @@
+{
+  "entity": "skrill",
+  "weight": 20,
+  "world_cap": 3,
+  "radius_cap": {"radius": 256, "max": 1},
+  "placement": "air",
+  "where": {
+    "thunderstorm": {"weight": 40, "conditions": [{"weather": "thunder"}, {"above_ground": {"min": 60, "max": 110}}]},
+    "frozen_peaks": {
+      "conditions": [
+        {
+          "biome": [
+            "minecraft:frozen_peaks",
+            "minecraft:jagged_peaks",
+            "minecraft:ice_spikes",
+            "minecraft:snowy_slopes"
+          ]
+        },
+        {"time": "active"},
+        {"above_ground": {"min": 30, "max": 60}}
+      ]
+    },
+    "sea_squall": {
+      "weight": 10,
+      "conditions": [{"biome": "#minecraft:is_ocean"}, {"weather": "rain"}, {"above_ground": {"min": 40, "max": 80}}]
+    }
+  },
+  "when": [{"dimension": "minecraft:overworld"}, {"world_age": {"min_days": 15}}],
+  "special": [
+    {"near_roost": {"within": 160, "kind": "cliff"}, "weight": 20},
+    {"biome": "#bookofdragons:cold", "weight": 10}
+  ]
+}

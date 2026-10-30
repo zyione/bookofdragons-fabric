@@ -1,0 +1,85 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "bookofdragons:placeable_speedstinger_scales",
+                  "properties": {
+                    "amount": "4"
+                  }
+                }
+              ],
+              "name": "bookofdragons:speed_stinger_scales",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 4,
+                  "add": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "bookofdragons:placeable_speedstinger_scales",
+                  "properties": {
+                    "amount": "3"
+                  }
+                }
+              ],
+              "name": "bookofdragons:speed_stinger_scales",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 3,
+                  "add": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "bookofdragons:placeable_speedstinger_scales",
+                  "properties": {
+                    "amount": "2"
+                  }
+                }
+              ],
+              "name": "bookofdragons:speed_stinger_scales",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 2,
+                  "add": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "bookofdragons:speed_stinger_scales"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

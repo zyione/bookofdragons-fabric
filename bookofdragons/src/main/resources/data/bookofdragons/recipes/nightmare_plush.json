@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " N ",
+    "NWN",
+    "S S"
+  ],
+  "key": {
+    "N": {
+      "item": "bookofdragons:monstrousnightmare_scales"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "bookofdragons:nightmare_plush",
+    "id": "bookofdragons:nightmare_plush",
+    "count": 1
+  }
+}

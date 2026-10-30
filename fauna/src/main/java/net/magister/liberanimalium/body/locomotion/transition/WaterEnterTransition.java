@@ -1,0 +1,34 @@
+package net.magister.liberanimalium.body.locomotion.transition;
+
+import net.magister.liberanimalium.body.locomotion.LocomotionMode;
+import net.magister.liberanimalium.chassis.FaunaBase;
+
+public class WaterEnterTransition implements TransitionPrimitive {
+   @Override
+   public boolean precondition(FaunaBase body) {
+      return body.profile().hasMode(LocomotionMode.SWIM);
+   }
+
+   @Override
+   public void begin(FaunaBase body) {
+   }
+
+   @Override
+   public boolean tick(FaunaBase body) {
+      return true;
+   }
+
+   @Override
+   public void interrupt(FaunaBase body) {
+   }
+
+   @Override
+   public String animSignal() {
+      return "WATER_ENTER";
+   }
+
+   @Override
+   public LocomotionMode fallbackMode() {
+      return LocomotionMode.WALK;
+   }
+}

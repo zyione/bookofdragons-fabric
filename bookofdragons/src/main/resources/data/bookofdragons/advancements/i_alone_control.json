@@ -1,0 +1,27 @@
+{
+  "parent": "bookofdragons:dragon_tamer",
+  "display": {
+    "icon": {
+      "item": "bookofdragons:rattlestaff",
+      "id": "bookofdragons:rattlestaff"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.i_alone_control.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.i_alone_control.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bound": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "bound"
+      }
+    }
+  }
+}

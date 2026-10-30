@@ -1,0 +1,51 @@
+{
+  "sounds": {
+    "idle": {
+      "sound": "minecraft:entity.silverfish.ambient",
+      "volume": 0.7,
+      "pitch": 0.5,
+      "variance": 0.5
+    },
+    "asleep": {
+      "sound": "minecraft:entity.silverfish.ambient",
+      "volume": 0.14,
+      "pitch": 0.2
+    },
+    "hurt": {
+      "sound": "minecraft:entity.silverfish.hurt",
+      "volume": 0.7,
+      "pitch": 0.5,
+      "variance": 0.1
+    },
+    "death": {
+      "sound": "minecraft:entity.silverfish.death",
+      "volume": 0.7,
+      "pitch": 0.5,
+      "variance": 0.1
+    },
+    "roar": {
+      "sound": "minecraft:entity.warden.roar",
+      "volume": 0.7,
+      "pitch": 1.5,
+      "variance": 0.1
+    },
+    "flap": {
+      "sound": "bookofdragons:medium_flap",
+      "volume": 1.0,
+      "pitch": 0.8,
+      "variance": 0.15
+    },
+    "bite": {
+      "sound": "bookofdragons:heavy_bite",
+      "volume": 0.75,
+      "pitch": 0.9,
+      "variance": 0.1
+    },
+    "shoot": {
+      "sound": "minecraft:item.firecharge.use",
+      "volume": 0.97,
+      "pitch": 0.6,
+      "variance": 0.1
+    }
+  }
+}

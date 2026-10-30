@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " T ",
+    "TWT",
+    "S S"
+  ],
+  "key": {
+    "T": {
+      "item": "bookofdragons:terrible_terror_scales"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "bookofdragons:terror_plush",
+    "id": "bookofdragons:terror_plush",
+    "count": 1
+  }
+}

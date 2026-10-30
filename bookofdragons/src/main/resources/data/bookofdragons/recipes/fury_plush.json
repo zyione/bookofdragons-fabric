@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " N ",
+    "NWN",
+    "S S"
+  ],
+  "key": {
+    "N": {
+      "item": "bookofdragons:nightfury_scales"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "bookofdragons:fury_plush",
+    "id": "bookofdragons:fury_plush",
+    "count": 1
+  }
+}

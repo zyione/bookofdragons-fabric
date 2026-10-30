@@ -1,0 +1,324 @@
+{"attributes":{"CON":{"floor":75,"ceiling":95},"ATH":{"floor":55,"ceiling":75},"AGI":{"floor":35,"ceiling":55},"PRW":{"floor":70,"ceiling":90},"POT":{"floor":70,"ceiling":90},"VIG":{"floor":50,"ceiling":70}},"art_version":2,"color_loci":
+{"b":{
+  "link_group": "body",
+  "pool":{"entries":
+  {"COMMON":["infernal","carnelian","umber","scarlet","ruby","rust","bronze","brass","gator","grassland","prarie","peridot","marsh","wildfyre","verdant","field", "topaz", "wildfire", "wheat", "goldenrod"],
+    "UNCOMMON":["jade","teal","malachite","sky","glace","peak","royal","dawn","magenta","maroon"],
+    "RARE":["crystal", "stonefall", "fujita", "nightfall", "quartz"],
+    "VERY_RARE":["melanistic_cool","leucistic_warm"]}}},
+
+  "r":{
+    "link_group": "pattern",
+    "pool":{"entries":
+    {"COMMON":["infernal","carnelian","umber","scarlet","ruby","rust","bronze","brass","gator","grassland","prarie","peridot","marsh","wildfyre","verdant","field", "topaz", "wildfire", "wheat", "goldenrod"],
+      "UNCOMMON":["jade","teal","malachite","sky","glace","peak","royal","dawn","magenta","maroon"],
+      "RARE":["crystal", "stonefall", "fujita", "nightfall", "quartz"],
+      "VERY_RARE":["melanistic_cool","leucistic_warm"]}}},
+
+  "y":{
+    "pool":{"entries":
+    {"COMMON":[
+      "alabaster",
+      "ivory",
+      "pearl",
+      "sandy"
+    ],
+      "UNCOMMON":[],
+      "RARE":["crystal", "stonefall", "fujita", "nightfall", "quartz"],
+      "VERY_RARE":["melanistic_cool","leucistic_warm"]}}},
+
+  "n":{
+    "link_group": "gradient",
+    "pool":{"entries"
+    :{"COMMON":["infernal","carnelian","umber","scarlet","ruby","rust","bronze","brass","gator","grassland","prarie","peridot","marsh","wildfyre","verdant","field", "topaz", "wildfire", "wheat", "goldenrod"],
+      "UNCOMMON":["jade","teal","malachite","sky","glace","peak","royal","dawn","magenta","maroon"],
+      "RARE":["crystal", "stonefall", "fujita", "nightfall", "quartz"],
+      "VERY_RARE":["melanistic_cool","leucistic_warm"]}}},
+
+  "j":{
+    "link_group": "pattern",
+    "pool":{"entries":
+    {"COMMON":["infernal","carnelian","umber","scarlet","ruby","rust","bronze","brass","gator","grassland","prarie","peridot","marsh","wildfyre","verdant","field", "topaz", "wildfire", "wheat", "goldenrod"],
+      "UNCOMMON":["jade","teal","malachite","sky","glace","peak","royal","dawn","magenta","maroon"],
+      "RARE":["crystal", "stonefall", "fujita", "nightfall", "quartz"],
+      "VERY_RARE":["melanistic_cool","leucistic_warm"]}}},
+
+  "a":{"pool":{
+    "link_group": "pattern",
+    "entries":{"COMMON":["infernal","carnelian","umber","scarlet","ruby","rust","bronze","brass","gator","grassland","prarie","peridot","marsh","wildfyre","verdant","field", "topaz", "wildfire", "wheat", "goldenrod"],
+      "UNCOMMON":["jade","teal","malachite","sky","glace","peak","royal","dawn","magenta","maroon"],
+      "RARE":["crystal", "stonefall", "fujita", "nightfall", "quartz"],
+      "VERY_RARE":["melanistic_cool","leucistic_warm"]}}},
+
+  "i":{"pool":{
+    "link_group": "pattern",
+    "entries": {"COMMON":["infernal","carnelian","umber","scarlet","ruby","rust","bronze","brass","gator","grassland","prarie","peridot","marsh","wildfyre","verdant","field", "topaz", "wildfire", "wheat", "goldenrod"],
+      "UNCOMMON":["jade","teal","malachite","sky","glace","peak","royal","dawn","magenta","maroon"],
+      "RARE":["crystal", "stonefall", "fujita", "nightfall", "quartz"],
+      "VERY_RARE":["melanistic_cool","leucistic_warm"]}}},
+
+  "z":{"pool":{
+    "link_group": "pattern",
+    "entries":{"COMMON":["infernal","carnelian","umber","scarlet","ruby","rust","bronze","brass","gator","grassland","prarie","peridot","marsh","wildfyre","verdant","field", "topaz", "wildfire", "wheat", "goldenrod"],
+      "UNCOMMON":["jade","teal","malachite","sky","glace","peak","royal","dawn","magenta","maroon"],
+      "RARE":["crystal", "stonefall", "fujita", "nightfall", "quartz"],
+      "VERY_RARE":["melanistic_cool","leucistic_warm"]}}},
+
+  "v":{"pool":{
+    "link_group": "gradient",
+    "entries":{"COMMON":["infernal","carnelian","umber","scarlet","ruby","rust","bronze","brass","gator","grassland","prarie","peridot","marsh","wildfyre","verdant","field", "topaz", "wildfire", "wheat", "goldenrod"],
+      "UNCOMMON":["jade","teal","malachite","sky","glace","peak","royal","dawn","magenta","maroon"],
+      "RARE":["crystal", "stonefall", "fujita", "nightfall", "quartz"],
+      "VERY_RARE":["melanistic_cool","leucistic_warm"]}}},
+
+  "c":{"pool":{
+    "link_group": "pattern",
+    "entries":{"COMMON":["infernal","carnelian","umber","scarlet","ruby","rust","bronze","brass","gator","grassland","prarie","peridot","marsh","wildfyre","verdant","field", "topaz", "wildfire", "wheat", "goldenrod"],
+      "UNCOMMON":["jade","teal","malachite","sky","glace","peak","royal","dawn","magenta","maroon"],
+      "RARE":["crystal", "stonefall", "fujita", "nightfall", "quartz"],
+      "VERY_RARE":["melanistic_cool","leucistic_warm"]}}}},
+
+  "structure_loci": {
+    "d": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["m_spine_fade"],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "u": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["u_underbelly_simple"],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "p": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "b_stripes_tiger",
+            "b_spots_and_stripes"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "w": {
+      "expression_count": 1,
+      "multi_channel_count": 2,
+      "pool": {
+        "weights": {
+          "COMMON": 50,
+          "UNCOMMON": 20,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "w_rounded_stripes",
+            "w_rippled_streaks",
+            "w_thin_streaks"
+          ],
+          "UNCOMMON": ["w_marbled"],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "x": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "f": {
+      "expression_count": 2,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "f_snout_cover",
+            "f_upper_mask",
+            "f_full_mask",
+            "f_lip_front"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "l": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "s": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "h": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["blank"],
+          "UNCOMMON": ["g_head_shoulders", "g_tail"],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "k": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 30,
+          "UNCOMMON": 40,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["wg_fade_inner", "wg_fade_outer"],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "q": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": ["d_dorsal_stripe"],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    }
+  },
+  "linkage": {
+    "rules": {
+      "body": {
+        "mode_weights": {
+          "SAME": 50,
+          "SIMILAR": 35,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      },
+      "pattern": {
+        "mode_weights": {
+          "SAME": 55,
+          "SIMILAR": 40,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      },
+      "gradient": {
+        "mode_weights": {
+          "SAME": 50,
+          "SIMILAR": 35,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      }
+    }
+  },
+
+  "palette_taxonomy":{"infernal":{"primary":"orange","sat":3,"temp":3,"light":-2},"carnelian":{"primary":"red","sat":1,"temp":-3,"light":-2},"wildfire":{"primary":"orange","sat":5,"temp":3,"light":1},"topaz":{"primary":"yellow","sat":2,"temp":4,"light":2},"wheat":{"primary":"yellow","sat":-2,"temp":2,"light":3},"goldenrod":{"primary":"yellow","sat":4,"temp":2,"light":2}, "umber":{"primary":"red","sat":0,"temp":-1,"light":-2},"scarlet":{"primary":"red","sat":4,"temp":-1,"light":1},"ruby":{"primary":"red","sat":4,"temp":0,"light":0},"rust":{"primary":"red","sat":-2,"temp":-1,"light":-2},"bronze":{"primary":"orange","sat":-3,"temp":-3,"light":-2},"brass":{"primary":"orange","sat":-2,"temp":-2,"light":-2},"gator":{"primary":"green","sat":-4,"temp":3,"light":-3},"grassland":{"primary":"yellow","sat":-3,"temp":2,"light":-2},"prarie":{"primary":"green","sat":-2,"temp":3,"light":0},"peridot":{"primary":"green","sat":0,"temp":3,"light":2},"marsh":{"primary":"green","sat":-1,"temp":1,"light":-1},"wildfyre":{"primary":"green","sat":2,"temp":0,"light":0},"verdant":{"primary":"green","sat":3,"temp":-1,"light":0},"field":{"primary":"green","sat":4,"temp":2,"light":3},"jade":{"primary":"green","sat":2,"temp":5,"light":1},"teal":{"primary":"blue","sat":2,"temp":4,"light":1},"malachite":{"primary":"blue","sat":-1,"temp":3,"light":0},"glace":{"primary":"blue","sat":2,"temp":2,"light":0},"peak":{"primary":"blue","sat":-3,"temp":-1,"light":-2}, "sky":{"primary": "blue","sat":2,"temp":1,"light":0},"royal":{"primary":"purple","sat":0,"temp":2,"light":-1},"dawn":{"primary":"purple","sat":0,"temp":3,"light":-1},"magenta":{"primary":"purple","sat":2,"temp":4,"light":0},"maroon":{"primary":"red","sat":-2,"temp":-2,"light":-4},"crystal":{"primary":"neutral","sat":-4,"temp":1,"light":3},"stonefall":{"primary":"neutral","sat":-3,"temp":0,"light":-2},"crystal":{"primary":"neutral","sat":-4,"temp":-1,"light":3},"fujita":{"primary":"green","sat":3,"temp":-3,"light":-4},"nightfall":{"primary":"purple","sat":2,"temp":1,"light":-4},"melanistic_cool":{"primary":"neutral","sat":-4,"temp":-1,"light":-5},"leucistic_warm":{"primary":"neutral","sat":-4,"temp":-1,"light":5}}}

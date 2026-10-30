@@ -1,0 +1,7 @@
+{
+  "part": "tail7",
+  "limit": 6.0,
+  "mend_per_tick": 0.01,
+  "grounded_ticks": 2400,
+  "line": "tail_fin"
+}

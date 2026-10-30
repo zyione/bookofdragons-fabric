@@ -1,0 +1,1161 @@
+{
+  "r_wing": [
+    {
+      "corners": [
+        "R_wing_humerus_membrane",
+        "R_wing_humerus",
+        "R_wing_ninthfinger",
+        "R_wing_ninthfinger_membrane"
+      ],
+      "top": [
+        [
+          0.0,
+          0.1195
+        ],
+        [
+          0.00365,
+          0.07896
+        ],
+        [
+          0.05847,
+          0.07923
+        ],
+        [
+          0.04791,
+          0.14135
+        ]
+      ],
+      "bottom": [
+        [
+          0.0,
+          0.32262
+        ],
+        [
+          0.00365,
+          0.28208
+        ],
+        [
+          0.05847,
+          0.28236
+        ],
+        [
+          0.04791,
+          0.34447
+        ]
+      ],
+      "dorsal": [
+        0.0033,
+        -0.99999,
+        -0.00175
+      ],
+      "restRatio": 1.29098,
+      "foldRef": [
+        "R_wing_humerus_membrane",
+        "R_wing_humerus",
+        "R_wing_ninthfinger_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_ninthfinger_membrane",
+        "R_wing_ninthfinger",
+        "R_wing_eighthfinger",
+        "R_wing_eighthfinger_membrane"
+      ],
+      "top": [
+        [
+          0.04791,
+          0.14135
+        ],
+        [
+          0.05847,
+          0.07923
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.06936,
+          0.15302
+        ]
+      ],
+      "bottom": [
+        [
+          0.04791,
+          0.34447
+        ],
+        [
+          0.05847,
+          0.28236
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.06936,
+          0.35614
+        ]
+      ],
+      "dorsal": [
+        -0.0023,
+        -0.99999,
+        -0.00295
+      ],
+      "restRatio": 0.38745,
+      "foldRef": [
+        "R_wing_ninthfinger_membrane",
+        "R_wing_ninthfinger",
+        "R_wing_eighthfinger_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_eighthfinger_membrane",
+        "R_wing_eighthfinger",
+        "R_wing_seventhfinger",
+        "R_wing_seventhfinger_membrane"
+      ],
+      "top": [
+        [
+          0.06936,
+          0.15302
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.09928,
+          0.17012
+        ]
+      ],
+      "bottom": [
+        [
+          0.06936,
+          0.35614
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.09928,
+          0.37324
+        ]
+      ],
+      "dorsal": [
+        -0.00343,
+        -0.99999,
+        -0.00149
+      ],
+      "restRatio": 0.30425,
+      "foldRef": [
+        "R_wing_eighthfinger_membrane",
+        "R_wing_eighthfinger",
+        "R_wing_seventhfinger_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_seventhfinger_membrane",
+        "R_wing_seventhfinger",
+        "R_wing_sixthfinger",
+        "R_wing_sixthfinger_membrane"
+      ],
+      "top": [
+        [
+          0.09928,
+          0.17012
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13769,
+          0.18934
+        ]
+      ],
+      "bottom": [
+        [
+          0.09928,
+          0.37324
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13769,
+          0.39247
+        ]
+      ],
+      "dorsal": [
+        -0.00282,
+        -0.99999,
+        -0.00245
+      ],
+      "restRatio": 0.3792,
+      "foldRef": [
+        "R_wing_seventhfinger_membrane",
+        "R_wing_seventhfinger",
+        "R_wing_sixthfinger_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_sixthfinger_membrane",
+        "R_wing_sixthfinger",
+        "R_wing_fifthfinger",
+        "R_wing_fifthfinger_membrane"
+      ],
+      "top": [
+        [
+          0.13769,
+          0.18934
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.18981,
+          0.20155
+        ]
+      ],
+      "bottom": [
+        [
+          0.13769,
+          0.39247
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.18981,
+          0.40468
+        ]
+      ],
+      "dorsal": [
+        -0.00181,
+        -0.99999,
+        -0.00327
+      ],
+      "restRatio": 0.42821,
+      "foldRef": [
+        "R_wing_sixthfinger_membrane",
+        "R_wing_sixthfinger",
+        "R_wing_fifthfinger_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_fifthfinger_membrane",
+        "R_wing_fifthfinger",
+        "R_wing_fourthfinger",
+        "R_wing_fourthfinger_membrane"
+      ],
+      "top": [
+        [
+          0.18981,
+          0.20155
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.25552,
+          0.1974
+        ]
+      ],
+      "bottom": [
+        [
+          0.18981,
+          0.40468
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.25552,
+          0.40052
+        ]
+      ],
+      "dorsal": [
+        -5.2E-4,
+        -0.99999,
+        -0.0037
+      ],
+      "restRatio": 0.45098,
+      "foldRef": [
+        "R_wing_fifthfinger_membrane",
+        "R_wing_fifthfinger",
+        "R_wing_fourthfinger_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_fourthfinger_membrane",
+        "R_wing_fourthfinger",
+        "R_wing_ringfinger",
+        "R_wing_ringfinger_membrane"
+      ],
+      "top": [
+        [
+          0.25552,
+          0.1974
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.31155,
+          0.15953
+        ]
+      ],
+      "bottom": [
+        [
+          0.25552,
+          0.40052
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.31155,
+          0.36265
+        ]
+      ],
+      "dorsal": [
+        8.4E-4,
+        -0.99999,
+        -0.00364
+      ],
+      "restRatio": 0.38368,
+      "foldRef": [
+        "R_wing_fourthfinger_membrane",
+        "R_wing_fourthfinger",
+        "R_wing_ringfinger_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_ringfinger_membrane",
+        "R_wing_ringfinger",
+        "R_wing_middlefinger",
+        "R_wing_middlefinger_membrane"
+      ],
+      "top": [
+        [
+          0.31155,
+          0.15953
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.30544,
+          0.10259
+        ]
+      ],
+      "bottom": [
+        [
+          0.31155,
+          0.36265
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.30544,
+          0.30571
+        ]
+      ],
+      "dorsal": [
+        0.00204,
+        -0.99999,
+        -0.00313
+      ],
+      "restRatio": 0.29174,
+      "foldRef": [
+        "R_wing_ringfinger_membrane",
+        "R_wing_ringfinger",
+        "R_wing_middlefinger_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_middlefinger_membrane",
+        "R_wing_middlefinger",
+        "R_wing_forefinger",
+        "R_wing_forefinger_membrane"
+      ],
+      "top": [
+        [
+          0.30544,
+          0.10259
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.28439,
+          0.06625
+        ]
+      ],
+      "bottom": [
+        [
+          0.30544,
+          0.30571
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.28439,
+          0.26938
+        ]
+      ],
+      "dorsal": [
+        0.00282,
+        -0.99999,
+        -0.00245
+      ],
+      "restRatio": 0.24711,
+      "foldRef": [
+        "R_wing_middlefinger_membrane",
+        "R_wing_middlefinger",
+        "R_wing_forefinger_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_forefinger_membrane",
+        "R_wing_forefinger",
+        "R_wing_forefinger2",
+        "R_wing_forefinger2_membrane"
+      ],
+      "top": [
+        [
+          0.28439,
+          0.06625
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.24967,
+          0.03648
+        ]
+      ],
+      "bottom": [
+        [
+          0.28439,
+          0.26938
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.24967,
+          0.2396
+        ]
+      ],
+      "dorsal": [
+        0.00328,
+        -0.99999,
+        -0.00179
+      ],
+      "restRatio": 0.31649,
+      "foldRef": [
+        "R_wing_forefinger_membrane",
+        "R_wing_forefinger",
+        "R_wing_forefinger2_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_forefinger2_membrane",
+        "R_wing_forefinger2",
+        "R_wing_forefinger3",
+        "R_wing_forefinger3_membrane"
+      ],
+      "top": [
+        [
+          0.24967,
+          0.03648
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.22002,
+          0.01573
+        ]
+      ],
+      "bottom": [
+        [
+          0.24967,
+          0.2396
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.22002,
+          0.21885
+        ]
+      ],
+      "dorsal": [
+        0.00363,
+        -0.99999,
+        -8.8E-4
+      ],
+      "restRatio": 0.31945,
+      "foldRef": [
+        "R_wing_forefinger2_membrane",
+        "R_wing_forefinger2",
+        "R_wing_forefinger3_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_forefinger3_membrane",
+        "R_wing_forefinger3",
+        "R_wing_forefinger4",
+        "R_wing_forefinger4_membrane"
+      ],
+      "top": [
+        [
+          0.22002,
+          0.01573
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.18511,
+          0.008
+        ]
+      ],
+      "bottom": [
+        [
+          0.22002,
+          0.21885
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.18511,
+          0.21113
+        ]
+      ],
+      "dorsal": [
+        0.00373,
+        -0.99999,
+        2.2E-4
+      ],
+      "restRatio": 0.38143,
+      "foldRef": [
+        "R_wing_forefinger3_membrane",
+        "R_wing_forefinger3",
+        "R_wing_forefinger4_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_forefinger4_membrane",
+        "R_wing_forefinger4",
+        "R_wing_forefinger5",
+        "R_wing_forefinger5_membrane"
+      ],
+      "top": [
+        [
+          0.18511,
+          0.008
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.15622,
+          0.0
+        ]
+      ],
+      "bottom": [
+        [
+          0.18511,
+          0.21113
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.15622,
+          0.20313
+        ]
+      ],
+      "dorsal": [
+        0.00343,
+        -0.99999,
+        0.00148
+      ],
+      "restRatio": 0.41479,
+      "foldRef": [
+        "R_wing_forefinger4_membrane",
+        "R_wing_forefinger4",
+        "R_wing_forefinger5_membrane"
+      ]
+    },
+    {
+      "corners": [
+        "R_wing_forefinger5_membrane",
+        "R_wing_forefinger5",
+        "R_wing_forefinger6",
+        "R_wing_forefinger6_membrane"
+      ],
+      "top": [
+        [
+          0.15622,
+          0.0
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.13988,
+          0.06436
+        ],
+        [
+          0.12895,
+          0.0068
+        ]
+      ],
+      "bottom": [
+        [
+          0.15622,
+          0.20313
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.13988,
+          0.26749
+        ],
+        [
+          0.12895,
+          0.20992
+        ]
+      ],
+      "dorsal": [
+        0.00251,
+        -0.99999,
+        0.00277
+      ],
+      "restRatio": 0.4233,
+      "foldRef": [
+        "R_wing_forefinger5_membrane",
+        "R_wing_forefinger5",
+        "R_wing_forefinger6_membrane"
+      ]
+    }
+  ],
+  "tail": [
+    {
+      "corners": [
+        "tail3",
+        "tail3",
+        "tail4_membrane",
+        "tail4"
+      ],
+      "top": [
+        [
+          0.10938,
+          0.49973
+        ],
+        [
+          0.1123,
+          0.49973
+        ],
+        [
+          0.20987,
+          0.47435
+        ],
+        [
+          0.15234,
+          0.49973
+        ]
+      ],
+      "bottom": [
+        [
+          0.10938,
+          0.49973
+        ],
+        [
+          0.1123,
+          0.49973
+        ],
+        [
+          0.20987,
+          0.47435
+        ],
+        [
+          0.15234,
+          0.49973
+        ]
+      ],
+      "dorsal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "restRatio": 1.0,
+      "foldRef": [
+        "tail3",
+        "tail3",
+        "tail4"
+      ]
+    },
+    {
+      "corners": [
+        "tail4",
+        "tail4_membrane",
+        "tail5_membrane",
+        "tail5"
+      ],
+      "top": [
+        [
+          0.15234,
+          0.49973
+        ],
+        [
+          0.20987,
+          0.47435
+        ],
+        [
+          0.25885,
+          0.46657
+        ],
+        [
+          0.20703,
+          0.49973
+        ]
+      ],
+      "bottom": [
+        [
+          0.15234,
+          0.49973
+        ],
+        [
+          0.20987,
+          0.47435
+        ],
+        [
+          0.25885,
+          0.46657
+        ],
+        [
+          0.20703,
+          0.49973
+        ]
+      ],
+      "dorsal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "restRatio": 0.90835,
+      "foldRef": [
+        "tail4",
+        "tail4_membrane",
+        "tail5"
+      ]
+    },
+    {
+      "corners": [
+        "tail5",
+        "tail5_membrane",
+        "tail6_membrane",
+        "tail6"
+      ],
+      "top": [
+        [
+          0.20703,
+          0.49973
+        ],
+        [
+          0.25885,
+          0.46657
+        ],
+        [
+          0.30863,
+          0.45824
+        ],
+        [
+          0.26172,
+          0.49924
+        ]
+      ],
+      "bottom": [
+        [
+          0.20703,
+          0.49973
+        ],
+        [
+          0.25885,
+          0.46657
+        ],
+        [
+          0.30863,
+          0.45824
+        ],
+        [
+          0.26172,
+          0.49924
+        ]
+      ],
+      "dorsal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "restRatio": 0.92579,
+      "foldRef": [
+        "tail5",
+        "tail5_membrane",
+        "tail6"
+      ]
+    },
+    {
+      "corners": [
+        "tail6",
+        "tail6_membrane",
+        "tail7_membrane",
+        "tail7"
+      ],
+      "top": [
+        [
+          0.26172,
+          0.49924
+        ],
+        [
+          0.30863,
+          0.45824
+        ],
+        [
+          0.37504,
+          0.44359
+        ],
+        [
+          0.31641,
+          0.49924
+        ]
+      ],
+      "bottom": [
+        [
+          0.26172,
+          0.49924
+        ],
+        [
+          0.30863,
+          0.45824
+        ],
+        [
+          0.37504,
+          0.44359
+        ],
+        [
+          0.31641,
+          0.49924
+        ]
+      ],
+      "dorsal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "restRatio": 0.90943,
+      "foldRef": [
+        "tail6",
+        "tail6_membrane",
+        "tail7"
+      ]
+    },
+    {
+      "corners": [
+        "tail7",
+        "tail7_membrane",
+        "tail8_membrane",
+        "tail8"
+      ],
+      "top": [
+        [
+          0.31641,
+          0.49924
+        ],
+        [
+          0.37504,
+          0.44359
+        ],
+        [
+          0.4311,
+          0.44336
+        ],
+        [
+          0.38867,
+          0.49924
+        ]
+      ],
+      "bottom": [
+        [
+          0.31641,
+          0.49924
+        ],
+        [
+          0.37504,
+          0.44359
+        ],
+        [
+          0.4311,
+          0.44336
+        ],
+        [
+          0.38867,
+          0.49924
+        ]
+      ],
+      "dorsal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "restRatio": 0.91776,
+      "foldRef": [
+        "tail7",
+        "tail7_membrane",
+        "tail8"
+      ]
+    },
+    {
+      "corners": [
+        "tail8",
+        "tail8_membrane",
+        "tail9_membrane",
+        "tail9"
+      ],
+      "top": [
+        [
+          0.38867,
+          0.49924
+        ],
+        [
+          0.4311,
+          0.44336
+        ],
+        [
+          0.53462,
+          0.44531
+        ],
+        [
+          0.45117,
+          0.49924
+        ]
+      ],
+      "bottom": [
+        [
+          0.38867,
+          0.49924
+        ],
+        [
+          0.4311,
+          0.44336
+        ],
+        [
+          0.53462,
+          0.44531
+        ],
+        [
+          0.45117,
+          0.49924
+        ]
+      ],
+      "dorsal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "restRatio": 0.91327,
+      "foldRef": [
+        "tail8",
+        "tail8_membrane",
+        "tail9"
+      ]
+    },
+    {
+      "corners": [
+        "tail9",
+        "tail9_membrane",
+        "tail10",
+        "tail10"
+      ],
+      "top": [
+        [
+          0.45117,
+          0.49924
+        ],
+        [
+          0.53462,
+          0.44531
+        ],
+        [
+          0.53462,
+          0.5
+        ],
+        [
+          0.53169,
+          0.5
+        ]
+      ],
+      "bottom": [
+        [
+          0.45117,
+          0.49924
+        ],
+        [
+          0.53462,
+          0.44531
+        ],
+        [
+          0.53462,
+          0.5
+        ],
+        [
+          0.53169,
+          0.5
+        ]
+      ],
+      "dorsal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "restRatio": 0.83089,
+      "foldRef": [
+        "tail9",
+        "tail9_membrane",
+        "tail10"
+      ]
+    }
+  ]
+}

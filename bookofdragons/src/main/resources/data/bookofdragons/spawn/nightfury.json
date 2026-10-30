@@ -1,0 +1,60 @@
+{
+  "entity": "nightfury",
+  "weight": 12,
+  "world_cap": 2,
+  "radius_cap": {"radius": 384, "max": 1},
+  "placement": "air",
+  "where": {
+    "sky": {"conditions": [{"biome": "#bookofdragons:cold"}, {"above_ground": {"min": 60, "max": 120}}]},
+    "peaks": {
+      "placement": "ground",
+      "weight": 10,
+      "conditions": [{"biome": "#bookofdragons:cold"}, {"y": {"min": 140}}, {"sky": "exposed"}]
+    },
+    "sea_cliffs": {
+      "placement": "ground",
+      "weight": 8,
+      "conditions": [
+        {
+          "biome": ["minecraft:snowy_beach", "minecraft:stony_shore", "minecraft:frozen_ocean", "minecraft:cold_ocean"]
+        },
+        {"slope": {"min_rise": 8, "radius": 4}},
+        {"sky": "exposed"}
+      ]
+    }
+  },
+  "when": [
+    {"dimension": "minecraft:overworld"},
+    {"time": "active"},
+    {"player_distance": {"min": 64}},
+    {"world_age": {"min_days": 20}}
+  ],
+  "special": [
+    {"moon": "new", "weight": 18},
+    {"weather": "thunder", "weight": 13},
+    {"near_roost": {"within": 160, "kind": "cliff", "empty": true}, "weight": 18}
+  ],
+  "deviants": {
+    "albino": {
+      "variant": "albino_fury",
+      "weight": 2,
+      "world_cap": 1,
+      "placement": "ground",
+      "where": {
+        "peaks": {
+          "conditions": [
+            {"biome": ["minecraft:frozen_peaks", "minecraft:jagged_peaks"]},
+            {"y": {"min": 140}},
+            {"sky": "exposed"}
+          ]
+        }
+      },
+      "when": [
+        {"dimension": "minecraft:overworld"},
+        {"time": "active"},
+        {"moon": "full"},
+        {"world_age": {"min_days": 40}}
+      ]
+    }
+  }
+}

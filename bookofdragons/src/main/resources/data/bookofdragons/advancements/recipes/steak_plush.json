@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "unlock": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "entry",
+        "favorite_food": [
+          "minecraft:beef",
+          "minecraft:cooked_beef"
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "bookofdragons:steak_plush"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "unlock",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bookofdragons:steak_plush"
+    ]
+  }
+}

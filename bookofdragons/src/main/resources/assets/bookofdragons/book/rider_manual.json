@@ -1,0 +1,84 @@
+{
+  "pages": [
+    {
+      "title": "book.bookofdragons.manual.ground",
+      "entries": [
+        {"held": "minecraft:saddle", "keys": ["key.use"], "text": "book.bookofdragons.manual.ground.saddle", "dragon": true},
+        {"keys": ["key.use"], "text": "book.bookofdragons.manual.ground.mount", "dragon": true},
+        {"keys": ["key.forward", "key.left", "key.back", "key.right"], "join": "/", "text": "book.bookofdragons.manual.ground.walk"},
+        {"keys": ["key.bookofdragons.dragon_sprint"], "text": "book.bookofdragons.manual.ground.run"},
+        {"keys": ["key.jump"], "text": "book.bookofdragons.manual.ground.takeoff"},
+        {"keys": ["key.bookofdragons.dismount"], "text": "book.bookofdragons.manual.ground.dismount"},
+        {"keys": ["key.bookofdragons.dismount"], "press": "twice", "text": "book.bookofdragons.manual.ground.dismount_air"},
+        {"keys": ["key.bookofdragons.open_inventory"], "text": "book.bookofdragons.manual.ground.inventory"}
+      ]
+    },
+    {
+      "title": "book.bookofdragons.manual.air",
+      "entries": [
+        {"mouse": true, "text": "book.bookofdragons.manual.air.steer"},
+        {"keys": ["key.forward", "key.back"], "join": "/", "text": "book.bookofdragons.manual.air.throttle"},
+        {"keys": ["key.forward"], "press": "twice", "text": "book.bookofdragons.manual.air.cruise"},
+        {"keys": ["key.jump"], "text": "book.bookofdragons.manual.air.boost"},
+        {"keys": ["key.bookofdragons.dragon_sprint"], "text": "book.bookofdragons.manual.air.brake"},
+        {"keys": ["key.left", "key.right"], "join": "/", "text": "book.bookofdragons.manual.air.strafe"},
+        {"keys": ["key.left", "key.right"], "join": "/", "press": "twice", "text": "book.bookofdragons.manual.air.dodge"},
+        {"keys": ["key.sneak"], "press": "hold", "text": "book.bookofdragons.manual.air.dive"},
+        {"keys": ["key.bookofdragons.free_camera"], "press": "hold", "text": "book.bookofdragons.manual.air.look"},
+        {"at": "minecraft:grass_block", "text": "book.bookofdragons.manual.air.land"}
+      ]
+    },
+    {
+      "title": "book.bookofdragons.manual.water",
+      "entries": [
+        {"mouse": true, "text": "book.bookofdragons.manual.water.steer"},
+        {"keys": ["key.forward", "key.back"], "join": "/", "text": "book.bookofdragons.manual.water.throttle"},
+        {"keys": ["key.sneak"], "press": "hold", "text": "book.bookofdragons.manual.water.under"},
+        {"keys": ["key.jump"], "text": "book.bookofdragons.manual.water.boost"},
+        {"keys": ["key.left", "key.right"], "join": "/", "press": "twice", "text": "book.bookofdragons.manual.water.dodge"},
+        {"keys": ["key.jump"], "at": "minecraft:water_bucket", "text": "book.bookofdragons.manual.water.takeoff"}
+      ]
+    },
+    {
+      "title": "book.bookofdragons.manual.fight",
+      "entries": [
+        {"keys": ["key.bookofdragons.primary_ability"], "text": "book.bookofdragons.manual.fight.primary"},
+        {"keys": ["key.bookofdragons.secondary_ability"], "text": "book.bookofdragons.manual.fight.secondary"},
+        {"keys": ["key.bookofdragons.grab"], "press": "hold", "text": "book.bookofdragons.manual.fight.grab"}
+      ]
+    },
+    {
+      "title": "book.bookofdragons.manual.keeping",
+      "entries": [
+        {"held": "minecraft:cod", "keys": ["key.use"], "text": "book.bookofdragons.manual.keeping.feed", "dragon": true},
+        {"keys": ["key.use"], "press": "hold", "text": "book.bookofdragons.manual.keeping.touch", "dragon": true},
+        {"held": "minecraft:chest", "keys": ["key.use"], "text": "book.bookofdragons.manual.keeping.chest", "dragon": true},
+        {"held": "minecraft:shears", "keys": ["key.use"], "text": "book.bookofdragons.manual.keeping.shears", "dragon": true},
+        {"keys": ["key.sneak", "key.use"], "join": "+", "text": "book.bookofdragons.manual.keeping.orders", "dragon": true},
+        {"keys": ["key.use"], "text": "book.bookofdragons.manual.keeping.perch", "dragon": true},
+        {"keys": ["key.sneak"], "press": "thrice", "text": "book.bookofdragons.manual.keeping.play"}
+      ]
+    },
+    {
+      "title": "book.bookofdragons.manual.staff",
+      "entries": [
+        {"held": "bookofdragons:rattlestaff", "keys": ["key.sneak", "key.use"], "join": "+", "dragon": true, "text": "book.bookofdragons.manual.staff.bind"},
+        {"held": "bookofdragons:rattlestaff", "keys": ["key.use"], "text": "book.bookofdragons.manual.staff.follow"},
+        {"held": "bookofdragons:rattlestaff", "keys": ["key.use"], "press": "hold", "text": "book.bookofdragons.manual.staff.sit"},
+        {"held": "bookofdragons:rattlestaff", "keys": ["key.use"], "at": "minecraft:grass_block", "text": "book.bookofdragons.manual.staff.go"},
+        {"held": "bookofdragons:rattlestaff", "keys": ["key.use"], "press": "hold", "at": "minecraft:grass_block", "text": "book.bookofdragons.manual.staff.go_sit"},
+        {"held": "bookofdragons:rattlestaff", "keys": ["key.use"], "at": "minecraft:skeleton_skull", "text": "book.bookofdragons.manual.staff.leave"},
+        {"held": "bookofdragons:rattlestaff", "keys": ["key.use"], "press": "hold", "at": "minecraft:skeleton_skull", "text": "book.bookofdragons.manual.staff.attack"}
+      ]
+    },
+    {
+      "title": "book.bookofdragons.manual.peace",
+      "entries": [
+        {"keys": ["key.sneak", "key.use"], "join": "+", "dragon": true, "text": "book.bookofdragons.manual.staff.stop"},
+        {"held": "bookofdragons:rattlestaff", "keys": ["key.use"], "press": "hold", "at": "minecraft:grass_block", "text": "book.bookofdragons.manual.staff.peace"},
+        {"at": "minecraft:glass", "text": "book.bookofdragons.manual.staff.barrier"},
+        {"text": "book.bookofdragons.manual.staff.strong"}
+      ]
+    }
+  ]
+}

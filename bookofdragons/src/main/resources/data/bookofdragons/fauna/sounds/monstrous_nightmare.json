@@ -1,0 +1,129 @@
+{
+  "sounds": {
+    "idle": {
+      "sound": "bookofdragons:monstrousnightmare_idle",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "idle_settled": {
+      "sound": "bookofdragons:monstrousnightmare_passive",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "asleep": {
+      "sound": "bookofdragons:monstrousnightmare_sleep",
+      "volume": 0.17,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "hurt": {
+      "sound": "bookofdragons:monstrousnightmare_hurt",
+      "volume": 0.58,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "death": {
+      "sound": "bookofdragons:monstrousnightmare_death",
+      "volume": 0.6,
+      "pitch": 1.0
+    },
+    "roar": {
+      "sound": "bookofdragons:monstrousnightmare_roar",
+      "volume": 0.69,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "growl": {
+      "sound": "bookofdragons:monstrousnightmare_growl",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "curious": {
+      "sound": "bookofdragons:monstrousnightmare_curious",
+      "volume": 0.48,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "friendly": {
+      "sound": "bookofdragons:monstrousnightmare_friendly",
+      "volume": 0.43,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "wary_fight": {
+      "sound": "bookofdragons:monstrousnightmare_wary_fight",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "wary_flee": {
+      "sound": "bookofdragons:monstrousnightmare_wary_flee",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "pet": {
+      "sound": "bookofdragons:monstrousnightmare_pet",
+      "volume": 0.44,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "buck": {
+      "sound": "bookofdragons:monstrousnightmare_buck",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "ability_start": {
+      "sound": "bookofdragons:monstrousnightmare_ability_start",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    "ability_loop": {
+      "sound": "bookofdragons:monstrousnightmare_ability_loop",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    "ability_end": {
+      "sound": "bookofdragons:monstrousnightmare_ability_end",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    "flap": {
+      "sound": "bookofdragons:large_flap",
+      "volume": 0.6,
+      "pitch": 0.9,
+      "variance": 0.15
+    },
+    "bite": {
+      "sound": "bookofdragons:heavy_bite",
+      "volume": 0.75,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "shoot": {
+      "sound": "minecraft:item.firecharge.use",
+      "volume": 0.97,
+      "pitch": 0.5,
+      "variance": 0.1
+    },
+    "breath_start": {
+      "sound": "bookofdragons:monstrousnightmare_breath_start",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    "breath_loop": {
+      "sound": "bookofdragons:monstrousnightmare_breath_loop",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    "breath_end": {
+      "sound": "bookofdragons:monstrousnightmare_breath_end",
+      "volume": 0.78,
+      "pitch": 1.0
+    }
+  }
+}

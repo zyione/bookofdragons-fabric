@@ -1,0 +1,6 @@
+{
+  "Toothless": {
+    "texture": "bookofdragons:textures/entity/genetics/nightfury/nametags/toothless.png",
+    "apply_saddle": true
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "bookofdragons:everything_we_know",
+  "display": {
+    "icon": {
+      "item": "minecraft:writable_book",
+      "id": "minecraft:writable_book"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.kill_on_sight.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.kill_on_sight.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chapter": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "chapter"
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "sounds": {
+    "idle": {
+      "sound": "bookofdragons:deadlynadder_idle",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "asleep": {
+      "sound": "minecraft:entity.parrot.ambient",
+      "volume": 0.28,
+      "pitch": 0.5
+    },
+    "hurt": {
+      "sound": "bookofdragons:deadlynadder_hurt",
+      "volume": 0.63,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "death": {
+      "sound": "minecraft:entity.parrot.death",
+      "volume": 0.7,
+      "pitch": 0.5,
+      "variance": 0.1
+    },
+    "roar": {
+      "sound": "bookofdragons:deadlynadder_roar",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "growl": {
+      "sound": "bookofdragons:deadlynadder_growl",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "curious": {
+      "sound": "bookofdragons:deadlynadder_curious",
+      "volume": 0.52,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "flap": {
+      "sound": "bookofdragons:medium_flap",
+      "volume": 1.0,
+      "pitch": 1.05,
+      "variance": 0.15
+    },
+    "bite": {
+      "sound": "bookofdragons:light_bite",
+      "volume": 1.0,
+      "pitch": 1.1,
+      "variance": 0.2
+    },
+    "shoot": {
+      "sound": "minecraft:entity.blaze.shoot",
+      "volume": 0.97,
+      "pitch": 1.0,
+      "variance": 0.1
+    }
+  }
+}

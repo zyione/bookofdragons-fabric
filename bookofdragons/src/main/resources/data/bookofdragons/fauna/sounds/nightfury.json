@@ -1,0 +1,90 @@
+{
+  "sounds": {
+    "idle": {
+      "sound": "bookofdragons:nightfury_idle",
+      "volume": 0.61,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "asleep": {
+      "sound": "bookofdragons:nightfury_sleep",
+      "volume": 0.17,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "hurt": {
+      "sound": "bookofdragons:nightfury_hurt",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "death": {
+      "sound": "bookofdragons:nightfury_death",
+      "volume": 0.67,
+      "pitch": 1.0
+    },
+    "roar": {
+      "sound": "bookofdragons:nightfury_roar",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "growl": {
+      "sound": "bookofdragons:nightfury_growl",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "sneeze": null,
+    "pet": {
+      "sound": "bookofdragons:nightfury_pet",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "flap": {
+      "sound": "bookofdragons:medium_flap",
+      "volume": 1.0,
+      "pitch": 1.0,
+      "variance": 0.15
+    },
+    "bite": {
+      "sound": "bookofdragons:light_bite",
+      "volume": 1.0,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "charge": {
+      "sound": "minecraft:entity.guardian.attack",
+      "volume": 1.0,
+      "pitch": 1.5
+    },
+    "shoot": {
+      "sound": "bookofdragons:nightfury_fire",
+      "volume": 0.64,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "blast": {
+      "sound": "minecraft:entity.dragon_fireball.explode",
+      "volume": 0.82,
+      "pitch": 1.5,
+      "variance": 0.2
+    },
+    "dive_start": {
+      "sound": "bookofdragons:nightfury_dive_start",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    "dive_loop": {
+      "sound": "bookofdragons:nightfury_dive_loop",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    "dive_end": {
+      "sound": "bookofdragons:nightfury_dive_end",
+      "volume": 1.0,
+      "pitch": 1.0
+    }
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "extends": "dragon",
+  "params": {"walk_speed": 0.0575, "walk_rate_max": 4.0, "run_speed": 0.2, "run_rate_max": 4.0, "run_from": 0.2},
+  "layers": [
+    {"name": "ground_stance", "transition": 6, "easing": "linear"},
+    {"name": "fidget", "transition": 10},
+    {"name": "ground_motion", "mode": "weighted", "transition": 4, "easing": "linear"},
+    {"name": "air_stance", "transition": 5, "easing": "easeInOutQuad"},
+    {"name": "air_blend", "mode": "weighted", "easing": "linear"},
+    {"name": "aqua_stance", "transition": 10, "easing": "linear"},
+    {"name": "grip", "mode": "weighted", "transition": 4, "mask": "grip_limbs"},
+    {"name": "overlay", "transition": 10, "mask": "no_legs"},
+    {"name": "attack", "transition": 2},
+    {"name": "blink"}
+  ],
+  "controllers": {
+    "grip": {"states": {}},
+    "ground_stance": {
+      "any": [
+        {"to": "ground_bucking", "when": {"fauna_bucking": true}},
+        {"to": "invite", "when": {"fauna_inviting": true}},
+        {"to": "sleep", "when": {"fauna_sleeping": true}},
+        {"to": "sit", "when": {"is_sitting": true}},
+        {"to": "sleep", "when": {"is_incapacitated": true}},
+        {"to": "warn", "when": {"fauna_posturing": true}},
+        {"to": "stalk", "when": {"fauna_stalking": true}},
+        {"to": "eat", "when": {"isEating": true}},
+        {"to": "takeoff", "when": {"is_charging_takeoff": true}},
+        {"to": "sit", "when": {"isBegging": true}},
+        {"to": "idle"}
+      ],
+      "states": {
+        "warn": {
+          "play": "cautious",
+          "speed_from": "ground_motion",
+          "sync_to": "ground_motion",
+          "on_enter": {"event": "pose.posturing.raise"}
+        }
+      }
+    },
+    "ground_motion": {
+      "states": {
+        "run_prowl": {
+          "play": "run_prowl",
+          "anim_weight": "1.0",
+          "weight_in": 0.25,
+          "weight_out_ticks": 10,
+          "anim_speed": "math.clamp(query.horiz_speed / 0.2, 0.05, 2.0)"
+        },
+        "run_cautious": null,
+        "walk_back": null
+      }
+    },
+    "fidget": {
+      "initial": "quiet",
+      "active_when": {
+        "transport": "GROUNDED",
+        "isStationary": true,
+        "is_sitting": false,
+        "is_incapacitated": false,
+        "isBegging": false,
+        "isEating": false,
+        "fauna_sleeping": false,
+        "fauna_bucking": false,
+        "fauna_inviting": false,
+        "fauna_posturing": false,
+        "fauna_stalking": false,
+        "is_charging_takeoff": false
+      },
+      "states": {
+        "quiet": {"transitions": {"flourish": {}}, "dwell": {"min": 1200, "max": 3000}},
+        "flourish": {
+          "behavior": "PLAY_ONCE",
+          "transitions": {"quiet": {}},
+          "dwell": {"min": 5, "max": 5},
+          "exit_on_clip_end": true,
+          "suppress": ["overlay"],
+          "pool": [
+            {"play": "failed_sneeze", "when": {"activity": ["wander", "explore", "rest", "play", "friend", "pack", "NONE"]}}
+          ]
+        }
+      }
+    },
+    "air_stance": {"states": {"air_bucking": null}},
+    "air_blend": {"states": {}},
+    "overlay": {
+      "any": [
+        {"to": "surprised", "when": {"fauna_startled": true}, "edge": true},
+        {"to": "side_eye", "when": {"transport": "GROUNDED", "fauna_alert": true}, "edge": true},
+        {"to": "side_eye", "when": {"transport": "GROUNDED", "stance": "SOFT_REPEL"}, "edge": true}
+      ],
+      "states": {
+        "quiet": {"transitions": {"flourish": {}}, "dwell": {"min": 160, "max": 360}},
+        "flourish": {
+          "behavior": "PLAY_ONCE",
+          "transitions": {"quiet": {}},
+          "dwell": {"min": 5, "max": 5},
+          "exit_on_clip_end": true,
+          "pool": [
+            {
+              "play": "alert_left",
+              "when": {
+                "transport": "GROUNDED",
+                "is_sitting": false,
+                "is_incapacitated": false,
+                "isStationary": true,
+                "activity": ["wander", "explore", "rest", "play", "friend", "pack", "NONE"]
+              },
+              "weight": 3
+            },
+            {
+              "play": "alert_right",
+              "when": {
+                "transport": "GROUNDED",
+                "is_sitting": false,
+                "is_incapacitated": false,
+                "isStationary": true,
+                "activity": ["wander", "explore", "rest", "play", "friend", "pack", "NONE"]
+              },
+              "weight": 3
+            },
+            {
+              "play": "sniff",
+              "when": {
+                "transport": "GROUNDED",
+                "is_sitting": false,
+                "is_incapacitated": false,
+                "isStationary": true,
+                "activity": ["wander", "explore", "rest", "play", "friend", "pack", "NONE"]
+              },
+              "weight": 3
+            },
+            {
+              "play": "side_eye",
+              "when": {
+                "transport": "GROUNDED",
+                "is_sitting": false,
+                "is_incapacitated": false,
+                "isStationary": true,
+                "activity": ["wander", "explore", "rest", "play", "friend", "pack", "NONE"]
+              },
+              "weight": 3
+            },
+            {
+              "play": "head_spin",
+              "when": {
+                "transport": "GROUNDED",
+                "is_sitting": false,
+                "is_incapacitated": false,
+                "isStationary": true,
+                "activity": ["wander", "explore", "rest", "play", "friend", "pack", "NONE"]
+              },
+              "weight": 2
+            },
+            {
+              "play": "sneeze",
+              "when": {
+                "transport": "GROUNDED",
+                "is_sitting": false,
+                "is_incapacitated": false,
+                "isStationary": true,
+                "activity": ["wander", "explore", "rest", "play", "friend", "pack", "NONE"]
+              },
+              "weight": 2
+            },
+            {
+              "play": "surprised",
+              "when": {
+                "transport": "GROUNDED",
+                "is_sitting": false,
+                "is_incapacitated": false,
+                "isStationary": true,
+                "activity": ["wander", "explore", "rest", "play", "friend", "pack", "NONE"]
+              },
+              "weight": 2
+            },
+            {
+              "play": "tired",
+              "when": {
+                "transport": "GROUNDED",
+                "is_sitting": false,
+                "is_incapacitated": false,
+                "isStationary": true,
+                "activity": ["wander", "explore", "rest", "play", "friend", "pack", "NONE"]
+              },
+              "weight": 2
+            },
+            {"play": "alert_left", "when": {"transport": "GROUNDED", "is_sitting": true}},
+            {"play": "alert_right", "when": {"transport": "GROUNDED", "is_sitting": true}},
+            {"play": "sniff", "when": {"transport": "GROUNDED", "is_sitting": true}},
+            {"play": "side_eye", "when": {"transport": "GROUNDED", "is_sitting": true}},
+            {"play": "head_spin", "when": {"transport": "GROUNDED", "is_sitting": true}},
+            {"play": "sneeze", "when": {"transport": "GROUNDED", "is_sitting": true}},
+            {"play": "surprised", "when": {"transport": "GROUNDED", "is_sitting": true}},
+            {"play": "tired", "when": {"transport": "GROUNDED", "is_sitting": true}},
+            {"play": "tonge_out", "when": {"transport": "AIRBORNE", "not": {"isDiveBreaking": true, "normalized_y": {"<": -0.94}}}},
+            {"play": "look_back", "when": {"transport": "AIRBORNE", "not": {"isDiveBreaking": true, "normalized_y": {"<": -0.94}}}},
+            {"play": "scan_left", "when": {"transport": "AIRBORNE", "not": {"isDiveBreaking": true, "normalized_y": {"<": -0.94}}}},
+            {"play": "scan_right", "when": {"transport": "AIRBORNE", "not": {"isDiveBreaking": true, "normalized_y": {"<": -0.94}}}},
+            {"play": "head_spin", "when": {"transport": "AIRBORNE", "not": {"isDiveBreaking": true, "normalized_y": {"<": -0.94}}}},
+            {"play": "sneeze", "when": {"transport": "AIRBORNE", "not": {"isDiveBreaking": true, "normalized_y": {"<": -0.94}}}}
+          ]
+        },
+        "surprised": {
+          "play": "surprised",
+          "behavior": "PLAY_ONCE",
+          "transitions": {"quiet": {}},
+          "dwell": {"min": 30, "max": 30},
+          "cooldown": 60,
+          "exit_on_clip_end": true
+        },
+        "side_eye": {
+          "play": "side_eye",
+          "behavior": "PLAY_ONCE",
+          "transitions": {"quiet": {}},
+          "dwell": {"min": 40, "max": 40},
+          "cooldown": 300,
+          "exit_on_clip_end": true
+        }
+      }
+    },
+    "attack": {"states": {"windup_once": null}}
+  },
+  "steps": {
+    "limbs": {
+      "front_left": {
+        "root": "L_F_upperarm",
+        "mid": "L_F_forearm",
+        "foot": "L_F_paw",
+        "reach_up": 4.0,
+        "reach_down": -4.0,
+        "zone": 0.15
+      },
+      "front_right": {
+        "root": "R_F_upperarm",
+        "mid": "R_F_forearm",
+        "foot": "R_F_paw",
+        "reach_up": 4.0,
+        "reach_down": -4.0,
+        "zone": 0.15
+      },
+      "back_left": {"root": "L_B_thigh", "mid": "L_B_lowerleg", "foot": "L_B_paw", "reach_up": 4.0, "reach_down": -4.0, "zone": 0.2},
+      "back_right": {"root": "R_B_thigh", "mid": "R_B_lowerleg", "foot": "R_B_paw", "reach_up": 4.0, "reach_down": -4.0, "zone": 0.2}
+    },
+    "attitude": {"probes": {"forward": 0.2, "back": 1.6, "side": 0.4}, "band": 5.0, "translation": true, "lean": 0.5},
+    "body": {
+      "style": {
+        "chest": [8, 10],
+        "hips": [10, 8],
+        "frequency": 2.2,
+        "damping": [0.5, 0.5],
+        "bob": 2.0,
+        "nod": 5.0,
+        "neck_hold": 0.9,
+        "neck_centre": 0.5,
+        "slither": 0.6,
+        "slither_lag": [2.2, 1.8],
+        "tail_whip": 2.0,
+        "tail_lag": 1.4,
+        "side": 0.375
+      }
+    }
+  },
+  "rig": {
+    "carry": {"bone": "lower_jaw", "offset": [-1, 0.08, -11.8], "rotation": [95, 0, -45], "scale": 1},
+    "head_track": {"distribution": [0.4, 0.35, 0.25]},
+    "grip": {
+      "grippers": [
+        {"limb": ["L_F_upperarm", "L_F_forearm", "L_F_paw"], "at": [-0.4, 1.24, -0.17], "reach": 1.9},
+        {"limb": ["R_F_upperarm", "R_F_forearm", "R_F_paw"], "at": [0.4, 1.24, -0.17], "reach": 1.9}
+      ],
+      "hold": [0, 0.43, -0.01],
+      "limits": {"forward": 20, "back": 35, "side": 50},
+      "media": ["air", "water"]
+    },
+    "swim": {
+      "preset": "doggy",
+      "float": [
+        {"bone": "upper_body", "point": "upper_torso", "depth": 3.0, "move": true, "max": 44.6},
+        {"bone": "neck1", "point": "head0", "depth": -3.0, "axis": "x", "max": 35}
+      ]
+    },
+    "chains": {
+      "neck": ["neck1", "neck2"],
+      "head": ["head0"],
+      "tail": ["tail", "tail2", "tail3", "tail4", "tail5", "tail6", "tail7"],
+      "spine": ["upper_torso", "upper_body", "lower_torso"],
+      "left_wing": ["L_wing_humerus"],
+      "right_wing": ["R_wing_humerus"],
+      "root": ["worldbody"]
+    },
+    "parts": [
+      {"bone": "neck1", "width": 0.5, "stretch": 1.0},
+      {"bone": "neck2", "width": 0.5, "stretch": 1.0},
+      {"name": "head", "bone": "head0", "width": 0.5, "damage": 1.5, "head": true},
+      {"bone": "tail", "width": 0.5, "damage": 0.5, "stretch": 1.0, "walkable": true},
+      {"bone": "tail2", "width": 0.5, "damage": 0.5, "stretch": 1.0, "walkable": true},
+      {"bone": "tail3", "width": 0.5, "damage": 0.5, "stretch": 1.0, "walkable": true},
+      {"bone": "tail4", "width": 0.5, "damage": 0.5, "stretch": 1.0, "walkable": true},
+      {"bone": "tail5", "width": 0.5, "damage": 0.5, "stretch": 1.0, "walkable": true},
+      {"bone": "tail6", "width": 0.5, "damage": 0.5, "stretch": 1.0, "walkable": true},
+      {"bone": "tail7", "width": 0.5, "damage": 0.5, "stretch": 1.0, "walkable": true}
+    ],
+    "chain": {
+      "tail": {
+        "stiffness": [0, 0.5, 0.3, 0.1, 0, 0, 0.5],
+        "bend": [15, 30],
+        "cone": [0, 20, 25, 35, 45, 55, 60],
+        "asleep_stiffness": 1.0,
+        "tip": 0.6,
+        "buoyancy": 1.3,
+        "water_follow": [1, 1, 1, 0, 0, 0, 0]
+      },
+      "neck": {
+        "stiffness": [0, 0.65, 1],
+        "bend": [30, 30],
+        "cone": [60, 60],
+        "asleep_stiffness": 0.5,
+        "flow": [0.3, 0.0],
+        "head_led": true
+      }
+    },
+    "wings": {"dive_layer": "air_blend"}
+  }
+}

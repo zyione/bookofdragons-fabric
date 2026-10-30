@@ -1,0 +1,84 @@
+{
+  "parent": "bookofdragons:kill_on_sight",
+  "display": {
+    "icon": {
+      "item": "minecraft:bookshelf",
+      "id": "minecraft:bookshelf"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.every_dragon_we_know_of.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.every_dragon_we_know_of.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chapter_nightfury": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "chapter",
+        "dragon_type": "nightfury"
+      }
+    },
+    "chapter_deadly_nadder": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "chapter",
+        "dragon_type": "deadly_nadder"
+      }
+    },
+    "chapter_monstrous_nightmare": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "chapter",
+        "dragon_type": "monstrous_nightmare"
+      }
+    },
+    "chapter_gronckle": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "chapter",
+        "dragon_type": "gronckle"
+      }
+    },
+    "chapter_hideous_zippleback": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "chapter",
+        "dragon_type": "hideous_zippleback"
+      }
+    },
+    "chapter_skrill": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "chapter",
+        "dragon_type": "skrill"
+      }
+    },
+    "chapter_whispering_death": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "chapter",
+        "dragon_type": "whispering_death"
+      }
+    },
+    "chapter_terrible_terror": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "chapter",
+        "dragon_type": "terrible_terror"
+      }
+    },
+    "chapter_speed_stinger": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "chapter",
+        "dragon_type": "speed_stinger"
+      }
+    }
+  }
+}

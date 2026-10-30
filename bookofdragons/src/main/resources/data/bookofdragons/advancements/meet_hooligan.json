@@ -1,0 +1,44 @@
+{
+  "parent": "bookofdragons:root",
+  "display": {
+    "icon": {
+      "item": "bookofdragons:viking_anvil",
+      "id": "bookofdragons:viking_anvil"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.meet_hooligan.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.meet_hooligan.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "traded_with_hooligan": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "type": "bookofdragons:hooligan_drifter"
+        }
+      }
+    },
+    "traded_with_hooligan_villager": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "type": "minecraft:villager",
+          "nbt": "{VillagerData:{profession:\"bookofdragons:hooligan\"}}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "traded_with_hooligan",
+      "traded_with_hooligan_villager"
+    ]
+  ]
+}

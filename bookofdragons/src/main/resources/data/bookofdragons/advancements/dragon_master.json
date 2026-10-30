@@ -1,0 +1,87 @@
+{
+  "parent": "bookofdragons:every_dragon_we_know_of",
+  "display": {
+    "icon": {
+      "item": "minecraft:dragon_head",
+      "id": "minecraft:dragon_head"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.dragon_master.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.dragon_master.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "entry_nightfury": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "entry",
+        "dragon_type": "nightfury"
+      }
+    },
+    "entry_deadly_nadder": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "entry",
+        "dragon_type": "deadly_nadder"
+      }
+    },
+    "entry_monstrous_nightmare": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "entry",
+        "dragon_type": "monstrous_nightmare"
+      }
+    },
+    "entry_gronckle": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "entry",
+        "dragon_type": "gronckle"
+      }
+    },
+    "entry_hideous_zippleback": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "entry",
+        "dragon_type": "hideous_zippleback"
+      }
+    },
+    "entry_skrill": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "entry",
+        "dragon_type": "skrill"
+      }
+    },
+    "entry_whispering_death": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "entry",
+        "dragon_type": "whispering_death"
+      }
+    },
+    "entry_terrible_terror": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "entry",
+        "dragon_type": "terrible_terror"
+      }
+    },
+    "entry_speed_stinger": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "entry",
+        "dragon_type": "speed_stinger"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1000
+  }
+}

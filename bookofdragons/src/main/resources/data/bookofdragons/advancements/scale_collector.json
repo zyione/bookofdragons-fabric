@@ -1,0 +1,129 @@
+{
+  "parent": "bookofdragons:trail_tracker",
+  "display": {
+    "icon": {
+      "item": "bookofdragons:nightfury_scales",
+      "id": "bookofdragons:nightfury_scales"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.scale_collector.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.scale_collector.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_nightfury_scales": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:nightfury_scales"
+            ]
+          }
+        ]
+      }
+    },
+    "has_deadlynadder_scales": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:deadlynadder_scales"
+            ]
+          }
+        ]
+      }
+    },
+    "has_monstrousnightmare_scales": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:monstrousnightmare_scales"
+            ]
+          }
+        ]
+      }
+    },
+    "has_gronckle_scales": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:gronckle_scales"
+            ]
+          }
+        ]
+      }
+    },
+    "has_hiddeouszippleback_scales": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:hiddeouszippleback_scales"
+            ]
+          }
+        ]
+      }
+    },
+    "has_skrill_scales": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:skrill_scales"
+            ]
+          }
+        ]
+      }
+    },
+    "has_whisperingdeath_scales": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:whisperingdeath_scales"
+            ]
+          }
+        ]
+      }
+    },
+    "has_terrible_terror_scales": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:terrible_terror_scales"
+            ]
+          }
+        ]
+      }
+    },
+    "has_speed_stinger_scales": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bookofdragons:speed_stinger_scales"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

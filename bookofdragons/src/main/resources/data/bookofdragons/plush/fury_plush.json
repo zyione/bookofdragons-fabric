@@ -1,0 +1,7 @@
+{
+  "default": "bookofdragons:textures/entity/misc/nightfury_plush.png",
+  "skins": {
+    "black": "bookofdragons:textures/entity/misc/nightfury_plush.png",
+    "white": "bookofdragons:textures/entity/misc/lightfury_plush.png"
+  }
+}

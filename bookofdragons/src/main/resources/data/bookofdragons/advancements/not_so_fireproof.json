@@ -1,0 +1,27 @@
+{
+  "parent": "bookofdragons:nice_and_slow",
+  "display": {
+    "icon": {
+      "item": "minecraft:fire_charge",
+      "id": "minecraft:fire_charge"
+    },
+    "title": {
+      "translate": "advancements.bookofdragons.not_so_fireproof.title"
+    },
+    "description": {
+      "translate": "advancements.bookofdragons.not_so_fireproof.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "breath": {
+      "trigger": "bookofdragons:dragon",
+      "conditions": {
+        "event": "breath"
+      }
+    }
+  }
+}

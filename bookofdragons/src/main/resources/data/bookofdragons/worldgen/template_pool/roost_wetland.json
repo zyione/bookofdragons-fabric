@@ -1,0 +1,42 @@
+{
+    "name": "bookofdragons:roost_wetland",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:mystery_burrow",
+                "processors": "bookofdragons:roost_wetland",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:mystery_burrow2",
+                "processors": "bookofdragons:roost_wetland",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:mystery_burrow3",
+                "processors": "bookofdragons:roost_wetland",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:mystery_burrow4",
+                "processors": "bookofdragons:roost_wetland",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

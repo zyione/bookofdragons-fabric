@@ -1,0 +1,63 @@
+{
+  "sounds": {
+    "idle": {
+      "sound": "bookofdragons:terribleterror_idle",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "asleep": {
+      "sound": "bookofdragons:terribleterror_sleep",
+      "volume": 0.27,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "hurt": {
+      "sound": "bookofdragons:terribleterror_hurt",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "death": {
+      "sound": "bookofdragons:terribleterror_hurt",
+      "volume": 0.62,
+      "pitch": 0.85
+    },
+    "roar": {
+      "sound": "bookofdragons:terribleterror_wary_fight",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "wary_fight": {
+      "sound": "bookofdragons:terribleterror_wary_fight",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "wary_flee": {
+      "sound": "bookofdragons:terribleterror_wary_flee",
+      "volume": 0.7,
+      "pitch": 1.0,
+      "variance": 0.1
+    },
+    "flap": {
+      "sound": "bookofdragons:small_flap",
+      "volume": 1.0,
+      "pitch": 1.2,
+      "variance": 0.2
+    },
+    "bite": {
+      "sound": "bookofdragons:light_bite",
+      "volume": 1.0,
+      "pitch": 1.3,
+      "variance": 0.2
+    },
+    "shoot": {
+      "sound": "minecraft:item.firecharge.use",
+      "volume": 0.97,
+      "pitch": 1.4,
+      "variance": 0.1
+    }
+  }
+}

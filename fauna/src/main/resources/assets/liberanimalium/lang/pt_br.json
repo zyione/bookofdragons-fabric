@@ -1,0 +1,9 @@
+{
+  "key.category.liberanimalium": "FAUNA Engine",
+  "liberanimalium.ability.cannot_use": "%s não pode usar essa habilidade agora!",
+  "liberanimalium.ability.cooldown": "A habilidade de %s ainda está em recarga!",
+  "liberanimalium.ability.not_bonded": "%s não está vinculado o suficiente para usar esta habilidade!",
+  "liberanimalium.command.set": "%s agora está %s",
+  "liberanimalium.too_young_to_fly": "%s é muito jovem para voar!",
+  "liberanimalium.needs_saddle": "É preciso uma sela para montar!"
+}

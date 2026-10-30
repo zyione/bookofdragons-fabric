@@ -1,0 +1,215 @@
+{
+  "delivery": {
+    "type": "stream",
+    "windup_ticks": 8,
+    "fire_rate": 3,
+    "max_duration_ticks": 200,
+    "cooldown_ticks": 40,
+    "fuel": {"max": 100, "drain_per_tick": 1, "regen_per_sec": 20, "recharge_ticks": 100}
+  },
+  "collision": {
+    "damage": 6.0,
+    "fire_seconds": 5
+  },
+  "muzzle": {"bone": "lower_jaw", "offset": [0, 0, -0.12]},
+  "light": {"level": 12, "source": true, "projectile": true, "every_ticks": 2, "ttl_ticks": 4, "spacing": 2, "max_points": 8},
+  "emitters": [
+    {
+      "kind": "projectile",
+      "emission": {"shape": "point", "count": 1, "rate_ticks": 3},
+      "sim": {
+        "speed": 1.3, "lifetime_ticks": 32, "grow_in_ticks": 6,
+        "initial_temperature": 1.0, "cooling_rate": 0.025, "cooling_shrink": true, "flicker": 0.0,
+        "movement": [
+          {"type": "drag", "factor": 0.97}
+        ]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:wd_core",
+        "frames": 8,
+        "blend": "additive",
+        "size": [1.08, 0.0],
+        "spin": true,
+        "shader_alpha": 1.0
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "source",
+      "phase": "charge",
+      "charge_scale": {"count": true, "size": true},
+      "emission": {"shape": "ring", "radius": 0.55, "count": 10, "rate_ticks": 1, "direction": "inward"},
+      "sim": {
+        "speed": 0.07, "lifetime_ticks": 8, "grow_in_ticks": 0,
+        "initial_temperature": 1.0, "cooling_rate": 0.1, "cooling_shrink": true, "flicker": 0.25,
+        "movement": []
+      },
+      "render": {
+        "type": "pixel_quad",
+        "shader_alpha": 1.0,
+        "blend": "additive",
+        "size": [0.12, 0.0],
+        "spin": false,
+        "snap": 32,
+        "palette": [
+          {"color": [255, 245, 215], "alpha": 0.9},
+          {"color": [255, 180, 70],  "alpha": 0.8},
+          {"color": [230, 90, 25],   "alpha": 0.55},
+          {"color": [140, 40, 15],   "alpha": 0.3}
+        ]
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "source",
+      "phase": "release",
+      "emission": {"shape": "sphere", "radius": 0.3, "count": 30, "rate_ticks": 1, "direction": "outward"},
+      "sim": {
+        "speed": 0.32, "lifetime_ticks": 9, "grow_in_ticks": 0,
+        "initial_temperature": 1.0, "cooling_rate": 0.11, "cooling_shrink": true, "flicker": 0.1,
+        "movement": [
+          {"type": "drag", "factor": 0.85}
+        ]
+      },
+      "render": {
+        "type": "pixel_quad",
+        "shader_alpha": 1.0,
+        "blend": "additive",
+        "size": [0.35, 0.0],
+        "spin": false,
+        "snap": 16,
+        "palette": [
+          {"color": [255, 250, 230], "alpha": 1.0},
+          {"color": [255, 200, 90],  "alpha": 0.85},
+          {"color": [240, 110, 30],  "alpha": 0.55},
+          {"color": [120, 35, 12],   "alpha": 0.2}
+        ]
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "source",
+      "emission": {"shape": "disc", "radius": 0.12, "spread": [0.04, 0.04, 0.3], "count": 7, "rate_ticks": 1},
+      "sim": {
+        "speed": 1.3, "lifetime_ticks": 26, "grow_in_ticks": 6,
+        "initial_temperature": 1.0, "cooling_rate": 0.04, "cooling_shrink": true, "flicker": 0.15,
+        "movement": [
+          {"type": "drag", "factor": 0.955},
+          {"type": "turbulence", "amount": 0.03, "noise_scale": 0.7}
+        ]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:wd_core",
+        "frames": 8,
+        "blend": "additive",
+        "size": [0.81, 0.0],
+        "spin": true,
+        "shader_alpha": 1.0
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "source",
+      "emission": {"shape": "ring", "radius": 0.22, "count": 28, "rate_ticks": 3, "flare": 0.07},
+      "sim": {
+        "speed": 1.2, "lifetime_ticks": 28, "grow_in_ticks": 0,
+        "initial_temperature": 1.0, "cooling_rate": 0.03, "cooling_shrink": false, "flicker": 0.08,
+        "movement": [
+          {"type": "drag", "factor": 0.935},
+          {"type": "turbulence", "amount": 0.008, "noise_scale": 0.5}
+        ]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:wd_arc",
+        "frames": 6,
+        "blend": "additive",
+        "size": [0.432, 0.0],
+        "spin": false,
+        "curves": {"size": [[0.0, 0.4], [0.2, 1.0], [1.0, 0.55]], "alpha": [[0.0, 0.0], [0.08, 1.0], [0.7, 0.8], [1.0, 0.0]]},
+        "shader_alpha": 1.0
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "source",
+      "emission": {"shape": "ring", "radius": 0.35, "count": 36, "rate_ticks": 3, "flare": 0.12},
+      "sim": {
+        "speed": 1.15, "lifetime_ticks": 30, "grow_in_ticks": 0,
+        "initial_temperature": 0.85, "cooling_rate": 0.03, "cooling_shrink": false, "flicker": 0.1,
+        "movement": [
+          {"type": "drag", "factor": 0.935},
+          {"type": "turbulence", "amount": 0.012, "noise_scale": 0.5}
+        ]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:wd_arc",
+        "frames": 6,
+        "blend": "additive",
+        "size": [0.504, 0.0],
+        "spin": false,
+        "curves": {"size": [[0.0, 0.35], [0.25, 1.0], [1.0, 0.6]], "alpha": [[0.0, 0.0], [0.1, 0.95], [0.65, 0.7], [1.0, 0.0]]},
+        "shader_alpha": 1.0
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "source",
+      "emission": {"shape": "sphere", "radius": 0.2, "spread": [0.2, 0.2, 0.4], "count": 3, "rate_ticks": 1},
+      "sim": {
+        "speed": 0.9, "lifetime_ticks": 40, "grow_in_ticks": 0,
+        "initial_temperature": 1.0, "cooling_rate": 0.022, "cooling_shrink": true, "flicker": 0.35,
+        "movement": [
+          {"type": "drag", "factor": 0.96},
+          {"type": "buoyancy", "amount": 0.01},
+          {"type": "turbulence", "amount": 0.08, "noise_scale": 1.2}
+        ]
+      },
+      "render": {
+        "type": "pixel_quad",
+        "shader_alpha": 1.0,
+        "blend": "additive",
+        "size": [0.07, 0.0],
+        "spin": false,
+        "snap": 32,
+        "palette": [
+          {"color": [255, 255, 235], "alpha": 1.0},
+          {"color": [255, 220, 120], "alpha": 1.0},
+          {"color": [255, 140, 40],  "alpha": 0.9},
+          {"color": [190, 60, 20],   "alpha": 0.6}
+        ]
+      }
+    },
+    {
+      "kind": "visual",
+      "anchor": "projectile",
+      "emission": {"shape": "point", "spread": [0.15, 0.15, 0.15], "count": 1, "rate_ticks": 2, "direction": "none"},
+      "sim": {
+        "speed": 0.0, "lifetime_ticks": 34, "grow_in_ticks": 0,
+        "initial_temperature": 1.0, "cooling_rate": 0.03, "cooling_shrink": false, "flicker": 0.0,
+        "movement": [
+          {"type": "buoyancy", "amount": 0.012},
+          {"type": "turbulence", "amount": 0.02, "noise_scale": 0.4},
+          {"type": "drag", "factor": 0.9}
+        ]
+      },
+      "render": {
+        "type": "billboard",
+        "texture": "bookofdragons:wd_smoke",
+        "frames": 2,
+        "blend": "alpha",
+        "size": [0.99, 0.0],
+        "spin": true,
+        "curves": {"size": [[0.0, 0.3], [0.4, 1.0], [1.0, 1.4]], "alpha": [[0.0, 0.0], [0.2, 0.9], [1.0, 0.0]]},
+        "emissive": false
+      }
+    }
+  ],
+  "impact": [
+    {"type": "extinguish"},
+    {"type": "slide", "bounciness": 0, "friction": 0.95, "max_bounces": 50, "lifetime_ticks": 60, "fade_rate": 0.01, "sets_fire": true}
+  ]
+}

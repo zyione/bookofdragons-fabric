@@ -1,0 +1,51 @@
+{
+    "name": "bookofdragons:roost_barrens",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:stoker_den",
+                "processors": "bookofdragons:roost_barrens",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:stoker_den2",
+                "processors": "bookofdragons:roost_barrens",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:stoker_den3",
+                "processors": "bookofdragons:roost_barrens",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:stoker_den4",
+                "processors": "bookofdragons:roost_barrens",
+                "projection": "rigid"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "bookofdragons:stoker_den5",
+                "processors": "bookofdragons:roost_barrens",
+                "projection": "rigid"
+            }
+        }
+    ]
+}

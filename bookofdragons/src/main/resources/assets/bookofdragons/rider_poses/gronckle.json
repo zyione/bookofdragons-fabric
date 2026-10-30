@@ -1,0 +1,36 @@
+{
+  "seat": { "bone": "saddle", "offset": [0.0, -0.74, -0.18] },
+  "blend_in_ticks": 12.0,
+  "head_follow": 0.25,
+  "load_smoothing_ticks": 1.5,
+  "pose": {
+    "root": { "rot": [0.0, 0.0, 0.0], "pos": [0.0, 0.0, 8.25] },
+    "torso": { "rot": [33.5, 0.0, 0.0], "pos": [0.0, 0.0, 0.0] },
+    "head": { "rot": [0.0, 0.0, 0.0], "pos": [0.0, 0.0, 0.0] },
+    "right_arm": { "rot": [0.0, -39.5, 0.0], "pos": [0.0, 0.0, 0.0] },
+    "left_arm": { "rot": [0.0, 39.5, 0.0], "pos": [0.0, 0.0, 0.0] },
+    "right_leg": { "rot": [21.0, 32.5, 6.0], "pos": [-0.35, 0.0, 0.0] },
+    "left_leg": { "rot": [21.0, -32.5, -6.0], "pos": [0.35, 0.0, 0.0] }
+  },
+  "springs": {
+    "surge": { "target": "-rider.accel_forward * 16", "frequency": 1.4, "damping": 0.45, "limit": 18.0 },
+    "sway": { "target": "-rider.load_right * 12", "frequency": 1.6, "damping": 0.4, "limit": 15.0 },
+    "heave": { "target": "-rider.bob * 1.25", "frequency": 3.0, "damping": 0.6, "limit": 3.0 },
+    "tuck": { "target": "math.clamp(rider.speed * 5 + rider.gravity_forward * 10, 0, 16)", "frequency": 0.8, "damping": 1.0, "limit": 16.0 },
+    "bank": { "target": "rider.gravity_right * 35", "frequency": 1.2, "damping": 0.8, "limit": 35.0 },
+    "grip": { "target": "math.min(rider.speed, 2) * 6", "frequency": 0.9, "damping": 0.9, "limit": 12.0 }
+  },
+  "channels": {
+    "root.ty": "spring.heave",
+    "torso.rx": "spring.surge + spring.tuck + spring.heave + math.sin(rider.time * 90) * 1.2",
+    "torso.ry": "rider.look_yaw * 0.2",
+    "torso.rz": "spring.sway",
+    "head.rz": "spring.bank",
+    "right_arm.rx": "-spring.grip - (spring.surge + spring.tuck) * 0.7",
+    "right_arm.rz": "-spring.sway * 0.6",
+    "left_arm.rx": "-spring.grip - (spring.surge + spring.tuck) * 0.7",
+    "left_arm.rz": "-spring.sway * 0.6",
+    "right_leg.rx": "-spring.heave * 1.5",
+    "left_leg.rx": "-spring.heave * 1.5"
+  }
+}

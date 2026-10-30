@@ -1,0 +1,28 @@
+{
+  "entity": "speed_stinger",
+  "weight": 40,
+  "group": {"min": 2, "max": 4},
+  "radius_cap": {"radius": 96, "max": 6},
+  "where": {
+    "cold_woods": {
+      "conditions": [
+        {
+          "biome": [
+            "#minecraft:is_taiga",
+            "minecraft:grove",
+            "minecraft:dark_forest",
+            "minecraft:snowy_plains",
+            "minecraft:snowy_slopes"
+          ]
+        }
+      ]
+    }
+  },
+  "when": [
+    {"dimension": "minecraft:overworld"},
+    {"time": "active"},
+    {"light": {"block": {"max": 0}}},
+    {"world_age": {"min_days": 6}}
+  ],
+  "special": [{"moon": "full", "weight": 30, "set": {"group": {"min": 3, "max": 5}}}]
+}

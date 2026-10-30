@@ -1,0 +1,745 @@
+{
+  "attributes": {
+    "CON": { "floor": 15, "ceiling": 25 },
+    "ATH": { "floor": 35, "ceiling": 55 },
+    "AGI": { "floor": 60, "ceiling": 80 },
+    "PRW": { "floor": 20, "ceiling": 40 },
+    "POT": { "floor": 50, "ceiling": 70 },
+    "VIG": { "floor": 70, "ceiling": 90 }
+  },
+  "art_version": 2,
+  "color_loci": {
+    "b": {
+      "link_group": "body",
+      "pool": {
+        "entries": {
+          "COMMON": [
+            "aqua",
+            "teal",
+            "forest",
+            "glade",
+            "lime",
+            "brush",
+            "pyrite",
+            "enchi",
+            "sunglow"
+          ],
+          "UNCOMMON": [
+            "peach",
+            "morning",
+            "vermillion",
+            "sunrise",
+            "dawn",
+            "pastel",
+            "glace",
+            "sapphire",
+            "azure",
+            "diamond"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "r": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 35,
+          "UNCOMMON": 35,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "aqua",
+            "teal",
+            "forest",
+            "glade",
+            "lime",
+            "brush",
+            "pyrite",
+            "enchi",
+            "sunglow"
+          ],
+          "UNCOMMON": [
+            "peach",
+            "morning",
+            "vermillion",
+            "sunrise",
+            "dawn",
+            "pastel",
+            "glace",
+            "sapphire",
+            "azure",
+            "diamond"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "y": {
+      "pool": {
+        "allow_downgrade": true,
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "sandy"
+          ],
+          "UNCOMMON": [
+          ]
+        }
+      }
+    },
+    "n": {
+      "link_group": "gradient",
+      "pool": {
+        "entries": {
+          "COMMON": [
+            "aqua",
+            "teal",
+            "forest",
+            "glade",
+            "lime",
+            "brush",
+            "pyrite",
+            "enchi",
+            "sunglow"
+          ],
+          "UNCOMMON": [
+            "peach",
+            "morning",
+            "vermillion",
+            "sunrise",
+            "dawn",
+            "pastel",
+            "glace",
+            "sapphire",
+            "azure",
+            "diamond"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "j": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 35,
+          "UNCOMMON": 45,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "aqua",
+            "teal",
+            "forest",
+            "glade",
+            "lime",
+            "brush",
+            "pyrite",
+            "enchi",
+            "sunglow"
+          ],
+          "UNCOMMON": [
+            "peach",
+            "morning",
+            "vermillion",
+            "sunrise",
+            "dawn",
+            "pastel",
+            "glace",
+            "sapphire",
+            "azure",
+            "diamond"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "a": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 35,
+          "UNCOMMON": 35,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "aqua",
+            "teal",
+            "forest",
+            "glade",
+            "lime",
+            "brush",
+            "pyrite",
+            "enchi",
+            "sunglow"
+          ],
+          "UNCOMMON": [
+            "peach",
+            "morning",
+            "vermillion",
+            "sunrise",
+            "dawn",
+            "pastel",
+            "glace",
+            "sapphire",
+            "azure",
+            "diamond"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "i": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 35,
+          "UNCOMMON": 35,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "aqua",
+            "teal",
+            "forest",
+            "glade",
+            "lime",
+            "brush",
+            "pyrite",
+            "enchi",
+            "sunglow"
+          ],
+          "UNCOMMON": [
+            "peach",
+            "morning",
+            "vermillion",
+            "sunrise",
+            "dawn",
+            "pastel",
+            "glace",
+            "sapphire",
+            "azure",
+            "diamond"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "z": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 35,
+          "UNCOMMON": 35,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "aqua",
+            "teal",
+            "forest",
+            "glade",
+            "lime",
+            "brush",
+            "pyrite",
+            "enchi",
+            "sunglow"
+          ],
+          "UNCOMMON": [
+            "peach",
+            "morning",
+            "vermillion",
+            "sunrise",
+            "dawn",
+            "pastel",
+            "glace",
+            "sapphire",
+            "azure",
+            "diamond"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "v": {
+      "link_group": "gradient",
+      "pool": {
+        "entries": {
+          "COMMON": [
+            "aqua",
+            "teal",
+            "forest",
+            "glade",
+            "lime",
+            "brush",
+            "pyrite",
+            "enchi",
+            "sunglow"
+          ],
+          "UNCOMMON": [
+            "peach",
+            "morning",
+            "vermillion",
+            "sunrise",
+            "dawn",
+            "pastel",
+            "glace",
+            "sapphire",
+            "azure",
+            "diamond"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "c": {
+      "link_group": "pattern",
+      "pool": {
+        "weights": {
+          "COMMON": 35,
+          "UNCOMMON": 35,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "aqua",
+            "teal",
+            "forest",
+            "glade",
+            "lime",
+            "brush",
+            "pyrite",
+            "enchi",
+            "sunglow"
+          ],
+          "UNCOMMON": [
+            "peach",
+            "morning",
+            "vermillion",
+            "sunrise",
+            "dawn",
+            "pastel",
+            "glace",
+            "sapphire",
+            "azure",
+            "diamond"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    }
+  },
+  "structure_loci": {
+    "d": {
+      "expression_count": 2,
+      "multi_channel_count": 2,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 40,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "blank"
+          ],
+          "UNCOMMON": [
+            "d_back_stripe",
+            "d_banded_tail_rings",
+            "d_small_stripes"
+          ],
+          "RARE": [
+            "d_collared"
+          ],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "u": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "u_underbelly_simple"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "p": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "blank"
+          ],
+          "UNCOMMON": [
+            "b_body_stripes"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "w": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "w_wing_spots",
+            "w_stripes_simple"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "x": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "f": {
+      "expression_count": 2,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "f_nose_fade",
+            "f_eye_streak",
+            "f_head_top_fade",
+            "f_center_stripe"
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "l": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 30,
+          "UNCOMMON": 40,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [ "blank"
+          ],
+          "UNCOMMON": ["l_leg_fade_basic",
+          "l_leg_banded",
+          "l_leg_socks",
+          "l_leg_spots"],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "s": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "h": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "blank"
+          ],
+          "UNCOMMON": [
+            "g_head_neck",
+            "g_tail_mid_fade"
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "k": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 30,
+          "UNCOMMON": 40,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+            "wg_wing_fade_simple",
+            "wg_wing_fade_outer",
+            "wg_wing_edges"
+          ],
+          "UNCOMMON": [
+
+          ],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    },
+    "q": {
+      "expression_count": 1,
+      "pool": {
+        "weights": {
+          "COMMON": 40,
+          "UNCOMMON": 30,
+          "RARE": 20,
+          "VERY_RARE": 10
+        },
+        "entries": {
+          "COMMON": [
+          ],
+          "UNCOMMON": [],
+          "RARE": [],
+          "VERY_RARE": []
+        }
+      }
+    }
+  },
+  "linkage": {
+    "rules": {
+      "body": {
+        "mode_weights": {
+          "SAME": 50,
+          "SIMILAR": 35,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      },
+      "pattern": {
+        "mode_weights": {
+          "SAME": 55,
+          "SIMILAR": 40,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      },
+      "gradient": {
+        "mode_weights": {
+          "SAME": 50,
+          "SIMILAR": 35,
+          "NONE": 15
+        },
+        "tier_weights": {
+          "0": 50,
+          "1": 30,
+          "2": 20
+        }
+      }
+    }
+  },
+  "palette_taxonomy": {
+    "aqua": {
+    "primary": "blue",
+    "sat": 4,
+    "temp": 3,
+    "light": 0
+  },
+  "teal": {
+    "primary": "blue",
+    "sat": 3,
+    "temp": 3,
+    "light": -1
+  },
+  "forest": {
+    "primary": "green",
+    "sat": 2,
+    "temp": -1,
+    "light": -2
+  },
+  "glade": {
+    "primary": "green",
+    "sat": 2,
+    "temp": 0,
+    "light": -1
+  },
+  "lime": {
+    "primary": "green",
+    "sat": 2,
+    "temp": 2,
+    "light": 2
+  },
+  "brush": {
+    "primary": "green",
+    "sat": -2,
+    "temp": 5,
+    "light": 2
+  },
+  "pyrite": {
+    "primary": "yellow",
+    "sat": 1,
+    "temp": 1,
+    "light": 3
+  },
+  "enchi": {
+    "primary": "orange",
+    "sat": 2,
+    "temp": -2,
+    "light": 2
+  },
+  "sunglow": {
+    "primary": "orange",
+    "sat": 2,
+    "temp": 1,
+    "light": 1
+  },
+  "peach": {
+    "primary": "orange",
+    "sat": 3,
+    "temp": 4,
+    "light": 0
+  },
+  "morning": {
+    "primary": "red",
+    "sat": 3,
+    "temp": 2,
+    "light": 0
+  },
+  "vermillion": {
+    "primary": "red",
+    "sat": 3,
+    "temp": 0,
+    "light": -1
+  },
+  "sunrise": {
+    "primary": "red",
+    "sat": 1,
+    "temp": -4,
+    "light": 1
+  },
+  "dawn": {
+    "primary": "purple",
+    "sat": 2,
+    "temp": 4,
+    "light": 1
+  },
+  "pastel": {
+    "primary": "blue",
+    "sat": 2,
+    "temp": -5,
+    "light": 1
+  },
+  "glace": {
+    "primary": "blue",
+    "sat": 1,
+    "temp": -2,
+    "light": 1
+  },
+  "sapphire": {
+    "primary": "blue",
+    "sat": 2,
+    "temp": 0,
+    "light": 1
+  },
+  "azure": {
+    "primary": "blue",
+    "sat": 3,
+    "temp": 1,
+    "light": 2
+  },
+  "diamond": {
+    "primary": "blue",
+    "sat": 4,
+    "temp": 2,
+    "light": 2
+  },
+    "sandy": {
+      "primary": "orange",
+      "sat": -3,
+      "temp": 1,
+      "light": 3
+    }
+  }
+}

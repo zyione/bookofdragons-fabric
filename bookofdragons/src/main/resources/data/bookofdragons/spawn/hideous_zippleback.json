@@ -1,0 +1,16 @@
+{
+  "entity": "hiddeous_zippleback",
+  "weight": 40,
+  "group": {"min": 1, "max": 2},
+  "radius_cap": {"radius": 128, "max": 3},
+  "where": {
+    "swamp": {"conditions": [{"biome": ["minecraft:swamp", "minecraft:mangrove_swamp", "minecraft:mushroom_fields"]}]},
+    "river_mist": {"weight": 30, "conditions": [{"biome": "#minecraft:is_river"}, {"weather": "rain"}]}
+  },
+  "when": [{"dimension": "minecraft:overworld"}, {"time": "active"}, {"y": {"min": 50}}, {"sky": "exposed"}],
+  "special": [
+    {"near_roost": {"within": 160, "kind": "wetland"}, "weight": 40},
+    {"weather": "rain", "weight": 15},
+    {"moon": "new", "weight": 10}
+  ]
+}

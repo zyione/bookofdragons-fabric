@@ -1,0 +1,9 @@
+{
+  "key.category.liberanimalium": "FAUNA Engine",
+  "liberanimalium.ability.cannot_use": "Der %s kann diese Fähigkeit gerade nicht nutzen!",
+  "liberanimalium.ability.cooldown": "Die Fähigkeit deines %ss ist noch am abklingen!",
+  "liberanimalium.ability.not_bonded": "Der Bund zu deinem %s ist noch nicht stark genug um diese Fähigkeit zu nutzen!",
+  "liberanimalium.command.set": "Der %s ist jetzt am %s",
+  "liberanimalium.too_young_to_fly": "Der %s ist zu jung zum fliegen!",
+  "liberanimalium.needs_saddle": "Es braucht einen Sattel, um geritten zu werden!"
+}

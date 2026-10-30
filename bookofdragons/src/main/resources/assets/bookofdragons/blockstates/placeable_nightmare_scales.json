@@ -1,0 +1,20 @@
+{
+  "multipart": [
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_1"}, "when": {"facing": "north", "amount": "1|2|3|4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_1", "y": 90}, "when": {"facing": "east", "amount": "1|2|3|4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_1", "y": 180}, "when": {"facing": "south", "amount": "1|2|3|4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_1", "y": 270}, "when": {"facing": "west", "amount": "1|2|3|4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_2"}, "when": {"facing": "north", "amount": "2|3|4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_2", "y": 90}, "when": {"facing": "east", "amount": "2|3|4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_2", "y": 180}, "when": {"facing": "south", "amount": "2|3|4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_2", "y": 270}, "when": {"facing": "west", "amount": "2|3|4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_3"}, "when": {"facing": "north", "amount": "3|4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_3", "y": 90}, "when": {"facing": "east", "amount": "3|4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_3", "y": 180}, "when": {"facing": "south", "amount": "3|4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_3", "y": 270}, "when": {"facing": "west", "amount": "3|4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_4"}, "when": {"facing": "north", "amount": "4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_4", "y": 90}, "when": {"facing": "east", "amount": "4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_4", "y": 180}, "when": {"facing": "south", "amount": "4"}},
+    {"apply": {"model": "bookofdragons:block/placeable_nightmare_scales_4", "y": 270}, "when": {"facing": "west", "amount": "4"}}
+  ]
+}

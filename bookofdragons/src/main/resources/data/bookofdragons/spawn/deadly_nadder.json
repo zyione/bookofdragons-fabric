@@ -1,0 +1,32 @@
+{
+  "entity": "deadlynadder",
+  "weight": 45,
+  "group": {"min": 1, "max": 2},
+  "radius_cap": {"radius": 128, "max": 4},
+  "where": {
+    "forest": {
+      "conditions": [
+        {"biome": ["#minecraft:is_forest", "#minecraft:is_jungle", "minecraft:cherry_grove"]},
+        {"temperature": {"min": 0.5}},
+        {"sky": "exposed"}
+      ]
+    },
+    "flowers": {
+      "weight": 40,
+      "group": {"min": 2, "max": 3},
+      "conditions": [
+        {
+          "biome": [
+            "minecraft:flower_forest",
+            "minecraft:meadow",
+            "minecraft:sunflower_plains",
+            "minecraft:cherry_grove"
+          ]
+        },
+        {"nearby_block": {"is": "#minecraft:flowers", "radius": 4, "min_count": 3}}
+      ]
+    }
+  },
+  "when": [{"dimension": "minecraft:overworld"}, {"time": "active"}],
+  "special": [{"near_roost": {"within": 160, "kind": "glade"}, "weight": 40}, {"weather": "clear", "weight": 10}]
+}

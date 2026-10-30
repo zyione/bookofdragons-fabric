@@ -1,0 +1,7 @@
+{
+  "render_type": "minecraft:cutout",
+  "parent": "bookofdragons:block/scalebed_2",
+  "textures": {
+    "scale": "bookofdragons:block/placeable_terribleterror_scales"
+  }
+}

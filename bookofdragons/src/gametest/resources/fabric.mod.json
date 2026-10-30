@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "bookofdragons_tests",
+  "version": "1.0.0",
+  "name": "Book of Dragons verification",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-gametest": ["net.magister.bookofdragons.verification.PortGameTests"],
+    "client": ["net.magister.bookofdragons.verification.ClientVerification"]
+  },
+  "depends": { "bookofdragons": "*" },
+  "suggests": { "fabric-gametest-api-v1": "*" }
+}

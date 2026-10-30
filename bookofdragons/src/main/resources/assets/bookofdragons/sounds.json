@@ -1,0 +1,1093 @@
+{
+  "animal_squeak": {
+    "subtitle": "subtitles.bookofdragons.animal_squeak",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/plush/animal_squeak1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/animal_squeak2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/animal_squeak3",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/animal_squeak4",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/animal_squeak5",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "ball_squeak": {
+    "subtitle": "subtitles.bookofdragons.ball_squeak",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/plush/ball_squeak1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/ball_squeak2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/ball_squeak3",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/ball_squeak4",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "deadlynadder_curious": {
+    "subtitle": "subtitles.bookofdragons.deadlynadder_curious",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_curious1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_curious2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_curious3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "deadlynadder_growl": {
+    "subtitle": "subtitles.bookofdragons.deadlynadder_growl",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_growl1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_growl2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_growl3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "deadlynadder_hurt": {
+    "subtitle": "subtitles.bookofdragons.deadlynadder_hurt",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_hurt1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_hurt2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_hurt3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "deadlynadder_idle": {
+    "subtitle": "subtitles.bookofdragons.deadlynadder_idle",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_idle1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_idle2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_idle3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "deadlynadder_roar": {
+    "subtitle": "subtitles.bookofdragons.deadlynadder_roar",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/deadlynadder/deadlynadder_roar",
+        "stream": false,
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "dragon_whistle": {
+    "subtitle": "subtitles.bookofdragons.dragon_whistle",
+    "sounds": [
+      {
+        "name": "bookofdragons:item/dragon_whistle1",
+        "stream": false,
+        "attenuation_distance": 64
+      },
+      {
+        "name": "bookofdragons:item/dragon_whistle2",
+        "stream": false,
+        "attenuation_distance": 64
+      },
+      {
+        "name": "bookofdragons:item/dragon_whistle3",
+        "stream": false,
+        "attenuation_distance": 64
+      },
+      {
+        "name": "bookofdragons:item/dragon_whistle4",
+        "stream": false,
+        "attenuation_distance": 64
+      },
+      {
+        "name": "bookofdragons:item/dragon_whistle5",
+        "stream": false,
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "gronckle_fire": {
+    "subtitle": "subtitles.bookofdragons.gronckle_fire",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/gronckle/gronckle_fire1",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "gronckle_idle": {
+    "subtitle": "subtitles.bookofdragons.gronckle_idle",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/gronckle/gronckle_idle1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/gronckle/gronckle_idle2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/gronckle/gronckle_idle3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "heavy_bite": {
+    "subtitle": "subtitles.bookofdragons.heavy_bite",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/generic/heavy_bite1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/generic/heavy_bite2",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "hideouszippleback_breath_end": {
+    "subtitle": "subtitles.bookofdragons.hideouszippleback_breath_end",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_breath_end",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "hideouszippleback_breath_loop": {
+    "subtitle": "subtitles.bookofdragons.hideouszippleback_breath_loop",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_breath_loop",
+        "stream": false,
+        "preload": true,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "hideouszippleback_breath_start": {
+    "subtitle": "subtitles.bookofdragons.hideouszippleback_breath_start",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_breath_start",
+        "stream": false,
+        "preload": true,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "hideouszippleback_death": {
+    "subtitle": "subtitles.bookofdragons.hideouszippleback_death",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_death",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "hideouszippleback_hurt": {
+    "subtitle": "subtitles.bookofdragons.hideouszippleback_hurt",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_hurt1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_hurt2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_hurt3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "hideouszippleback_idle": {
+    "subtitle": "subtitles.bookofdragons.hideouszippleback_idle",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_idle1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_idle2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_idle3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "hideouszippleback_ignition": {
+    "subtitle": "subtitles.bookofdragons.hideouszippleback_ignition",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_ignition1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_ignition2",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "hideouszippleback_roar": {
+    "subtitle": "subtitles.bookofdragons.hideouszippleback_roar",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_roar",
+        "stream": false,
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "hideouszippleback_sleep": {
+    "subtitle": "subtitles.bookofdragons.hideouszippleback_sleep",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_sleep1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_sleep2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/hideouszippleback/hideouszippleback_sleep3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "large_flap": {
+    "subtitle": "subtitles.bookofdragons.large_flap",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/generic/large_flap1",
+        "stream": false,
+        "attenuation_distance": 36
+      },
+      {
+        "name": "bookofdragons:entity/generic/large_flap2",
+        "stream": false,
+        "attenuation_distance": 36
+      },
+      {
+        "name": "bookofdragons:entity/generic/large_flap3",
+        "stream": false,
+        "attenuation_distance": 36
+      },
+      {
+        "name": "bookofdragons:entity/generic/large_flap4",
+        "stream": false,
+        "attenuation_distance": 36
+      },
+      {
+        "name": "bookofdragons:entity/generic/large_flap5",
+        "stream": false,
+        "attenuation_distance": 36
+      }
+    ]
+  },
+  "light_bite": {
+    "subtitle": "subtitles.bookofdragons.light_bite",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/generic/light_bite1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/generic/light_bite2",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "medium_flap": {
+    "subtitle": "subtitles.bookofdragons.medium_flap",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/generic/medium_flap1",
+        "stream": false,
+        "attenuation_distance": 30
+      },
+      {
+        "name": "bookofdragons:entity/generic/medium_flap2",
+        "stream": false,
+        "attenuation_distance": 30
+      },
+      {
+        "name": "bookofdragons:entity/generic/medium_flap3",
+        "stream": false,
+        "attenuation_distance": 30
+      },
+      {
+        "name": "bookofdragons:entity/generic/medium_flap4",
+        "stream": false,
+        "attenuation_distance": 30
+      },
+      {
+        "name": "bookofdragons:entity/generic/medium_flap5",
+        "stream": false,
+        "attenuation_distance": 30
+      }
+    ]
+  },
+  "monstrousnightmare_ability_end": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_ability_end",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_ability_end",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_ability_loop": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_ability_loop",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_ability_loop",
+        "stream": false,
+        "preload": true,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_ability_start": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_ability_start",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_ability_start",
+        "stream": false,
+        "preload": true,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_breath_end": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_breath_end",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_breath_end",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_breath_loop": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_breath_loop",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_breath_loop",
+        "stream": false,
+        "preload": true,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_breath_start": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_breath_start",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_breath_start",
+        "stream": false,
+        "preload": true,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_buck": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_buck",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_buck",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_curious": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_curious",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_curious1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_curious2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_curious3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_death": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_death",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_death",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_friendly": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_friendly",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_friendly1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_friendly1_1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_friendly2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_friendly2_1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_friendly3",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_friendly3_1",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_growl": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_growl",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_growl1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_growl2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_growl3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_hurt": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_hurt",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_hurt1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_hurt2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_hurt3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_idle": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_idle",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_idle1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_idle2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_idle3",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_idle4",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_idle5",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_passive": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_passive",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_passive1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_passive2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_passive3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_pet": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_pet",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_pet",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_roar": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_roar",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_roar",
+        "stream": false,
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "monstrousnightmare_sleep": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_sleep",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_sleep1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_sleep2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_sleep3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_wary_fight": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_wary_fight",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_wary_fight1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_wary_fight2",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "monstrousnightmare_wary_flee": {
+    "subtitle": "subtitles.bookofdragons.monstrousnightmare_wary_flee",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/monstrousnightmare/monstrousnightmare_wary_flee",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "nightfury_death": {
+    "subtitle": "subtitles.bookofdragons.nightfury_death",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_death",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "nightfury_dive_end": {
+    "subtitle": "subtitles.bookofdragons.nightfury_dive_end",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_dive_end",
+        "stream": false,
+        "attenuation_distance": 80
+      }
+    ]
+  },
+  "nightfury_dive_loop": {
+    "subtitle": "subtitles.bookofdragons.nightfury_dive_loop",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_dive_loop",
+        "stream": false,
+        "attenuation_distance": 80
+      }
+    ]
+  },
+  "nightfury_dive_start": {
+    "subtitle": "subtitles.bookofdragons.nightfury_dive_start",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_dive_start",
+        "stream": false,
+        "attenuation_distance": 80
+      }
+    ]
+  },
+  "nightfury_fire": {
+    "subtitle": "subtitles.bookofdragons.nightfury_fire",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_fire1",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "nightfury_growl": {
+    "subtitle": "subtitles.bookofdragons.nightfury_growl",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_growl1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_growl2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_growl3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "nightfury_hurt": {
+    "subtitle": "subtitles.bookofdragons.nightfury_hurt",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_hurt1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_hurt2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_hurt3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "nightfury_idle": {
+    "subtitle": "subtitles.bookofdragons.nightfury_idle",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_idle1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_idle2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_idle3",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_idle4",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_idle5",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_idle6",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "nightfury_pet": {
+    "subtitle": "subtitles.bookofdragons.nightfury_pet",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_pet",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "nightfury_roar": {
+    "subtitle": "subtitles.bookofdragons.nightfury_roar",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_roar",
+        "stream": false,
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "nightfury_sleep": {
+    "subtitle": "subtitles.bookofdragons.nightfury_sleep",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_sleep1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_sleep2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/nightfury/nightfury_sleep3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "plush_low_squeak": {
+    "subtitle": "subtitles.bookofdragons.plush_low_squeak",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/plush/plush_low_squeak1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/plush_low_squeak2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/plush_low_squeak3",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/plush_low_squeak4",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "plush_squeak": {
+    "subtitle": "subtitles.bookofdragons.plush_squeak",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/plush/plush_squeak1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/plush_squeak2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/plush_squeak3",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/plush_squeak4",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/plush/plush_squeak5",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "rattlestaff_use": {
+    "subtitle": "subtitles.bookofdragons.rattlestaff_use",
+    "sounds": [
+      {
+        "name": "bookofdragons:item/rattlestaff_use",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "skrill_fire": {
+    "subtitle": "subtitles.bookofdragons.skrill_fire",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/skrill/skrill_fire1",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "small_flap": {
+    "subtitle": "subtitles.bookofdragons.small_flap",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/generic/small_flap1",
+        "stream": false,
+        "attenuation_distance": 24
+      },
+      {
+        "name": "bookofdragons:entity/generic/small_flap2",
+        "stream": false,
+        "attenuation_distance": 24
+      },
+      {
+        "name": "bookofdragons:entity/generic/small_flap3",
+        "stream": false,
+        "attenuation_distance": 24
+      },
+      {
+        "name": "bookofdragons:entity/generic/small_flap4",
+        "stream": false,
+        "attenuation_distance": 24
+      },
+      {
+        "name": "bookofdragons:entity/generic/small_flap5",
+        "stream": false,
+        "attenuation_distance": 24
+      }
+    ]
+  },
+  "terribleterror_hurt": {
+    "subtitle": "subtitles.bookofdragons.terribleterror_hurt",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_hurt1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_hurt2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_hurt3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "terribleterror_idle": {
+    "subtitle": "subtitles.bookofdragons.terribleterror_idle",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_idle1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_idle2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_idle3",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_idle4",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "terribleterror_sleep": {
+    "subtitle": "subtitles.bookofdragons.terribleterror_sleep",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_sleep1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_sleep2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_sleep3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "terribleterror_wary_fight": {
+    "subtitle": "subtitles.bookofdragons.terribleterror_wary_fight",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_wary_fight1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_wary_fight2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_wary_fight3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  },
+  "terribleterror_wary_flee": {
+    "subtitle": "subtitles.bookofdragons.terribleterror_wary_flee",
+    "sounds": [
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_wary_flee1",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_wary_flee2",
+        "stream": false,
+        "attenuation_distance": 20
+      },
+      {
+        "name": "bookofdragons:entity/terribleterror/terribleterror_wary_flee3",
+        "stream": false,
+        "attenuation_distance": 20
+      }
+    ]
+  }
+}
