@@ -38,6 +38,8 @@ public final class ClientVerification implements ClientModInitializer {
         });
     }
     private void step(Minecraft client) throws Exception {
+        // Automated windows may lose focus; keep the integrated server ticking.
+        client.options.pauseOnLostFocus = false;
         if (++tick > 6000) throw new IllegalStateException("Client verification timed out at phase " + phase);
         if (phase == 0) {
             if (!(client.screen instanceof TitleScreen) || client.getOverlay() != null) return;

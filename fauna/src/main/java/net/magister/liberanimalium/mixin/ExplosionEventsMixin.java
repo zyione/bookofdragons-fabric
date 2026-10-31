@@ -6,16 +6,17 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.AABB;
 import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.*;
 
 @Mixin(Explosion.class)
 public abstract class ExplosionEventsMixin {
     @Shadow @Final private ObjectArrayList<BlockPos> toBlow;
-    @Redirect(method = "explode", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;getEntities(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/AABB;)Ljava/util/List;"))
-    private List<Entity> liberanimalium$detonate(Level level, Entity except, AABB bounds) {
-        List<Entity> entities = level.getEntities(except, bounds);
+    @Shadow @Final private Level level;
+    // Transform the collected list after other mods' query redirects have run.
+    // Dragons of Berk also redirects the query; replacing it twice prevents boot.
+    @ModifyVariable(method = "explode", at = @At("STORE"), ordinal = 0)
+    private List<Entity> liberanimalium$detonate(List<Entity> entities) {
         CommonEvents.EXPLOSION.allEach(l -> l.onDetonate(level, (Explosion)(Object)this, toBlow, entities));
         return entities;
     }

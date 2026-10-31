@@ -14,6 +14,8 @@ result={
     'reproducibleReleaseJars':read_json('.reference/repro-result.json'),
     'resources':{},'releaseArtifacts':{},'manualCoverage':'See VERIFICATION.md; exhaustive gameplay and real-player latency tests remain unverified.'
 }
+compat = ROOT/'.reference/pack-compat-result.json'
+if compat.exists(): result['modpackCompatibility'] = json.loads(compat.read_text())
 for module,prefix in [('fauna','fauna'),('bookofdragons','book')]:
     audit=read_json('.reference/'+prefix+'-packaged-audit.json')
     result['resources'][module]=audit['resourceComparison']

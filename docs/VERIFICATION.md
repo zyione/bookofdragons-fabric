@@ -9,11 +9,12 @@ a claim of exhaustive behavior parity or a comparison with a live Forge game.
 - Development compilation and packaging with JDK 21, Gradle 9.2.1, Loom 1.14.10.
 - Three JUnit tests: independent-player large transfers, malformed/replayed
   fragments, disconnect and timeout cleanup.
-- Eight Fabric GameTests: every actual dragon species finalizes with genetics,
+- Ten Fabric GameTests: every actual dragon species finalizes with genetics,
   ticks, and round-trips ownership/data; multipart lookup/collision queries;
   sound-listener tags; discovery/notes serialization and copying; paralysis,
   immunity and AI restoration; non-owner and distance authorization;
-  equipment and egg persistence; malformed controls; actual egg hatching.
+  equipment and egg persistence; malformed controls; actual egg hatching;
+  mutable explosion entity filtering before damage; null-entity ray queries.
 - Development dedicated server readiness; isolated packaged Java 17 server
   readiness and graceful save/shutdown.
 - Development and packaged Java 17 clients: genetic appearance synchronization,
@@ -26,6 +27,11 @@ a claim of exhaustive behavior parity or a comparison with a live Forge game.
 - Packaged dedicated server: summoned and ticked all nine species before
   gracefully saving and stopping.
 - Rebuilt both release jars with all tasks rerun; both SHA-256 hashes matched.
+- Repaired jars in an isolated copy of the user's launcher-pack mods, using
+  Fabric Loader 0.19.5 and Java 17: 83 top-level jars including the test harness,
+  Dragons of Berk, Create/Porting Library, Lithium and ModernFix. All eight client
+  checks passed and the process exited cleanly. User configs, resource packs,
+  shaders and existing saves were not copied, so those remain outside this check.
 - Asset/data hashes: 1,002 Book resources and 77 FAUNA resources match their
   reference jars, with none removed, added or changed in the audit's asset/data
   scope. The sealed `bookofdragons.core` is retained as a required resource.
@@ -61,6 +67,14 @@ mixin targets are absent without Sable. Offline test accounts cannot access
 Realms; test servers bind only to loopback.
 
 ## Port-specific issues found and corrected
+
+- Launcher-pack compatibility repair: FAUNA now filters the collected explosion
+  entity list instead of redirecting the same query as Dragons of Berk.
+  The callback still runs before damage; a regression test verifies one callback,
+  protected-entity exclusion and damage to an unfiltered entity.
+- When `porting_lib_base` is loaded, use its identical null-entity collision-context
+  implementation instead of applying a competing redirect. The standalone
+  fallback remains required and covered by an entity-independent ray-query test.
 
 - Wait for both mod initializers before registry/setup; otherwise FAUNA's
   call game event was missing from its listener tag.

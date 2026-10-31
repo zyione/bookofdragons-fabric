@@ -24,6 +24,37 @@ import net.minecraft.world.entity.animal.Pig;
 import net.minecraft.world.phys.AABB;
 
 public final class PortGameTests implements FabricGameTest {
+    @GameTest(template = FabricGameTest.EMPTY_STRUCTURE)
+    public void entityIndependentRayQueriesRemainSupported(GameTestHelper helper) {
+        var position = helper.absoluteVec(new net.minecraft.world.phys.Vec3(1, 2, 1));
+        var context = new net.minecraft.world.level.ClipContext(position, position.add(0, -1, 0),
+            net.minecraft.world.level.ClipContext.Block.COLLIDER,
+            net.minecraft.world.level.ClipContext.Fluid.NONE, null);
+        helper.getLevel().clip(context);
+        helper.succeed();
+    }
+    @GameTest(template = FabricGameTest.EMPTY_STRUCTURE)
+    public void explosionListenersFilterEntitiesBeforeDamage(GameTestHelper helper) {
+        Pig protectedPig = helper.spawn(EntityType.PIG, new BlockPos(1, 2, 1));
+        Pig exposedPig = helper.spawn(EntityType.PIG, new BlockPos(2, 2, 1));
+        float initialHealth = protectedPig.getHealth();
+        var explosion = new net.minecraft.world.level.Explosion(helper.getLevel(), null,
+            protectedPig.getX(), protectedPig.getY(), protectedPig.getZ(), 2.0F, false,
+            net.minecraft.world.level.Explosion.BlockInteraction.KEEP);
+        int[] calls = {0};
+        net.magister.liberanimalium.platform.event.CommonEvents.EXPLOSION.register((level, event, blocks, entities) -> {
+            if (event == explosion) {
+                calls[0]++;
+                helper.assertTrue(entities.contains(protectedPig), "Explosion callback missed nearby entity");
+                entities.remove(protectedPig);
+            }
+        });
+        explosion.explode();
+        helper.assertTrue(calls[0] == 1, "Explosion callback must run exactly once");
+        helper.assertTrue(protectedPig.getHealth() == initialHealth, "Filtered entity took explosion damage");
+        helper.assertTrue(exposedPig.getHealth() < exposedPig.getMaxHealth(), "Unfiltered entity escaped explosion damage");
+        helper.succeed();
+    }
     private static net.magister.liberanimalium.platform.net.PacketContext sender(net.minecraft.server.level.ServerPlayer player) {
         return new net.magister.liberanimalium.platform.net.PacketContext() {
             public void enqueueWork(Runnable work) { work.run(); }
