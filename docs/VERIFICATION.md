@@ -9,12 +9,14 @@ a claim of exhaustive behavior parity or a comparison with a live Forge game.
 - Development compilation and packaging with JDK 21, Gradle 9.2.1, Loom 1.14.10.
 - Three JUnit tests: independent-player large transfers, malformed/replayed
   fragments, disconnect and timeout cleanup.
-- Ten Fabric GameTests: every actual dragon species finalizes with genetics,
+- Eleven Fabric GameTests: every actual dragon species finalizes with genetics,
   ticks, and round-trips ownership/data; multipart lookup/collision queries;
   sound-listener tags; discovery/notes serialization and copying; paralysis,
   immunity and AI restoration; non-owner and distance authorization;
   equipment and egg persistence; malformed controls; actual egg hatching;
-  mutable explosion entity filtering before damage; null-entity ray queries.
+  mutable explosion entity filtering before damage; null-entity ray queries;
+  nearest-entity ownership commands from a position closer to a hitbox than the
+  parent, followed by ticking, saddling and a successful mounting permission check.
 - Development dedicated server readiness; isolated packaged Java 17 server
   readiness and graceful save/shutdown.
 - Development and packaged Java 17 clients: genetic appearance synchronization,
@@ -67,6 +69,12 @@ mixin targets are absent without Sable. Offline test accounts cannot access
 Realms; test servers bind only to loopback.
 
 ## Port-specific issues found and corrected
+
+- Exclude FAUNA's nonpersistent multipart hitboxes from command selectors before
+  sorting and limiting. Physical queries still include them. The new regression
+  test failed on the previous jar because the nearest Night Fury was a hitbox,
+  then passed with the selector fix and both ownership commands applied to the
+  dragon. Hitboxes have their parent's entity type but cannot save taming fields.
 
 - Supply Fabric model baking and display-context selection for the reference
   `forge:separate_transforms` book, renamed book and rattlestaff definitions.

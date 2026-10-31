@@ -24,6 +24,40 @@ import net.minecraft.world.entity.animal.Pig;
 import net.minecraft.world.phys.AABB;
 
 public final class PortGameTests implements FabricGameTest {
+    @GameTest(template = FabricGameTest.EMPTY_STRUCTURE, timeoutTicks = 240)
+    public void forcedOwnershipCommandsPermitMounting(GameTestHelper helper) {
+        var player = helper.makeMockServerPlayerInLevel();
+        DragonBase body = helper.spawn(ModEntities.NIGHTFURY.get(), new BlockPos(1, 200, 1));
+        body.setGrowthStage(2); body.setNoAi(true); body.setNoGravity(true);
+        helper.runAfterDelay(20, () -> {
+            PartBody<?> nearestPart = Arrays.stream(body.getParts())
+                .filter(part -> part.distanceToSqr(body) > 0.1 && part.distanceToSqr(body) < 64)
+                .findFirst().orElseThrow(() -> new IllegalStateException("No offset hitbox for selector regression"));
+            player.setPos(nearestPart.position());
+            var source = player.createCommandSourceStack().withPermission(4);
+            var commands = helper.getLevel().getServer().getCommands();
+            String selector = "@e[type=bookofdragons:nightfury,sort=nearest,limit=1,distance=..10]";
+            try {
+                var parsed = new net.minecraft.commands.arguments.selector.EntitySelectorParser(new com.mojang.brigadier.StringReader(selector)).parse();
+                helper.assertTrue(parsed.findSingleEntity(source) == body, "Nearest-dragon selector returned a hitbox instead of its parent");
+            } catch (com.mojang.brigadier.exceptions.CommandSyntaxException failure) {
+                throw new IllegalStateException(failure);
+            }
+            commands.performPrefixedCommand(source, "data modify entity " + selector + " Owner set from entity @s UUID");
+            helper.runAfterDelay(120, () -> {
+                commands.performPrefixedCommand(source, "data merge entity " + selector + " {TamingRitualCompleted:1b,AwaitingTamingRitual:0b}");
+                helper.assertTrue(player.getUUID().equals(body.getOwnerUUID()), "Owner command failed");
+                helper.assertTrue(body.isTame(), "Ritual command failed");
+                body.getInventory().setItem(0, new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.SADDLE));
+                ((net.magister.bookofdragons.entity.component.InventoryComponent)body.componentRegistry.get(net.magister.bookofdragons.entity.component.InventoryComponent.class)).updateEquipment();
+                helper.runAfterDelay(20, () -> {
+                    helper.assertTrue(body.isTame(), "Forced tame did not persist through ticking");
+                    helper.assertTrue(body.canBeMountedBy(player), "Forced tame cannot be mounted");
+                    helper.succeed();
+                });
+            });
+        });
+    }
     @GameTest(template = FabricGameTest.EMPTY_STRUCTURE)
     public void entityIndependentRayQueriesRemainSupported(GameTestHelper helper) {
         var position = helper.absoluteVec(new net.minecraft.world.phys.Vec3(1, 2, 1));

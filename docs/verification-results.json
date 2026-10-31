@@ -12,16 +12,17 @@
     "skipped": "0"
   },
   "gameTests": [
-    "portgametests.malformedcontrolsrejectnonfinitevaluesbeforemutation",
-    "portgametests.soundlistenerandmultipartqueriesareregistered",
+    "portgametests.explosionlistenersfilterentitiesbeforedamage",
     "portgametests.nonownerscannotcommandorreleasenearbydragons",
     "portgametests.discoveryandnotessurviveserializationandclone",
-    "portgametests.explosionlistenersfilterentitiesbeforedamage",
     "portgametests.equipmentandeggdatasurviveitemandentityroundtrips",
-    "portgametests.paralysisdisablesandrestoresaiwithimmunity",
+    "portgametests.soundlistenerandmultipartqueriesareregistered",
+    "portgametests.malformedcontrolsrejectnonfinitevaluesbeforemutation",
     "portgametests.entityindependentrayqueriesremainsupported",
+    "portgametests.paralysisdisablesandrestoresaiwithimmunity",
     "portgametests.activatedegghatchesgeneticbabywithparentlineage",
-    "portgametests.everydragoncreatesticksandretainsownershiponsave"
+    "portgametests.everydragoncreatesticksandretainsownershiponsave",
+    "portgametests.forcedownershipcommandspermitmounting"
   ],
   "packagedClient": [
     "Book, renamed book and rattlestaff have textured geometry in every display context",
@@ -40,7 +41,7 @@
     "spawnedSpecies": 9,
     "exitCode": 0,
     "artifacts": {
-      "fauna-engine-fabric-1.0+1.20.1.fabric.dev.1.jar": "546c004a7447232ab8f3769a4081c9ac642cb643a24529fe9c37f42d6cbb7029",
+      "fauna-engine-fabric-1.0+1.20.1.fabric.dev.1.jar": "c9d3a437b2106ac00c95e47421984d576c864594b124b6e02a1563852257a366",
       "bookofdragons-fabric-1.4+1.20.1.fabric.dev.1.jar": "ce23cddeb5ce1be53257ec77c1c5ad47f55d56c597fe3ca7f05cb6e16aa1a8c8",
       "fabric-api-0.92.12+1.20.1.jar": "4197ff4fbdac13cffccd267c1bc59e9fbabb2b5683a9d5f8023f4b5ea16a1c1e",
       "azurelib-VDXznzXQ.jar": "a7381f41ede57c01bcd1d10326535a6c6d846fe251140b0f0d72c97e5267a44d",
@@ -69,8 +70,8 @@
   },
   "releaseArtifacts": {
     "fauna-engine-fabric-1.0+1.20.1.fabric.dev.1.jar": {
-      "bytes": 3235174,
-      "sha256": "546c004a7447232ab8f3769a4081c9ac642cb643a24529fe9c37f42d6cbb7029"
+      "bytes": 3236428,
+      "sha256": "c9d3a437b2106ac00c95e47421984d576c864594b124b6e02a1563852257a366"
     },
     "bookofdragons-fabric-1.4+1.20.1.fabric.dev.1.jar": {
       "bytes": 9150166,

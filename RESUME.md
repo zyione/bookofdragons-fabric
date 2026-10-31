@@ -1,5 +1,11 @@
 # Book of Dragons Fabric port checkpoint
 
+Command targeting repair: selectors now exclude multipart hitbox proxies before
+sort/limit, so nearest-dragon data commands reach the persistent dragon. The old
+jar failed a regression with the player beside an offset hitbox; the fix passes
+ownership commands, delayed ticking, saddling and mounting permission checks.
+This repair updates FAUNA. Eleven GameTests now pass.
+
 Item-model repair: native Fabric baking/display selection restores normal book,
 renamed book and rattlestaff 2D icons and 3D held geometry. Nine packaged client
 checks pass in both minimal and launcher-mod runtimes; original resources remain
@@ -22,7 +28,7 @@ https://github.com/zyione/bookofdragons-fabric.git. Their later preference is
 automated server tests and client harnesses instead of full desktop control.
 The user paused then explicitly resumed the task.
 
-Verification (2026-10-31): 3 JUnit tests, 10 GameTests, 9 packaged Java 17 client
+Verification (2026-10-31): 3 JUnit tests, 11 GameTests, 9 packaged Java 17 client
 checks including flight, breath controls and C2S dismount, and Java 17 dedicated
 server spawning all nine species. Both release jar hashes are reproducible.
 All 1085 retained reference resources also match their staged Git blobs.
