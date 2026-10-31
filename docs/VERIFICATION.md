@@ -5,6 +5,12 @@ a claim of exhaustive behavior parity or a comparison with a live Forge game.
 
 ## Passed
 
+- BigChadGuysPlus compatibility: 409 original top-level jars, copied configs,
+  scripts and resource packs, and ComplementaryReimagined shaders enabled.
+  All ten client checks passed, including real nearest-dragon ownership
+  commands beside a hitbox. See `BCG_COMPATIBILITY.md` and
+  `bcg-compatibility-results.json` for the scope and exact artifact hashes.
+
 - Java 17 bytecode in both remapped installation jars.
 - Development compilation and packaging with JDK 21, Gradle 9.2.1, Loom 1.14.10.
 - Three JUnit tests: independent-player large transfers, malformed/replayed

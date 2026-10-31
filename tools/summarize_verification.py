@@ -16,6 +16,13 @@ result={
 }
 compat = ROOT/'.reference/pack-compat-result.json'
 if compat.exists(): result['modpackCompatibility'] = json.loads(compat.read_text())
+bcg = ROOT/'docs/bcg-compatibility-results.json'
+if bcg.exists():
+    evidence = json.loads(bcg.read_text())
+    result['bigChadGuysCompatibility'] = {
+        'report':'bcg-compatibility-results.json', 'clientChecks':len(evidence['clientChecks']),
+        'sourceTopLevelJars':evidence['sourceTopLevelJars'], 'exitCode':evidence['exitCode'],
+        'shaderPack':evidence['shaderPack'], 'shadersEnabled':evidence['shadersEnabled']}
 for module,prefix in [('fauna','fauna'),('bookofdragons','book')]:
     audit=read_json('.reference/'+prefix+'-packaged-audit.json')
     result['resources'][module]=audit['resourceComparison']

@@ -1,0 +1,38 @@
+{
+  "loader": "0.19.5",
+  "java": 17,
+  "exitCode": 0,
+  "elapsedSeconds": 255.7,
+  "sourceTopLevelJars": 409,
+  "clientChecks": [
+    "Book, renamed book and rattlestaff have textured geometry in every display context",
+    "Nearest-dragon ownership commands select the parent and preserve saddled mounting",
+    "Nine species finalized, genetics synchronized and world frames rendered",
+    "Book opened, rendered and requested synchronized data",
+    "Extended menu payload, inventory screen and entity preview rendered",
+    "Mount, rider camera and HUD rendered without error",
+    "100-page note save crossed the real Fabric C2S transport intact",
+    "Adult takeoff transitioned to synchronized flight and rendered rider camera",
+    "Primary attack press/release traveled through real C2S handler and rendered breath frames",
+    "C2S dismount detached rider on server and client"
+  ],
+  "scope": "Copied instance mods, configs, scripts, resource packs and shader settings; fresh isolated world; no user saves",
+  "date": "2026-10-31",
+  "pack": "BigChadGuysPlus",
+  "sourceModJarsUnchanged": true,
+  "originalResourcePackEntries": 34,
+  "originalResourcePackSelectionPreserved": true,
+  "shaderPack": "ComplementaryReimagined_r5.9.3.zip",
+  "shadersEnabled": true,
+  "testCharacter": "Human / Nitwit",
+  "releaseJars": {
+    "bookofdragons-fabric-1.4+1.20.1.fabric.dev.1.jar": "ce23cddeb5ce1be53257ec77c1c5ad47f55d56c597fe3ca7f05cb6e16aa1a8c8",
+    "fauna-engine-fabric-1.0+1.20.1.fabric.dev.1.jar": "c9d3a437b2106ac00c95e47421984d576c864594b124b6e02a1563852257a366"
+  },
+  "visualReview": [
+    "01-gallery.png",
+    "02-book.png",
+    "05-flight.png"
+  ],
+  "limits": "No exhaustive mod interaction, all-origin/class, remote multiplayer, long-term natural taming or performance benchmark coverage."
+}

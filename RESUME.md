@@ -1,5 +1,12 @@
 # Book of Dragons Fabric port checkpoint
 
+BigChadGuysPlus compatibility passed: copied 409 source mod jars, configs,
+KubeJS, resource packs and ComplementaryReimagined_r5.9.3 shader settings to an
+isolated client/world. All ten client checks passed, including actual ownership
+commands beside a hitbox and saddled mounting. Java 17 exit 0; visual review
+confirmed gallery, book and flight. Source jar hashes stayed unchanged. No game
+jar patch was needed. See docs/BCG_COMPATIBILITY.md and its JSON evidence.
+
 Command targeting repair: selectors now exclude multipart hitbox proxies before
 sort/limit, so nearest-dragon data commands reach the persistent dragon. The old
 jar failed a regression with the player beside an offset hitbox; the fix passes

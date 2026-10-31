@@ -21,6 +21,7 @@ import net.minecraft.world.level.GameType;
 /** Repeatable real-client rendering and menu checks without desktop input. */
 public final class ClientVerification implements ClientModInitializer {
     private int tick, phase, wait;
+    private int spawnedAtServerTick;
     private UUID dragon;
     private CompletableFuture<?> serverAction;
     private final Path output = Path.of("verification");
@@ -62,6 +63,12 @@ public final class ClientVerification implements ClientModInitializer {
             if (!serverAction.isDone()) return;
             serverAction.join(); serverAction = null;
         }
+        if (phase == 2 && Boolean.getBoolean("bookofdragons.instanceCompatibility")) {
+            if (client.screen != null && client.screen.getClass().getName().startsWith("io.github.apace100.origins.screen."))
+                client.setScreen(null);
+            // Client ticks continue while an onboarding screen pauses the server.
+            if (client.getSingleplayerServer().getTickCount() - spawnedAtServerTick < 20) return;
+        }
         if (++wait < 60) return;
         wait = 0;
         if (phase == 1) {
@@ -70,6 +77,15 @@ public final class ClientVerification implements ClientModInitializer {
             serverAction = server.submit(() -> {
                 var player = server.getPlayerList().getPlayer(id);
                 var level = player.serverLevel();
+                if (Boolean.getBoolean("bookofdragons.instanceCompatibility")
+                        && server.getCommands().getDispatcher().getRoot().getChild("origin") != null) {
+                    var source = player.createCommandSourceStack().withPermission(4);
+                    if (server.getCommands().performPrefixedCommand(source, "origin set @s origins:origin origins:human") < 1)
+                        throw new IllegalStateException("Could not initialize the isolated player's Human origin");
+                    if (net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("origins-classes")
+                            && server.getCommands().performPrefixedCommand(source, "origin set @s origins-classes:class origins-classes:nitwit") < 1)
+                        throw new IllegalStateException("Could not initialize the isolated player's neutral class");
+                }
                 for (var existing : level.getAllEntities()) {
                     if (existing instanceof DragonBase) existing.discard();
                 }
@@ -105,11 +121,35 @@ public final class ClientVerification implements ClientModInitializer {
                     }
                     level.addFreshEntity(body); i++;
                 }
+                spawnedAtServerTick = server.getTickCount();
             });
             phase = 2;
         } else if (phase == 2) {
             client.setScreen(null);
             verifyItemModels(client);
+            if (Boolean.getBoolean("bookofdragons.instanceCompatibility")) {
+                var server = client.getSingleplayerServer();
+                var id = client.player.getUUID();
+                serverAction = server.submit(() -> {
+                    var player = server.getPlayerList().getPlayer(id);
+                    DragonBase body = (DragonBase)player.serverLevel().getEntity(dragon);
+                    var part = Arrays.stream(body.getParts()).filter(p -> p.distanceToSqr(body) > 0.1 && p.distanceToSqr(body) < 64)
+                        .findFirst().orElseThrow(() -> new IllegalStateException("No offset hitbox after " + body.tickCount
+                            + " body ticks at " + body.position() + "; parts=" + Arrays.toString(Arrays.stream(body.getParts()).map(p -> p.position()).toArray())));
+                    var source = player.createCommandSourceStack().withPermission(4).withPosition(part.position());
+                    String target = "@e[type=bookofdragons:nightfury,sort=nearest,limit=1,distance=..10]";
+                    try {
+                        var selector = new net.minecraft.commands.arguments.selector.EntitySelectorParser(new com.mojang.brigadier.StringReader(target)).parse();
+                        if (selector.findSingleEntity(source) != body) throw new IllegalStateException("Instance selector returned a hitbox");
+                    } catch (com.mojang.brigadier.exceptions.CommandSyntaxException error) { throw new IllegalStateException(error); }
+                    body.setOwnerUUID(null); body.setTame(false); body.setTamingRitualCompleted(false);
+                    server.getCommands().performPrefixedCommand(source, "data modify entity " + target + " Owner set from entity @s UUID");
+                    server.getCommands().performPrefixedCommand(source, "data merge entity " + target + " {TamingRitualCompleted:1b,AwaitingTamingRitual:0b}");
+                    if (!body.isTame() || !id.equals(body.getOwnerUUID()) || !body.canBeMountedBy(player))
+                        throw new IllegalStateException("Instance ownership commands failed to permit saddled mounting");
+                    passed.add("Nearest-dragon ownership commands select the parent and preserve saddled mounting");
+                });
+            }
             snapshot(client, "01-gallery.png");
             for (var entity : client.level.entitiesForRendering()) {
                 if (entity instanceof DragonBase body) {
@@ -201,9 +241,15 @@ public final class ClientVerification implements ClientModInitializer {
         try (var image = Screenshot.takeScreenshot(client.getMainRenderTarget())) { image.writeToFile(output.resolve(name)); }
     }
     private void verifyItemModels(Minecraft client) {
+        // Starter-kit mods can populate inventory asynchronously on first join.
+        // Query controlled stacks rather than assuming particular hotbar contents.
+        var book = new ItemStack(net.magister.bookofdragons.item.ModItems.BOOK_OF_DRAGONS.get());
+        var renamed = book.copy();
+        renamed.setHoverName(net.minecraft.network.chat.Component.literal("How to Train your Dragon"));
+        var stacks = List.of(book, renamed, new ItemStack(net.magister.bookofdragons.item.ModItems.RATTLE_STAFF.get()));
         Set<net.minecraft.resources.ResourceLocation> bookSprites = new HashSet<>();
         for (int slot = 0; slot < 3; slot++) {
-            var stack = client.player.getInventory().getItem(slot);
+            var stack = stacks.get(slot);
             var model = client.getItemRenderer().getModel(stack, client.level, client.player, 0);
             if (!(model instanceof net.magister.bookofdragons.platform.fabric.SeparateItemModels.SeparateModel separate))
                 throw new IllegalStateException("Separate item model not loaded: " + stack);
