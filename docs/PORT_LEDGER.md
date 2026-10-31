@@ -23,6 +23,7 @@ Long-session gameplay and real-player latency coverage remain manual gaps.
 | Config | ForgeConfigSpec TOML defaults and config screen | Tested Forge Config API Port 8.0.1; native registration; optional Mod Menu factory | Defaults loaded client/server; config-screen combinations not exhaustively exercised |
 | Worldgen/roost/trades/data | Structure processor, roost block entities/modules, spawn engine, trades, data packs | Original shared code/data; native registration/trade sinks; lazy external genetics pack sources | Data load, registries, resource hashes, natural test-world generation; distribution and progression manual |
 | Assets | Original models/textures/animations/audio/font/core resources | Original bytes retained; Forge generated mixin/refmap metadata replaced | 1002 Book and 77 FAUNA asset/data hashes identical; sealed core retained |
+| Separate item models | Forge separate-transforms definitions for book, renamed book and rattlestaff | Fabric model-loading callback and render-context model selection | Packaged minimal and launcher-mod clients: textured quads in every context, distinct rename icon, hotbar and held-book screenshots |
 | Packaging | Java 17 runtime and installation namespace | Loom remapJar; exact pinned dependencies; reproducible archives | Java 17 packaged server/client, both release hashes identical after full rerun |
 
 ## Differences and provenance

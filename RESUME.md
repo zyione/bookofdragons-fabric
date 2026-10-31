@@ -1,6 +1,11 @@
 # Book of Dragons Fabric port checkpoint
 
-Launcher crash repair: explosion callback now coexists with Dragons of Berk;
+Item-model repair: native Fabric baking/display selection restores normal book,
+renamed book and rattlestaff 2D icons and 3D held geometry. Nine packaged client
+checks pass in both minimal and launcher-mod runtimes; original resources remain
+unchanged. Update only the Book of Dragons jar for this repair.
+
+Earlier launcher crash repair: explosion callback now coexists with Dragons of Berk;
 the standalone null-entity ray fallback is skipped when Porting Library provides
 the identical implementation. Ten GameTests and eight client checks passed in
 both the minimal packaged runtime and the isolated launcher-mod compatibility
@@ -17,7 +22,7 @@ https://github.com/zyione/bookofdragons-fabric.git. Their later preference is
 automated server tests and client harnesses instead of full desktop control.
 The user paused then explicitly resumed the task.
 
-Verification (2026-10-31): 3 JUnit tests, 10 GameTests, 8 packaged Java 17 client
+Verification (2026-10-31): 3 JUnit tests, 10 GameTests, 9 packaged Java 17 client
 checks including flight, breath controls and C2S dismount, and Java 17 dedicated
 server spawning all nine species. Both release jar hashes are reproducible.
 All 1085 retained reference resources also match their staged Git blobs.

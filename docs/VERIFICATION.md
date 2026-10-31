@@ -29,7 +29,7 @@ a claim of exhaustive behavior parity or a comparison with a live Forge game.
 - Rebuilt both release jars with all tasks rerun; both SHA-256 hashes matched.
 - Repaired jars in an isolated copy of the user's launcher-pack mods, using
   Fabric Loader 0.19.5 and Java 17: 83 top-level jars including the test harness,
-  Dragons of Berk, Create/Porting Library, Lithium and ModernFix. All eight client
+  Dragons of Berk, Create/Porting Library, Lithium and ModernFix. All nine client
   checks passed and the process exited cleanly. User configs, resource packs,
   shaders and existing saves were not copied, so those remain outside this check.
 - Asset/data hashes: 1,002 Book resources and 77 FAUNA resources match their
@@ -67,6 +67,13 @@ mixin targets are absent without Sable. Offline test accounts cannot access
 Realms; test servers bind only to loopback.
 
 ## Port-specific issues found and corrected
+
+- Supply Fabric model baking and display-context selection for the reference
+  `forge:separate_transforms` book, renamed book and rattlestaff definitions.
+  Their original textures, 2D/3D geometry and rename predicate remain intact.
+  Packaged client checks verify textured geometry for every display context and
+  a distinct renamed-book icon. Screenshots confirm hotbar icons and the held
+  3D book in both minimal and launcher-mod compatibility runtimes.
 
 - Launcher-pack compatibility repair: FAUNA now filters the collected explosion
   entity list instead of redirecting the same query as Dragons of Berk.

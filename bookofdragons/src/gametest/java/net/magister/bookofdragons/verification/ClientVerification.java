@@ -75,6 +75,12 @@ public final class ClientVerification implements ClientModInitializer {
                 }
                 BlockPos floor = player.blockPosition();
                 player.setGameMode(GameType.CREATIVE);
+                player.getInventory().setItem(0, new ItemStack(net.magister.bookofdragons.item.ModItems.BOOK_OF_DRAGONS.get()));
+                var variantBook = new ItemStack(net.magister.bookofdragons.item.ModItems.BOOK_OF_DRAGONS.get());
+                variantBook.setHoverName(net.minecraft.network.chat.Component.literal("How to Train your Dragon"));
+                player.getInventory().setItem(1, variantBook);
+                player.getInventory().setItem(2, new ItemStack(net.magister.bookofdragons.item.ModItems.RATTLE_STAFF.get()));
+                player.getInventory().selected = 0;
                 double x = floor.getX(), y = 110;
                 server.getCommands().performPrefixedCommand(server.createCommandSourceStack(),
                     "fill " + (floor.getX()-22) + " 109 " + (floor.getZ()-5) + " " + (floor.getX()+22) + " 109 " + (floor.getZ()+48) + " minecraft:stone");
@@ -103,6 +109,7 @@ public final class ClientVerification implements ClientModInitializer {
             phase = 2;
         } else if (phase == 2) {
             client.setScreen(null);
+            verifyItemModels(client);
             snapshot(client, "01-gallery.png");
             for (var entity : client.level.entitiesForRendering()) {
                 if (entity instanceof DragonBase body) {
@@ -192,5 +199,26 @@ public final class ClientVerification implements ClientModInitializer {
     }
     private void snapshot(Minecraft client, String name) throws Exception {
         try (var image = Screenshot.takeScreenshot(client.getMainRenderTarget())) { image.writeToFile(output.resolve(name)); }
+    }
+    private void verifyItemModels(Minecraft client) {
+        Set<net.minecraft.resources.ResourceLocation> bookSprites = new HashSet<>();
+        for (int slot = 0; slot < 3; slot++) {
+            var stack = client.player.getInventory().getItem(slot);
+            var model = client.getItemRenderer().getModel(stack, client.level, client.player, 0);
+            if (!(model instanceof net.magister.bookofdragons.platform.fabric.SeparateItemModels.SeparateModel separate))
+                throw new IllegalStateException("Separate item model not loaded: " + stack);
+            for (var display : net.minecraft.world.item.ItemDisplayContext.values()) {
+                var selected = separate.forDisplay(display);
+                var quads = selected.getQuads(null, null, net.minecraft.util.RandomSource.create(0));
+                if (quads.isEmpty()) throw new IllegalStateException("Invisible item model: " + stack + " / " + display);
+                for (var quad : quads) {
+                    var sprite = quad.getSprite().contents().name();
+                    if (sprite.getPath().equals("missingno")) throw new IllegalStateException("Missing item texture: " + stack);
+                    if (slot < 2 && display == net.minecraft.world.item.ItemDisplayContext.GUI) bookSprites.add(sprite);
+                }
+            }
+        }
+        if (bookSprites.size() != 2) throw new IllegalStateException("Renamed book texture override did not select a distinct icon");
+        passed.add("Book, renamed book and rattlestaff have textured geometry in every display context");
     }
 }
