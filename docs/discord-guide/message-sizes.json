@@ -1,0 +1,58 @@
+{
+  "standardDiscordLimit": 2000,
+  "exportBudget": 1900,
+  "messages": [
+    {
+      "file": "01-install-the-right-files.md",
+      "utf16CharactersIncludingFinalNewline": 1665
+    },
+    {
+      "file": "02-get-started-and-open-the-book.md",
+      "utf16CharactersIncludingFinalNewline": 1089
+    },
+    {
+      "file": "03-how-normal-taming-works.md",
+      "utf16CharactersIncludingFinalNewline": 1668
+    },
+    {
+      "file": "04-foods-for-the-first-five-species.md",
+      "utf16CharactersIncludingFinalNewline": 1037
+    },
+    {
+      "file": "05-foods-for-the-other-four-species.md",
+      "utf16CharactersIncludingFinalNewline": 750
+    },
+    {
+      "file": "06-night-fury-taming-walkthrough.md",
+      "utf16CharactersIncludingFinalNewline": 1344
+    },
+    {
+      "file": "07-saddles-inventory-and-care.md",
+      "utf16CharactersIncludingFinalNewline": 1262
+    },
+    {
+      "file": "08-default-riding-and-ability-controls.md",
+      "utf16CharactersIncludingFinalNewline": 1375
+    },
+    {
+      "file": "09-commands-whistles-and-finding-your-dragon.md",
+      "utf16CharactersIncludingFinalNewline": 1016
+    },
+    {
+      "file": "10-eggs-and-hatching.md",
+      "utf16CharactersIncludingFinalNewline": 1538
+    },
+    {
+      "file": "11-creative-admin-force-taming.md",
+      "utf16CharactersIncludingFinalNewline": 1486
+    },
+    {
+      "file": "12-troubleshooting.md",
+      "utf16CharactersIncludingFinalNewline": 1589
+    },
+    {
+      "file": "13-bigchadguys-and-verification-notes.md",
+      "utf16CharactersIncludingFinalNewline": 1388
+    }
+  ]
+}

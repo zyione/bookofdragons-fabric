@@ -11,6 +11,10 @@ additional rights to that content.
 
 ## Installation
 
+For players, see the sectioned [player guide](docs/PLAYER_GUIDE.md).
+The [Discord posting instructions](docs/discord-guide/POSTING.md) explain how to
+share its numbered messages with headings, controls and copyable commands.
+
 Use Minecraft **1.20.1**, Java **17 or later**, and Fabric Loader **0.18.2**.
 Install both output jars in the instance's `mods` directory:
 
