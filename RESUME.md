@@ -1,5 +1,13 @@
 # Book of Dragons Fabric port checkpoint
 
+Player documentation (2 November 2026): docs/PLAYER_GUIDE.md and a complete
+site-ready wiki under docs/dragon-wiki. Nine species pages cover spawn routes,
+world-age gates, food/treasure, dynamic taming requests, abilities, eggs, care
+and scales; Gronckle also has its iron recipe. README.md is the wiki index and
+TAMING_AND_SPAWNING.md explains shared mechanics. The user requested complete
+site pages rather than Discord splits for this wiki. Generator and source hashes
+are included; site bundle: build/distributions/bookofdragons-dragon-wiki-site.zip.
+
 BigChadGuysPlus compatibility passed: copied 409 source mod jars, configs,
 KubeJS, resource packs and ComplementaryReimagined_r5.9.3 shader settings to an
 isolated client/world. All ten client checks passed, including actual ownership

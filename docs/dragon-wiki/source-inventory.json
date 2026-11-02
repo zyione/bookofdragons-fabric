@@ -1,0 +1,319 @@
+[
+  {
+    "species": "nightfury",
+    "entityId": "bookofdragons:nightfury",
+    "name": "Night Fury",
+    "requestPool": [
+      "APPROACH",
+      "DEFEND",
+      "FOLLOW",
+      "TOUCH",
+      "MEAL",
+      "REST",
+      "WALK",
+      "GIFT",
+      "MOUNT"
+    ],
+    "favoriteFood": [
+      "minecraft:salmon"
+    ],
+    "specialFood": [
+      "minecraft:tropical_fish"
+    ],
+    "dislikedFood": [
+      "minecraft:pufferfish"
+    ],
+    "rideable": true,
+    "flying": true,
+    "sourceHashes": {
+      "bookofdragons/src/main/resources/data/bookofdragons/fauna/species/nightfury.json": "031e28b167659109563e50c94f4d371bfeda697f197123a37107be36a2ff99c9",
+      "bookofdragons/src/main/resources/data/bookofdragons/spawn/nightfury.json": "cca5c54b9222e52dad81c566d5cca024bd2a8e3df50e3000773969bc58d23d0e",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/custom/dragon/NightfuryEntity.java": "cfd92eb5155f3c976b86484ac1bb0cba1d4e067be5700dee3785db4686679a2f",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/DragonType.java": "b94a259d6562c88daa89978fd42b42473bbddb8181e5db987a717c7968b12c87",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/EggHatchCondition.java": "1a9e04018e51d272ffb554fff70be1a37d609ced6935446f438db352599b7d05",
+      "bookofdragons/src/main/resources/data/bookofdragons/loot_tables/entities/nightfury.json": "b8d3b4319b86af0b419e93917f4d91ac6687530b0f90fcc17a3772e8597bff2f",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/component/ShearingComponent.java": "42b66e45e0a02418b123e778b98e379b24c971ca30fb19684ef029bc3a89daba"
+    }
+  },
+  {
+    "species": "deadly_nadder",
+    "entityId": "bookofdragons:deadlynadder",
+    "name": "Deadly Nadder",
+    "requestPool": [
+      "APPROACH",
+      "FOLLOW",
+      "TOUCH",
+      "MEAL",
+      "REST",
+      "WALK",
+      "MOUNT"
+    ],
+    "favoriteFood": [
+      "minecraft:chicken"
+    ],
+    "specialFood": [
+      "minecraft:tropical_fish"
+    ],
+    "dislikedFood": [
+      "minecraft:spider_eye"
+    ],
+    "rideable": true,
+    "flying": true,
+    "sourceHashes": {
+      "bookofdragons/src/main/resources/data/bookofdragons/fauna/species/deadly_nadder.json": "38ad1a557930981162afd2d1089737fe10d480b7429cd64faa48976174de1390",
+      "bookofdragons/src/main/resources/data/bookofdragons/spawn/deadly_nadder.json": "0fc0f4b99b86ca9b4a7c3208bc5569f8336e1c19bad5405b27205fe4ec08a907",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/custom/dragon/DeadlynadderEntity.java": "622d1abc4b2f2d44edebdae77f1cef9a86d05d6b83da4bcbabcca689df3a8b0f",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/DragonType.java": "b94a259d6562c88daa89978fd42b42473bbddb8181e5db987a717c7968b12c87",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/EggHatchCondition.java": "1a9e04018e51d272ffb554fff70be1a37d609ced6935446f438db352599b7d05",
+      "bookofdragons/src/main/resources/data/bookofdragons/loot_tables/entities/deadlynadder.json": "ca3bf007d57548f9e87755a2205597f7bfa7e9723827afb80ea8f6e6785c9eab",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/component/ShearingComponent.java": "42b66e45e0a02418b123e778b98e379b24c971ca30fb19684ef029bc3a89daba"
+    }
+  },
+  {
+    "species": "gronckle",
+    "entityId": "bookofdragons:gronckle",
+    "name": "Gronckle",
+    "requestPool": [
+      "TOUCH",
+      "MEAL",
+      "REST",
+      "WALK",
+      "GIFT",
+      "MOUNT"
+    ],
+    "favoriteFood": [
+      "minecraft:mutton"
+    ],
+    "specialFood": [
+      "minecraft:gold_ore"
+    ],
+    "dislikedFood": [
+      "minecraft:pufferfish"
+    ],
+    "rideable": true,
+    "flying": true,
+    "sourceHashes": {
+      "bookofdragons/src/main/resources/data/bookofdragons/fauna/species/gronckle.json": "22ee2a1c12c6cf39f66b3975e2b7c2dcff1c068174ce5b86600594cb06831b10",
+      "bookofdragons/src/main/resources/data/bookofdragons/spawn/gronckle.json": "af01c8b3e98d9d33b7c188e7e9b894ba0847004a71fda9d267472e5f324ca833",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/custom/dragon/GronckleEntity.java": "2efa8fe111c3eec5984953d8a893875f7b7054dd4bc2476063a6b94934142c36",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/DragonType.java": "b94a259d6562c88daa89978fd42b42473bbddb8181e5db987a717c7968b12c87",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/EggHatchCondition.java": "1a9e04018e51d272ffb554fff70be1a37d609ced6935446f438db352599b7d05",
+      "bookofdragons/src/main/resources/data/bookofdragons/loot_tables/entities/gronckle.json": "07e6f1282305793ace0aed8a54e9cab9984566aba3cbb2ce34b3f7af145bf4d3",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/component/ShearingComponent.java": "42b66e45e0a02418b123e778b98e379b24c971ca30fb19684ef029bc3a89daba",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/custom/dragon/GronckleIronRecipe.java": "febaa59a0521e7f734646628ca508be3a9ec70bfe92129c9295557935b5e4813"
+    }
+  },
+  {
+    "species": "hideous_zippleback",
+    "entityId": "bookofdragons:hiddeous_zippleback",
+    "name": "Hideous Zippleback",
+    "requestPool": [
+      "APPROACH",
+      "TOUCH",
+      "FOLLOW",
+      "MEAL",
+      "REST",
+      "WALK",
+      "MOUNT"
+    ],
+    "favoriteFood": [
+      "minecraft:salmon"
+    ],
+    "specialFood": [
+      "minecraft:pufferfish"
+    ],
+    "dislikedFood": [
+      "minecraft:rotten_flesh"
+    ],
+    "rideable": true,
+    "flying": true,
+    "sourceHashes": {
+      "bookofdragons/src/main/resources/data/bookofdragons/fauna/species/hideous_zippleback.json": "3286f3396fe30f23ee6176d61a8f604801d44415819ee707b882c25fd7ea7322",
+      "bookofdragons/src/main/resources/data/bookofdragons/spawn/hideous_zippleback.json": "041ed56da9d03d4a04d13470a734201c26155469834213bdc8cb3c3f615d2b06",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/custom/dragon/HiddeousZipplebackEntity.java": "53a5083d81b1e45ae2670796af487a329c4b2f0cb98b3a3e693dea2e9a74ee6c",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/DragonType.java": "b94a259d6562c88daa89978fd42b42473bbddb8181e5db987a717c7968b12c87",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/EggHatchCondition.java": "1a9e04018e51d272ffb554fff70be1a37d609ced6935446f438db352599b7d05",
+      "bookofdragons/src/main/resources/data/bookofdragons/loot_tables/entities/hiddeous_zippleback.json": "445cef71c25d5f5a1deb0e5a465c6749862cfa505ddf70e8b34a18c2dfa3f253",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/component/ShearingComponent.java": "42b66e45e0a02418b123e778b98e379b24c971ca30fb19684ef029bc3a89daba"
+    }
+  },
+  {
+    "species": "monstrous_nightmare",
+    "entityId": "bookofdragons:monstrousnightmare",
+    "name": "Monstrous Nightmare",
+    "requestPool": [
+      "APPROACH",
+      "DEFEND",
+      "SPAR",
+      "HUNT",
+      "MEAL",
+      "REST",
+      "WALK",
+      "HUNT_TOGETHER",
+      "GIFT",
+      "MOUNT"
+    ],
+    "favoriteFood": [
+      "minecraft:beef"
+    ],
+    "specialFood": [
+      "minecraft:tropical_fish"
+    ],
+    "dislikedFood": [
+      "minecraft:rotten_flesh"
+    ],
+    "rideable": true,
+    "flying": true,
+    "sourceHashes": {
+      "bookofdragons/src/main/resources/data/bookofdragons/fauna/species/monstrous_nightmare.json": "562d71bc4195b59d63dbcc5667b5968df0bcaa213a0455bd46f317cd728a9f7e",
+      "bookofdragons/src/main/resources/data/bookofdragons/spawn/monstrous_nightmare.json": "44f6f3ca5bd811d322e286a4b4359b28d7c567402b72308c4535c2ee67b09e4b",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/custom/dragon/MonstrousnightmareEntity.java": "d62ffe5895fbdf33c5b1b2784ae7c509b7e441e41827a4a5169ee338b7816035",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/DragonType.java": "b94a259d6562c88daa89978fd42b42473bbddb8181e5db987a717c7968b12c87",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/EggHatchCondition.java": "1a9e04018e51d272ffb554fff70be1a37d609ced6935446f438db352599b7d05",
+      "bookofdragons/src/main/resources/data/bookofdragons/loot_tables/entities/monstrousnightmare.json": "320ccbd841c833610f5b85ef8f659164e7dec593a1ffde51dce920330ee8aaab",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/component/ShearingComponent.java": "42b66e45e0a02418b123e778b98e379b24c971ca30fb19684ef029bc3a89daba"
+    }
+  },
+  {
+    "species": "skrill",
+    "entityId": "bookofdragons:skrill",
+    "name": "Skrill",
+    "requestPool": [
+      "APPROACH",
+      "DEFEND",
+      "SPAR",
+      "HUNT",
+      "MEAL",
+      "REST",
+      "WALK",
+      "HUNT_TOGETHER",
+      "GIFT",
+      "MOUNT"
+    ],
+    "favoriteFood": [
+      "minecraft:mutton"
+    ],
+    "specialFood": [
+      "minecraft:tropical_fish"
+    ],
+    "dislikedFood": [
+      "minecraft:pufferfish"
+    ],
+    "rideable": true,
+    "flying": true,
+    "sourceHashes": {
+      "bookofdragons/src/main/resources/data/bookofdragons/fauna/species/skrill.json": "6f014ce2d6db9884c69d541381baac0e850c9b4ff12b1582f33dc2faf354d0ed",
+      "bookofdragons/src/main/resources/data/bookofdragons/spawn/skrill.json": "3b1400a1d77909b7bfdf7cc6ed8505073d8b56436f63793b16b72d734db49bf0",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/custom/dragon/SkrillEntity.java": "6266e9b35c57023bd467e4ffc4c85e8d4d2e4df6a68f4c3448d23a5ce03e2874",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/DragonType.java": "b94a259d6562c88daa89978fd42b42473bbddb8181e5db987a717c7968b12c87",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/EggHatchCondition.java": "1a9e04018e51d272ffb554fff70be1a37d609ced6935446f438db352599b7d05",
+      "bookofdragons/src/main/resources/data/bookofdragons/loot_tables/entities/skrill.json": "7f31248e5268f8785ce5bac777663230ae21e7f954b25b662b2772c63eb240f6",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/component/ShearingComponent.java": "42b66e45e0a02418b123e778b98e379b24c971ca30fb19684ef029bc3a89daba"
+    }
+  },
+  {
+    "species": "whispering_death",
+    "entityId": "bookofdragons:whispering_death",
+    "name": "Whispering Death",
+    "requestPool": [
+      "APPROACH",
+      "SPAR",
+      "TOUCH",
+      "HUNT",
+      "MEAL",
+      "REST",
+      "WALK",
+      "HUNT_TOGETHER",
+      "GIFT",
+      "MOUNT"
+    ],
+    "favoriteFood": [
+      "minecraft:mutton"
+    ],
+    "specialFood": [
+      "minecraft:rabbit"
+    ],
+    "dislikedFood": [
+      "minecraft:pufferfish"
+    ],
+    "rideable": true,
+    "flying": true,
+    "sourceHashes": {
+      "bookofdragons/src/main/resources/data/bookofdragons/fauna/species/whispering_death.json": "a38337e58ce22abbf6726128a52ec999dc62068239935f9538ff851e5edb99ba",
+      "bookofdragons/src/main/resources/data/bookofdragons/spawn/whispering_death.json": "3d615097243988180a19c5cd5ce9f5eccd60363a0aa6998ae0038b47be50e8b4",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/custom/dragon/WhisperingDeathEntity.java": "e2ae5f123ecdc36d9ef8e51fa692d7ce0ca639ca61df906eb7438a64b31b1c16",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/DragonType.java": "b94a259d6562c88daa89978fd42b42473bbddb8181e5db987a717c7968b12c87",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/EggHatchCondition.java": "1a9e04018e51d272ffb554fff70be1a37d609ced6935446f438db352599b7d05",
+      "bookofdragons/src/main/resources/data/bookofdragons/loot_tables/entities/whispering_death.json": "f618107fe447fc5b294adc119e902548a31f591089d3f26bdfec08e5f2be18b3",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/component/ShearingComponent.java": "42b66e45e0a02418b123e778b98e379b24c971ca30fb19684ef029bc3a89daba"
+    }
+  },
+  {
+    "species": "terrible_terror",
+    "entityId": "bookofdragons:terrible_terror",
+    "name": "Terrible Terror",
+    "requestPool": [
+      "APPROACH",
+      "TOUCH",
+      "FOLLOW",
+      "MEAL",
+      "REST",
+      "WALK"
+    ],
+    "favoriteFood": [
+      "minecraft:cod"
+    ],
+    "specialFood": [
+      "minecraft:salmon"
+    ],
+    "dislikedFood": [
+      "minecraft:spider_eye"
+    ],
+    "rideable": false,
+    "flying": true,
+    "sourceHashes": {
+      "bookofdragons/src/main/resources/data/bookofdragons/fauna/species/terrible_terror.json": "b7677e36e36af5555a7b901c0911ac7eea5b61efdc6881beee1ff1bd54c4ed56",
+      "bookofdragons/src/main/resources/data/bookofdragons/spawn/terrible_terror.json": "f0ae6e2383e35daebefef393dba2216dd3039a77a6e780f02afd9d8acd9ad425",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/custom/dragon/TerribleTerrorEntity.java": "c909ae08646aa822a3b20cdd325ecc7b78abce08817f9ecb61f661bf40320afe",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/DragonType.java": "b94a259d6562c88daa89978fd42b42473bbddb8181e5db987a717c7968b12c87",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/EggHatchCondition.java": "1a9e04018e51d272ffb554fff70be1a37d609ced6935446f438db352599b7d05",
+      "bookofdragons/src/main/resources/data/bookofdragons/loot_tables/entities/terrible_terror.json": "78825b25cfe042b1c478bf5663e0833e54dc42f2e32f9253ecf23a3a5c7bf18f",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/component/ShearingComponent.java": "42b66e45e0a02418b123e778b98e379b24c971ca30fb19684ef029bc3a89daba"
+    }
+  },
+  {
+    "species": "speed_stinger",
+    "entityId": "bookofdragons:speed_stinger",
+    "name": "Speed Stinger",
+    "requestPool": [
+      "APPROACH",
+      "SPAR",
+      "FOLLOW",
+      "HUNT",
+      "MEAL",
+      "REST",
+      "WALK",
+      "HUNT_TOGETHER"
+    ],
+    "favoriteFood": [
+      "minecraft:salmon"
+    ],
+    "specialFood": [
+      "minecraft:cod"
+    ],
+    "dislikedFood": [
+      "minecraft:rotten_flesh"
+    ],
+    "rideable": false,
+    "flying": false,
+    "sourceHashes": {
+      "bookofdragons/src/main/resources/data/bookofdragons/fauna/species/speed_stinger.json": "18e2dcc5d86416d5b72c6496f95ac5aafd18dd316e5e33a1d1e7ad542d539dd0",
+      "bookofdragons/src/main/resources/data/bookofdragons/spawn/speed_stinger.json": "8f0cf3702fb5875dafce8a30eb0a8ef0007752732435d5a622b7792ca6975943",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/custom/dragon/SpeedStingerEntity.java": "d674e7a673c1f18ba5ae7431021a2384dabab354c27799ccd351035b55599bc6",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/DragonType.java": "b94a259d6562c88daa89978fd42b42473bbddb8181e5db987a717c7968b12c87",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/data/EggHatchCondition.java": "1a9e04018e51d272ffb554fff70be1a37d609ced6935446f438db352599b7d05",
+      "bookofdragons/src/main/resources/data/bookofdragons/loot_tables/entities/speed_stinger.json": "e6204452d499368e0f62c02b5f91b294e075db21da88cdf2fa464bb6adfa5f24",
+      "bookofdragons/src/main/java/net/magister/bookofdragons/entity/component/ShearingComponent.java": "42b66e45e0a02418b123e778b98e379b24c971ca30fb19684ef029bc3a89daba"
+    }
+  }
+]

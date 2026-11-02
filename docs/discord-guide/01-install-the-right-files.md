@@ -4,6 +4,9 @@ For the unofficial Fabric 1.20.1 development port. Updated 2 November 2026.
 Start with section 1, then follow the sections you need. Server datapacks,
 configuration changes and remapped controls can change your experience.
 
+Species-by-species wiki:
+https://github.com/zyione/bookofdragons-fabric/tree/codex/fabric-1.20.1/docs/dragon-wiki
+
 ## 01. Install the right files
 
 Use **Minecraft Java 1.20.1**, **Java 17**, and **Fabric**.

@@ -12,6 +12,8 @@ additional rights to that content.
 ## Installation
 
 For players, see the sectioned [player guide](docs/PLAYER_GUIDE.md).
+The [dragon wiki](docs/dragon-wiki/README.md) has a page for every registered
+species, including spawn rules, food, individual taming advice, eggs and abilities.
 The [Discord posting instructions](docs/discord-guide/POSTING.md) explain how to
 share its numbered messages with headings, controls and copyable commands.
 
